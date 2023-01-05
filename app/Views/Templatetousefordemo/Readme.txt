@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: ZenBlog
-Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+Template Name: Mentor
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
 Author: BootstrapMade.com
-License: https:///bootstrapmade.com/license/
+License: https://bootstrapmade.com/license/
