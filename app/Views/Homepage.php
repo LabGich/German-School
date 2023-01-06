@@ -91,18 +91,19 @@
             <img src="/assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>What We Do.</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              In addition, we provide language lessons in a welcoming, multicultural setting. As a result, you can study a language whenever it's convenient for you. It may be 
+              after work, at lunch, in the morning, throughout the evening, or in the comfort of your house. In addition, compared to other language schools in Mombasa, we are cost-friendly 
+              to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bi bi-check-circle"></i> European Level A1.</li>
+              <li><i class="bi bi-check-circle"></i> European Level C1.</li>
+              <li><i class="bi bi-check-circle"></i> European Level C2.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              We have online classes for all languages, which is significant. Imagine not having to leave your office or home to complete your studies.
             </p>
 
           </div>
