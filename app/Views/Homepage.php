@@ -44,28 +44,23 @@
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
+          <li class="dropdown"><a href="courses.html"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Geramn Course</a></li>
+              <li><a href="#">Chinese Course</a></li>
+              <li><a href="#">French Course</a></li>
+              <li><a href="#">Spanish Course</a></li>
+              <li><a href="#">English Course</a></li>
+              <li><a href="#">Swahili Course</a></li>
+              <li><a href="#">Arabic Course</a></li>
+              <li><a href="#">Italian Course</a></li>
+            </ul>
+          </li>
           <li><a href="trainers.html">Trainers</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="pricing.html">Pricing</a></li>
 
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -156,8 +151,10 @@
             <div class="content">
               <h3>Why Choose FLC Mombasa?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                If language schools in Mombasa, Kenya are what you're looking for. The Foreign Language College Mombasa provides personalized, brief language classes as well as immersive 
+                language programs. It was established in the year 2**** under the direction of The **** with the goal of offering top-notch language services in Mombasa, Kenya. For now,
+                we have given the Kenyan youth, men, and women work options. As a result, we provide translation, interpreting, and foreign language training services. Others include language recruitment services, localization services, and transcribing services. 
+                With the help of our immersive programs, you can now learn a new language in as little as 90 days.
               </p>
               <div class="text-center">
                 <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
