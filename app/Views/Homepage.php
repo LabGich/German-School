@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>German School - Index</title>
+  <title>Foreign Language College Mombasa - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,7 +36,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="/">German School </a></h1>
+      <h1 class="logo me-auto"><a href="/">Foreign Language College Mombasa </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -80,7 +80,7 @@
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Learning Today,<br>Leading Tomorrow</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h2>We offer foreign language courses in Mombasa. Learn with the best</h2>
       <a href="courses.html" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
