@@ -46,7 +46,7 @@
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="courses.html"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Geramn Course</a></li>
+              <li><a href="#">German Course</a></li>
               <li><a href="#">Chinese Course</a></li>
               <li><a href="#">French Course</a></li>
               <li><a href="#">Spanish Course</a></li>
@@ -93,7 +93,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>What We Do.</h3>
             <p class="fst-italic">
-              In addition, we provide language lessons in a welcoming, multicultural setting. As a result, you can study a language whenever it's convenient for you. It may be 
+              Here at FLC Mombasa, we provide language lessons in a welcoming, multicultural setting. As a result, you can study a language whenever it's convenient for you. It may be 
               after work, at lunch, in the morning, throughout the evening, or in the comfort of your house. In addition, compared to other language schools in Mombasa, we are cost-friendly 
               to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
@@ -281,8 +281,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Languages</h2>
-          <p>Popular Languages</p>
+          <h2>Courses</h2>
+          <p>Popular Courses</p>
         </div>
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -463,6 +463,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sponsorship Program</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -502,7 +503,7 @@
         </div>
         <div class="credits">
 
-          Designed by <a href="https://meneja.co.ke.com/">Kencert</a>
+          Designed by <a href="https://meneja.co.ke.com/">Kencert </a> in partnership with <a href="https://www.linkedin.com/in/labrador-gichohi-56605011a/">LABU</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
