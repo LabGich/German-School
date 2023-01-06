@@ -79,8 +79,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learning Today,<br>Leading Tomorrow</h1>
-      <h2>We offer foreign language courses in Mombasa. Learn with the best</h2>
+      <h1>Learning Naturally,<br>Speaking Naturally</h1>
+      <h2>Learning Today. Leading Tomorrow. Learn with the best!</h2>
       <a href="courses.html" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
@@ -154,7 +154,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Mentor?</h3>
+              <h3>Why Choose FLC Mombasa?</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                 Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
@@ -283,8 +283,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Courses</h2>
-          <p>Popular Courses</p>
+          <h2>Languages</h2>
+          <p>Popular Languages</p>
         </div>
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -294,11 +294,11 @@
               <img src="/assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
+                  <h4>German</h4>
                   <p class="price">$169</p>
                 </div>
 
-                <h3><a href="course-details.html">Website Design</a></h3>
+                <h3><a href="course-details.html">German Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -320,11 +320,11 @@
               <img src="/assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
+                  <h4>Italian</h4>
                   <p class="price">$250</p>
                 </div>
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                <h3><a href="course-details.html">Italian Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -346,11 +346,11 @@
               <img src="/assets/img/course-3.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Content</h4>
+                  <h4>Spanish</h4>
                   <p class="price">$180</p>
                 </div>
 
-                <h3><a href="course-details.html">Copywriting</a></h3>
+                <h3><a href="course-details.html">Spanish Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -382,7 +382,7 @@
               <img src="/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Walter White</h4>
-                <span>Web Development</span>
+                <span>German Class Tutor</span>
                 <p>
                   Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
                 </p>
@@ -401,7 +401,7 @@
               <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
+                <span>Italian Class Tutor</span>
                 <p>
                   Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
                 </p>
@@ -420,7 +420,7 @@
               <img src="/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>William Anderson</h4>
-                <span>Content</span>
+                <span>Spanish Class Tutor</span>
                 <p>
                   Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
                 </p>
@@ -449,12 +449,12 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Mentor</h3>
+            <h3>Peter Marupu</h3>
             <p>
               A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              Bamburi, Mombasa<br>
+              Kenya <br><br>
+              <strong>Phone:</strong> +254 111 896265<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
@@ -471,13 +471,16 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Languages Offered</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">German</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Chinese</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">French</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spanish</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">English</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Swahili</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Arabic</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Italian</a></li>
             </ul>
           </div>
 
@@ -497,7 +500,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>German School</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Foreign Language College Mombasa </span></strong>. All Rights Reserved
         </div>
         <div class="credits">
 
