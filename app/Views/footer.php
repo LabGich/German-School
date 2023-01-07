@@ -5,9 +5,8 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h3>Peter Marupu</h3>
+            <h3>Foreign Languages College Mombasa</h3>
             <p>
-              A108 Adam Street <br>
               Haile Selasie Road ,<br>
                Commercial Building first floor suite Number 1,<br>Mombasa,<br>
               Kenya. <br><br>
