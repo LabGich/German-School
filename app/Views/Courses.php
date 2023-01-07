@@ -46,7 +46,7 @@
                   <p class="price">$169</p>
                 </div>
 
-                <h3><a href="course-details.html">German Class</a></h3>
+                <h3><a href="#">German Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -72,7 +72,7 @@
                   <p class="price">$250</p>
                 </div>
 
-                <h3><a href="course-details.html">Italian Class</a></h3>
+                <h3><a href="#">Italian Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -98,7 +98,7 @@
                   <p class="price">$180</p>
                 </div>
 
-                <h3><a href="course-details.html">Spanish Class</a></h3>
+                <h3><a href="#">Spanish Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">

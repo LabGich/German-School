@@ -23,7 +23,7 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Learning Naturally,<br>Speaking Naturally</h1>
       <h2>Learning Today. Leading Tomorrow. Learn with the best!</h2>
-      <a href="courses.html" class="btn-get-started">Get Started</a>
+      <a href="/Courses" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -247,7 +247,7 @@
                   <p class="price">Ksh 80,0000</p>
                 </div>
 
-                <h3><a href="course-details.html">German Class</a></h3>
+                <h3><a href="/Courses">German Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -273,7 +273,7 @@
                   <p class="price">Ksh 60,0000</p>
                 </div>
 
-                <h3><a href="course-details.html">Italian Class</a></h3>
+                <h3><a href="/Courses">Italian Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -299,7 +299,7 @@
                   <p class="price">Ksh 50,0000</p>
                 </div>
 
-                <h3><a href="course-details.html">Spanish Class</a></h3>
+                <h3><a href="/Courses">Spanish Class</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
