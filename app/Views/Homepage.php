@@ -105,7 +105,7 @@
                 With the help of our immersive programs, you can now learn a new language in as little as 90 days.
               </p>
               <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="/About" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -114,23 +114,27 @@
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <i class="bx bx-bullseye"></i>
+                    <h4>Vission</h4>
+                    <p>To be the leading college in foreign languages</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>Mission</h4>
+                    <p>To ensure continued knowledge in universally spoken languages</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <i class="bx bx-football"></i>
+                    <h4>Goals</h4>
+                    
+                    <p>Reading Comprehension</p>
+                    <p>Writing Comprehension</p>
+                    <p>Speaking Comprehension</p>
+                  
                   </div>
                 </div>
               </div>
@@ -240,7 +244,7 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>German</h4>
-                  <p class="price">$169</p>
+                  <p class="price">Ksh 80,0000</p>
                 </div>
 
                 <h3><a href="course-details.html">German Class</a></h3>
@@ -266,7 +270,7 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Italian</h4>
-                  <p class="price">$250</p>
+                  <p class="price">Ksh 60,0000</p>
                 </div>
 
                 <h3><a href="course-details.html">Italian Class</a></h3>
@@ -292,7 +296,7 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Spanish</h4>
-                  <p class="price">$180</p>
+                  <p class="price">Ksh 50,0000</p>
                 </div>
 
                 <h3><a href="course-details.html">Spanish Class</a></h3>
