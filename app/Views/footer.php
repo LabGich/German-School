@@ -8,8 +8,9 @@
             <h3>Peter Marupu</h3>
             <p>
               A108 Adam Street <br>
-              Bamburi, Mombasa<br>
-              Kenya <br><br>
+              Haile Selasie Road ,<br>
+               Commercial Building first floor suite Number 1,<br>Mombasa,<br>
+              Kenya. <br><br>
               <strong>Phone:</strong> +254 111 896265<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
