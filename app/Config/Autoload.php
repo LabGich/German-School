@@ -45,7 +45,7 @@ class Autoload extends AutoloadConfig
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config'      => APPPATH . 'Config',
     ];
-
+    $autoload['global_libraries'] = ['database'];
     /**
      * -------------------------------------------------------------------
      * Class Map

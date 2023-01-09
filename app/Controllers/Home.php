@@ -2,6 +2,11 @@
 
 namespace App\Controllers;
 
+// use Config\Database;
+// use CodeIgniter\Database\BaseConnection;
+
+
+
 class Home extends BaseController
 {
     public function index()
@@ -83,5 +88,51 @@ class Home extends BaseController
     public function Scholarship()
     {
         return view('Scholarship');
+    }
+    public function Enrollment()
+    {
+            $trimester = $_GET["trimester"];
+            $year = $_GET["year"];
+            $fullnames = $_GET["fullnames"];
+            $gender = $_GET["gender"];
+            $idno = $_GET["idno"];            
+            $placeofbirth = $_GET["placeofbirth"];
+            $dob = ["dob"];
+            $residence = $_GET["residence"];
+            $profession = $_GET["profession"];
+            $pobox = $_GET["pobox"];
+            $email = $_GET["email"];
+            $telephone = $_GET["telephone"];
+            $guardian = $_GET["guardian"];
+            $course = $_GET["course"];
+            $intake = $_GET["intake"];
+          
+// INSERT INTO `users` (`userid`, `username`, `firstname`, `lastname`, `email`, `phonenum`, `usertype`, `password`) VALUES
+// (1, 'ken', 'kenedy', 'cheruiyot', 'cheruiyotkenedy@gmail.com', '0711314358', 'Admin', 'pass');
+
+        return var_dump($_GET);
+    }
+    public function Applyscholarship()
+    {
+            $name = $_GET["name"];
+            $admissionnum = $_GET["admissionnum"];
+            $reasons = $_GET["reasons"];
+           
+            // $db = Database::connect();
+            // $query = $db->query('SELECT * FROM users');
+            // if ($query)
+            // {
+            //     echo 'Database connection successful';
+            // }
+            // else
+            // {
+            //     echo 'Error connecting to database';
+            // }
+
+            // $db = \Config\Database::connect();
+            // $query = $db->query('SELECT * FROM users');
+            // $results = $query->getResult();
+
+        return $reasons;
     }
 }

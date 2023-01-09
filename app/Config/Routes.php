@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -57,6 +57,8 @@ $routes->get('/Admission', 'Home::Admission');
 $routes->get('/Attendance', 'Home::Attendance');
 $routes->get('/Homework', 'Home::Homework');
 $routes->get('/Scholarship', 'Home::Scholarship');
+$routes->get('/Enrollment', 'Home::Enrollment');
+$routes->get('/Applyscholarship', 'Home::Applyscholarship');
 
 /*
  * --------------------------------------------------------------------

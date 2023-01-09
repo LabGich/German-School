@@ -36,7 +36,7 @@
           EMAIL: info@foreignlanguagemombasa.co.ke</p>
           <u style="color:red">ENROLLMENT FORM</u>
           </div>
-          <form action="/enrollment" method="post" role="form">
+          <form action="/Enrollment" class="card p-3" method="GET" role="form">
           <div class="form-group row mt-3">
             <label for="trimester" class="col-lg-2 col-sm-2 col-form-label">TRIMESTER</label>
             <div class="col-sm-4 col-lg-4">
@@ -375,16 +375,16 @@
           <button type="submit" class="btn btn-primary p-2 mt-3 mb-2">Submit</button>
           </form>
               
-          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download</button>
-</br>          
-<img src="/assets/img/admission.png" class="img-fluid"/>
+<!--          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download</button>-->
+<!--</br>          -->
+<!--<img src="/assets/img/admission.png" class="img-fluid"/>-->
 
 
-        <div class="row">
+<!--        <div class="row">-->
 
-          <img src="/assets/fees.png" class="img-fluid"/>
+<!--          <img src="/assets/fees.png" class="img-fluid"/>-->
 
-        </div>
+<!--        </div>-->
 
       </div>
     </section><!-- End Pricing Section -->
