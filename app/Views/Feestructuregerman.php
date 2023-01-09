@@ -60,9 +60,8 @@
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 24,000</li>              
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 31,500</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>
@@ -79,9 +78,8 @@
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 24,000</li>     
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 31,500</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>
@@ -98,9 +96,8 @@
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 24,000</li>     
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 31,500</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>

@@ -44,9 +44,19 @@ $routes->get('/Courses', 'Home::Courses');
 $routes->get('/Contact', 'Home::Contact');
 $routes->get('/About', 'Home::About');
 $routes->get('/Feestructure', 'Home::Feestructure');
+$routes->get('/Feestructurearabic', 'Home::Feestructurearabic');
+$routes->get('/Feestructurechinese', 'Home::Feestructurechinese');
+$routes->get('/Feestructureenglish', 'Home::Feestructureenglish');
+$routes->get('/Feestructurefrench', 'Home::Feestructurefrench');
+$routes->get('/Feestructuregerman', 'Home::Feestructuregerman');
+$routes->get('/Feestructureitalian', 'Home::Feestructureitalian');
+$routes->get('/Feestructurejapanese', 'Home::Feestructurejapanese');
+$routes->get('/Feestructurespanish', 'Home::Feestructurespanish');
+$routes->get('/Feestructureswahili', 'Home::Feestructureswahili');
 $routes->get('/Admission', 'Home::Admission');
 $routes->get('/Attendance', 'Home::Attendance');
 $routes->get('/Homework', 'Home::Homework');
+$routes->get('/Scholarship', 'Home::Scholarship');
 
 /*
  * --------------------------------------------------------------------

@@ -44,11 +44,11 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>German</h4>
-                  <p class="price">Ksh 80,0000</p>
+                  <p class="price">Ksh 30,0000</p>
                 </div>
 
                 <h3><a href="/Courses">German Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Learn German in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -70,11 +70,11 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Italian</h4>
-                  <p class="price">Ksh 60,0000</p>
+                  <p class="price">Ksh 30,0000</p>
                 </div>
 
                 <h3><a href="/Courses">Italian Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Learn Italian in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
@@ -96,11 +96,11 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Spanish</h4>
-                  <p class="price">Ksh 50,0000</p>
+                  <p class="price">Ksh 30,0000</p>
                 </div>
 
                 <h3><a href="/Courses">Spanish Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Learn Spanish in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
@@ -123,11 +123,11 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Chinese</h4>
-                  <p class="price">Ksh 80,0000</p>
+                  <p class="price">Ksh 44,0000</p>
                 </div>
 
                 <h3><a href="/Courses">Chinese Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Learn Chinese in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -148,12 +148,12 @@
               <img src="/assets/img/course-5.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>French</h4>
-                  <p class="price">Ksh 60,0000</p>
+                  <h4>English</h4>
+                  <p class="price">Ksh 30,0000</p>
                 </div>
 
-                <h3><a href="/Courses">French Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a href="/Courses">English Class</a></h3>
+                <p>Learn English in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
@@ -174,12 +174,12 @@
               <img src="/assets/img/course-6.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>English</h4>
-                  <p class="price">Ksh 50,0000</p>
+                  <h4>Japanese</h4>
+                  <p class="price">Ksh 44,0000</p>
                 </div>
 
-                <h3><a href="/Courses">English Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a href="/Courses">Japanese Class</a></h3>
+                <p>Learn Japanese in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
@@ -202,11 +202,11 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Swahili</h4>
-                  <p class="price">Ksh 80,0000</p>
+                  <p class="price">Ksh 44,0000</p>
                 </div>
 
                 <h3><a href="/Courses">Swahili Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Learn Swahili in a few months with us.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -222,31 +222,31 @@
             </div>
           </div> <!-- End Course Item-->
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="/assets/img/course-8.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Arabic</h4>
-                  <p class="price">Ksh 60,0000</p>
-                </div>
+          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">-->
+          <!--  <div class="course-item">-->
+          <!--    <img src="/assets/img/course-8.jpg" class="img-fluid" alt="...">-->
+          <!--    <div class="course-content">-->
+          <!--      <div class="d-flex justify-content-between align-items-center mb-3">-->
+          <!--        <h4>Arabic</h4>-->
+          <!--        <p class="price">Ksh 60,0000</p>-->
+          <!--      </div>-->
 
-                <h3><a href="/Courses">Arabic Class</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+          <!--      <h3><a href="/Courses">Arabic Class</a></h3>-->
+          <!--      <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>-->
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
+          <!--        <div class="trainer-profile d-flex align-items-center">-->
+          <!--          <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">-->
+          <!--          <span>Lana</span>-->
+          <!--        </div>-->
+          <!--        <div class="trainer-rank d-flex align-items-center">-->
+          <!--          <i class="bx bx-user"></i>&nbsp;35-->
+          <!--          &nbsp;&nbsp;-->
+          <!--          <i class="bx bx-heart"></i>&nbsp;42-->
+          <!--        </div>-->
+          <!--      </div> -->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div> <!-- End Course Item-->
 
           
         </div>

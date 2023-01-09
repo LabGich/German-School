@@ -28,6 +28,42 @@ class Home extends BaseController
     {
         return view('Feestructure');
     }
+    public function Feestructurearabic()
+    {
+        return view('Feestructurearabic');
+    }
+    public function Feestructurechinese()
+    {
+        return view('Feestructurechinese');
+    }
+    public function Feestructureenglish()
+    {
+        return view('Feestructureenglish');
+    }
+    public function Feestructurefrench()
+    {
+        return view('Feestructurefrench');
+    }
+    public function Feestructuregerman()
+    {
+        return view('Feestructuregerman');
+    }
+    public function Feestructureitalian()
+    {
+        return view('Feestructureitalian');
+    }
+    public function Feestructurejapanese()
+    {
+        return view('Feestructurejapanese');
+    }
+    public function Feestructurespanish()
+    {
+        return view('Feestructurespanish');
+    }
+    public function Feestructureswahili()
+    {
+        return view('Feestructureswahili');
+    }
     public function Contact()
     {
         return view('Contact');
@@ -43,5 +79,9 @@ class Home extends BaseController
     public function Homework()
     {
         return view('Homework');
+    }
+    public function Scholarship()
+    {
+        return view('Scholarship');
     }
 }

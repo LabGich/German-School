@@ -5,13 +5,13 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h3>Foreign Languages College Mombasa</h3>
+            <h3>Foreign Language College Mombasa</h3>
             <p>
               Haile Selasie Road ,<br>
                Commercial Building first floor suite Number 1,<br>Mombasa,<br>
               Kenya. <br><br>
               <strong>Phone:</strong> +254 111 896265<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Email:</strong> info@foreignlanguagemombasa.co.ke<br>
             </p>
           </div>
 

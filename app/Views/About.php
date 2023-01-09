@@ -42,9 +42,13 @@
               to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> European Level A1.</li>
-              <li><i class="bi bi-check-circle"></i> European Level C1.</li>
-              <li><i class="bi bi-check-circle"></i> European Level C2.</li>
+               <li><i class="bi bi-check-circle"></i> German Level A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Spanish Level A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> English Level A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Italian Level A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Chinese Level HSK1-HSK6.</li>
+              <li><i class="bi bi-check-circle"></i> Japanese Level JPL5-JPL3.</li>
+              <li><i class="bi bi-check-circle"></i> Swahili Level 1-Level 6.</li>
             </ul>
             <p>
               We have online classes for all languages, which is significant. Imagine not having to leave your office or home to complete your studies.
@@ -56,28 +60,28 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Counts Section ======= -->
+   <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">
 
         <div class="row counters">
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Students</p>
-          </div>
+          <!--<div class="col-lg-3 col-6 text-center">-->
+          <!--  <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>-->
+          <!--  <p>Students</p>-->
+          <!--</div>-->
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+          <div class="col-lg-6 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
             <p>Courses</p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Events</p>
-          </div>
+          <!--<div class="col-lg-3 col-6 text-center">-->
+          <!--  <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>-->
+          <!--  <p>Events</p>-->
+          <!--</div>-->
 
-          <div class="col-lg-3 col-6 text-center">
+          <div class="col-lg-6 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
             <p>Trainers</p>
           </div>

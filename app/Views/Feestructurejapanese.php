@@ -54,15 +54,14 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box featured">
               <h3>Intensive Plan</h3>
-              <h4><sup>Ksh</sup>8,000<span> / month</span></h4>
+              <h4><sup>Ksh</sup>9,125<span> / month</span></h4>
               <ul>
-                <li>Duration: 2 hours per day for 3 months</li>
+                <li>Duration: 2 hours per day for 4 months</li>
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 36,500</li>        
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>
@@ -73,15 +72,14 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box featured">
               <h3>Super Intensive Plan</h3>
-              <h4><sup>Ksh</sup>12,000<span> / month</span></h4>
+              <h4><sup>Ksh</sup>18,250<span> / month</span></h4>
               <ul>
                 <li>Duration: 3 hours per day for 2 months</li>
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 36,500</li>
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>
@@ -92,22 +90,21 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box featured">
               <h3>ACCELERATED Plan</h3>
-              <h4><sup>Ksh</sup>24,000<span> / month</span></h4>
+              <h4><sup>Ksh</sup>36,500<span> / month</span></h4>
               <ul>
                 <li>Duration: 6 hours per day for 1 month</li>
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 24,000</li>
-                <li>Certificate and Assessment fees: Kshs. 4000</li>                
-                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 35,500</b></li>
+                <li>Tuition Fees: Kshs. 36,500</li>
+                <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
-            <img src="/assets/fees.png" class="img-fluid"/>
+            <!--<img src="/assets/feeschineese.png" class="img-fluid"/>-->
         </div>
 
       </div>
