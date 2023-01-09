@@ -9,15 +9,15 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
- <?php include 'css.php' ?>
+  <?php include 'css.php' ?>
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
- <?php include 'header.php' ?>
- 
+  <?php include 'header.php' ?>
+
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
@@ -26,7 +26,7 @@
         <p>Some of the courses we offer. </p>
       </div>
     </div><!-- End Breadcrumbs -->
- 
+
     <!-- ======= Popular Courses Section ======= -->
     <section id="popular-courses" class="courses">
       <div class="container" data-aos="fade-up">
@@ -44,7 +44,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>German</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">German Class</a></h3>
@@ -70,7 +75,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Italian</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">Italian Class</a></h3>
@@ -96,7 +106,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Spanish</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">Spanish Class</a></h3>
@@ -123,7 +138,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Chinese</h4>
-                  <p class="price">Ksh 44,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 44,000</p>
                 </div>
 
                 <h3><a href="/Courses">Chinese Class</a></h3>
@@ -149,7 +169,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>English</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">English Class</a></h3>
@@ -175,7 +200,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Japanese</h4>
-                  <p class="price">Ksh 44,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 44,000</p>
                 </div>
 
                 <h3><a href="/Courses">Japanese Class</a></h3>
@@ -202,7 +232,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Swahili</h4>
-                  <p class="price">Ksh 44,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 44,000</p>
                 </div>
 
                 <h3><a href="/Courses">Swahili Class</a></h3>
@@ -222,33 +257,69 @@
             </div>
           </div> <!-- End Course Item-->
 
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">-->
-          <!--  <div class="course-item">-->
-          <!--    <img src="/assets/img/course-8.jpg" class="img-fluid" alt="...">-->
-          <!--    <div class="course-content">-->
-          <!--      <div class="d-flex justify-content-between align-items-center mb-3">-->
-          <!--        <h4>Arabic</h4>-->
-          <!--        <p class="price">Ksh 60,0000</p>-->
-          <!--      </div>-->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="course-item">
+              <img src="/assets/img/course-8.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Arabic</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 60,000</p>
+                </div>
 
-          <!--      <h3><a href="/Courses">Arabic Class</a></h3>-->
-          <!--      <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>-->
-                <!-- <div class="trainer d-flex justify-content-between align-items-center">
-          <!--        <div class="trainer-profile d-flex align-items-center">-->
-          <!--          <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">-->
-          <!--          <span>Lana</span>-->
-          <!--        </div>-->
-          <!--        <div class="trainer-rank d-flex align-items-center">-->
-          <!--          <i class="bx bx-user"></i>&nbsp;35-->
-          <!--          &nbsp;&nbsp;-->
-          <!--          <i class="bx bx-heart"></i>&nbsp;42-->
-          <!--        </div>-->
-          <!--      </div> -->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!--</div> <!-- End Course Item-->
+                <h3><a href="/Courses">Arabic Class</a></h3>
+                <p>Learn Arabic in a few months with us.</p>
+                <!-- <div class="trainer d-flex justify-content-between align-items-center">-->
+                <!--        <div class="trainer-profile d-flex align-items-center">-->
+                <!--          <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">-->
+                <!--          <span>Lana</span>-->
+                <!--        </div>-->
+                <!--        <div class="trainer-rank d-flex align-items-center">-->
+                <!--          <i class="bx bx-user"></i>&nbsp;35-->
+                <!--          &nbsp;&nbsp;-->
+                <!--          <i class="bx bx-heart"></i>&nbsp;42-->
+                <!--        </div>-->
+                <!--      </div> -->
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
 
-          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="course-item">
+              <img src="/assets/img/course-8.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>French</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 31,500</p>
+                </div>
+
+                <h3><a href="/Courses">French Class</a></h3>
+                <p>Learn French in a few months with us.</p>
+                <!-- <div class="trainer d-flex justify-content-between align-items-center">-->
+                <!--        <div class="trainer-profile d-flex align-items-center">-->
+                <!--          <img src="/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">-->
+                <!--          <span>Lana</span>-->
+                <!--        </div>-->
+                <!--        <div class="trainer-rank d-flex align-items-center">-->
+                <!--          <i class="bx bx-user"></i>&nbsp;35-->
+                <!--          &nbsp;&nbsp;-->
+                <!--          <i class="bx bx-heart"></i>&nbsp;42-->
+                <!--        </div>-->
+                <!--      </div> -->
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+
         </div>
 
       </div>
@@ -286,7 +357,7 @@
       </div>
     </section><!-- End Counts Section -->
 
-    
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
@@ -340,7 +411,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">                  
+                <div class="testimonial-item">
                   <h3>Giddy Otieno</h3>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>

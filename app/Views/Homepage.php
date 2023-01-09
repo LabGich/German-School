@@ -9,21 +9,21 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
- <?php include 'css.php' ?>
+  <?php include 'css.php' ?>
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
- <?php include 'header.php' ?>
+  <?php include 'header.php' ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learning Naturally,<br>Speaking Naturally</h1>
-      <h2>Learning Today. Leading Tomorrow. Learn with the best!</h2>
-      <a href="/Courses" class="btn-get-started">Get Started</a>
+      <h1>Learn Foreign Language<br>Study in World Leading Institutions</h1>
+      <h2>LANGUAGE IS POWER!</h2>
+      <a href="/Admission" class="btn-get-started">Apply Now</a>
     </div>
   </section><!-- End Hero -->
 
@@ -45,12 +45,12 @@
               to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> German Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Spanish Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> English Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Italian Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Chinese Level HSK1-HSK6.</li>
-              <li><i class="bi bi-check-circle"></i> Japanese Level JPL5-JPL3.</li>
+              <li><i class="bi bi-check-circle"></i> German A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Spanish A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> English A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Italian A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Chinese HSK1-HSK6.</li>
+              <li><i class="bi bi-check-circle"></i> Japanese JPL3-JPL5.</li>
               <li><i class="bi bi-check-circle"></i> Swahili Level 1-Level 6.</li>
             </ul>
             <p>
@@ -134,11 +134,11 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-football"></i>
                     <h4>Goals</h4>
-                    
+
                     <p>Reading Comprehension</p>
                     <p>Writing Comprehension</p>
                     <p>Speaking Comprehension</p>
-                  
+
                   </div>
                 </div>
               </div>
@@ -248,7 +248,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>German</h4>
-                  <p class="price">Ksh 20,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 20,000</p>
                 </div>
 
                 <h3><a href="/Courses">German Class</a></h3>
@@ -274,7 +279,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Italian</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">Italian Class</a></h3>
@@ -300,7 +310,12 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Spanish</h4>
-                  <p class="price">Ksh 30,0000</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                      <a href="/Admission" class="btn-get-started">Apply Now</a>
+                    </div>
+                  </div>
+                  <p class="price">Ksh 30,000</p>
                 </div>
 
                 <h3><a href="/Courses">Spanish Class</a></h3>
