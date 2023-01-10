@@ -27,7 +27,7 @@
     </div><!-- End Breadcrumbs -->
     <!-- ======= Login Section ======= -->
     <section id="about" class="about">
-      <div class="container p-2  col-lg-6 col-sm-12" data-aos="fade-up" style="background: rgb(184 209 191);
+      <div class="container p-2  col-lg-6 col-sm-12" data-aos="fade-up" style="background: rgb(178 214 229);
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;">

@@ -27,20 +27,20 @@
     </div><!-- End Breadcrumbs -->
     <!-- ======= Login Section ======= -->
     <section id="about" class="about">
-      <div class="container p-2  col-lg-6 col-sm-12" data-aos="fade-up" style="background: rgb(184 209 191);
+      <div class="container p-2  col-lg-6 col-sm-12" data-aos="fade-up" style="background: rgb(178 214 229);
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;">
 <p class="text-center mb-2" style="justify-content:center">Please Enter Registration Number and Password </p>
       <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
 
-<form action="/Logincontroller" method="post" role="form" class="php-email-form mt-3 m-3">
+<form action="<?php echo ('/logincontroller'); ?>" method="post" role="form" class="mt-3 m-3">
   
     <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
       <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Admission Number" required>
     </div>  
   <div class="form-group mt-3  col-lg-12 col-sm-12 mb-2">
-    <input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
+    <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
   </div>  
   <div><button class="btn btn-success  mt-3 p-2  col-lg-6 col-sm-12" type="submit">Login</button></div>
 </form>

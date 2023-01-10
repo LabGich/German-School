@@ -50,7 +50,7 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
 
-    <!--<a href="/Login" class="get-started-btn">Login</a>-->
+    <a href="/Login" class="get-started-btn">Login</a>
     <!--<a href="/Registration" class="get-started-btn">Registration</a>-->
 
   </div>

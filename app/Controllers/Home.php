@@ -2,8 +2,8 @@
 
 namespace App\Controllers;
 
-// use Config\Database;
-// use CodeIgniter\Database\BaseConnection;
+use Config\Database;
+use CodeIgniter\Database\BaseConnection;
 
 
 
@@ -16,6 +16,31 @@ class Home extends BaseController
     public function Login()
     {
         return view('Login');
+    }
+    public function loginfunc()
+    {
+        // var_dump($this->request->getPost());
+        $username = $this->request->getPost('admissionnumber');
+        $password = $this->request->getPost('password');
+        $db = Database::connect();
+            $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+            $result = $query->getResultArray();
+            if ($result)
+            {
+                // echo 'Database connection successful';
+                var_dump($result);
+                foreach ($result as $row)
+                {
+                  echo $id = $row['userid'];
+                  echo $firstname = $row['firstname'];
+                  echo $email = $row['email'];
+                  echo $usertype = $row['usertype'];
+                }
+            }
+            else
+            {
+                echo 'No User found!';
+            }
     }
     public function Registration()
     {
