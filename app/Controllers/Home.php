@@ -2,8 +2,8 @@
 
 namespace App\Controllers;
 
-// use Config\Database;
-// use CodeIgniter\Database\BaseConnection;
+use Config\Database;
+use CodeIgniter\Database\BaseConnection;
 
 
 
@@ -22,53 +22,53 @@ class Home extends BaseController
         // var_dump($this->request->getPost());
         $username = $this->request->getPost('admissionnumber');
         $password = $this->request->getPost('password');
-        // $db = Database::connect();
-        //     // $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
-        //      $query = $db->query("SELECT * FROM users ");
-        //     $result = $query->getResultArray();
-        //     if ($result)
-        //     {
-        //         // echo 'Database connection successful';
-        //         var_dump($result);
-        //         $data['users'] = $result;
-        //         foreach ($result as $row)
-        //         {
-        //           echo $id = $row['userid'];
-        //           echo $firstname = $row['firstname'];
-        //           echo $email = $row['email'];
-        //           echo $usertype = $row['usertype'];
-        //         }
-        //     }
-        //     else
-        //     {
-        //         echo 'No User found!';
-        //     }
-        //     return view('userlist',$data);
+        $db = Database::connect();
+            // $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+             $query = $db->query("SELECT * FROM users ");
+            $result = $query->getResultArray();
+            if ($result)
+            {
+                // echo 'Database connection successful';
+                var_dump($result);
+                $data['users'] = $result;
+                foreach ($result as $row)
+                {
+                  echo $id = $row['userid'];
+                  echo $firstname = $row['firstname'];
+                  echo $email = $row['email'];
+                  echo $usertype = $row['usertype'];
+                }
+            }
+            else
+            {
+                echo 'No User found!';
+            }
+            return view('userlist',$data);
     }
     public function userlist()
     {       
-        // $db = Database::connect();
-        //     $query = $db->query("SELECT * FROM users ");
-        //     $result = $query->getResultArray();
-        //     $data['users'] = [];
-        //     if ($result)
-        //     {
+        $db = Database::connect();
+            $query = $db->query("SELECT * FROM users ");
+            $result = $query->getResultArray();
+            $data['users'] = [];
+            if ($result)
+            {
                
-        //         var_dump($result);
-        //         $data['users'] = $result;
-        //         // foreach ($result as $row)
-        //         // {
-        //         //   echo $id = $row['userid'];
-        //         //   echo $firstname = $row['firstname'];
-        //         //   echo $email = $row['email'];
-        //         //   echo $usertype = $row['usertype'];
-        //         // }
-        //     }
-        //     else
-        //     {
-        //         echo 'No User found!';
-        //     }
-        //     return view('userlist',$data);
+                var_dump($result);
+                $data['users'] = $result;
+                // foreach ($result as $row)
+                // {
+                //   echo $id = $row['userid'];
+                //   echo $firstname = $row['firstname'];
+                //   echo $email = $row['email'];
+                //   echo $usertype = $row['usertype'];
+                // }
+            }
+            else
+            {
+                echo 'No User found!';
+            }
+            return view('userlist',$data);
     }
     public function Registration()
     {
@@ -159,11 +159,30 @@ class Home extends BaseController
             $guardian = $_GET["guardian"];
             $course = $_GET["course"];
             $intake = $_GET["intake"];
-          
-// INSERT INTO `users` (`userid`, `username`, `firstname`, `lastname`, `email`, `phonenum`, `usertype`, `password`) VALUES
-// (1, 'ken', 'kenedy', 'cheruiyot', 'cheruiyotkenedy@gmail.com', '0711314358', 'Admin', 'pass');
-
-        return var_dump($_GET);
+            
+            $data = [               
+                'TRIMESTER'       => $trimester,
+                'FULLNAMES'        => $fullnames,
+                'GENDER'        => $gender,
+                'IDNO' => $idno,                
+                'PLACEOFBIRTH'        => $placeofbirth,
+                'DOB'        => $dob,
+                'RESIDENCE'        => $residence,
+                'PROFESSION'        => $profession,
+                'POBOX'        => $pobox,
+                'EMAIL'        => $email,
+                'TELEPHONE'        => $telephone,
+                'GUARDIAN'        => $guardian,
+                'COURSE'        => $course,
+                'INTAKE'        => $intake
+            ];
+            // var_dump($data);
+            $db = Database::connect();            
+            $builder = $db->table('ENROLLMENT');
+            $builder->insert($data);
+            var_dump($builder);
+            return $builder;
+            // return view('Scholarship');
     }
     public function Applyscholarship()
     {
