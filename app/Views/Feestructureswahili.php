@@ -9,15 +9,15 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
- <?php include 'css.php' ?>
+  <?php include 'css.php' ?>
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
- <?php include 'header.php' ?>
- <main id="main">
+  <?php include 'header.php' ?>
+  <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
@@ -29,9 +29,9 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
-<button class="btn btn-success btn-lg">Apply Scholarship</button>
-<br/><br/>
-<p>Scholarships are open from 1st - 15th January for the first 40 Students who apply. You get to qualify for 30% off!!!.</p>
+        <a href="/Scholarship"><button class="btn btn-success btn-lg">Apply Scholarship</button></a>
+        <br /><br />
+        <p>Scholarships are open from 1st - 15th January for the first 40 Students who apply. You get to qualify for 30% off!!!.</p>
         <div class="row">
           <!--<div class="col-lg-3 col-md-6">-->
           <!--  <div class="box">-->
@@ -60,7 +60,7 @@
                 <li>Physical/Online/Blended Classes</li>
                 <li>Books: Kshs 4,500</li>
                 <li>Admission fees: Kshs 3,000</li>
-                <li>Tuition Fees: Kshs. 36,500</li>        
+                <li>Tuition Fees: Kshs. 36,500</li>
                 <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-            <img src="/assets/fees44.png" class="img-fluid"/>
+          <img src="/assets/fees44.png" class="img-fluid" />
         </div>
 
       </div>
