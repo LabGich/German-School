@@ -45,13 +45,16 @@
               to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> German A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Spanish A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> English A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Italian A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Arabic.</li>
               <li><i class="bi bi-check-circle"></i> Chinese HSK1-HSK6.</li>
+              <li><i class="bi bi-check-circle"></i> English A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> French.</li>
+              <li><i class="bi bi-check-circle"></i> German A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Italian A1-C1.</li>
+
               <li><i class="bi bi-check-circle"></i> Japanese JPL3-JPL5.</li>
-              <li><i class="bi bi-check-circle"></i> Swahili Level 1-Level 6.</li>
+              <li><i class="bi bi-check-circle"></i> Spanish A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Swahili Level1-Level6.</li>
             </ul>
             <p>
               We have online classes for all languages, which is significant. Imagine not having to leave your office or home to complete your studies.

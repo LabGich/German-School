@@ -9,20 +9,20 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
- <?php include 'css.php' ?>
+  <?php include 'css.php' ?>
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
- <?php include 'header.php' ?>
- 
+  <?php include 'header.php' ?>
+
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>About Us</h2>        
+        <h2>About Us</h2>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -42,13 +42,15 @@
               to fit your budgetary needs. We offer training from beginner levels  to advanced levels:
             </p>
             <ul>
-               <li><i class="bi bi-check-circle"></i> German Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Spanish Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> English Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Italian Level A1-C1.</li>
-              <li><i class="bi bi-check-circle"></i> Chinese Level HSK1-HSK6.</li>
-              <li><i class="bi bi-check-circle"></i> Japanese Level JPL5-JPL3.</li>
-              <li><i class="bi bi-check-circle"></i> Swahili Level 1-Level 6.</li>
+              <li><i class="bi bi-check-circle"></i> Arabic.</li>
+              <li><i class="bi bi-check-circle"></i> Chinese HSK1-HSK6.</li>
+              <li><i class="bi bi-check-circle"></i> English A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> French.</li>
+              <li><i class="bi bi-check-circle"></i> German A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Italian A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Japanese JPL3-JPL5.</li>
+              <li><i class="bi bi-check-circle"></i> Spanish A1-C1.</li>
+              <li><i class="bi bi-check-circle"></i> Swahili Level1-Level6.</li>
             </ul>
             <p>
               We have online classes for all languages, which is significant. Imagine not having to leave your office or home to complete your studies.
@@ -60,7 +62,7 @@
       </div>
     </section><!-- End About Section -->
 
-   <!-- ======= Counts Section ======= -->
+    <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">
 
@@ -144,7 +146,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">                  
+                <div class="testimonial-item">
                   <h3>Giddy Otieno</h3>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>

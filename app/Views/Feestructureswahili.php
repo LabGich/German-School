@@ -64,7 +64,7 @@
                 <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Enroll Now</a>
+                <a href="/Admission" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
                 <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Enroll Now</a>
+                <a href="/Admission" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
                 <li style="color:red;font-size:20px;"><b>TOTAL AMOUNT: Kshs. 44,000</b></li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Enroll Now</a>
+                <a href="/Admission" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
