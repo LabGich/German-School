@@ -46,6 +46,12 @@
         <li><a href="/Admission">Apply Today</a></li>
         <li><a href="/Scholarship">Apply Scholarship</a></li>
         <li><a href="/Contact">Contact</a></li>
+        <li class="dropdown"><a href="#"><span>Portal Login</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Staff Portal</a></li>
+            <li><a href="#">Student Portal</a></li>
+          </ul>
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->

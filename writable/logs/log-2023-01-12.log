@@ -1,0 +1,37 @@
+ERROR - 2023-01-12 03:05:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Old Windows\Windows NT\System\work\germanschool\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Old Windows\Windows NT\System\work\germanschool\app\Controllers\Home.php(182): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(925): App\Controllers\Home->Enrollment()
+#6 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+#7 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Old Windows\Windows NT\System\work\germanschool\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Old Windows\Windows NT\System\work\germanschool\system\Commands\Server\rewrite.php(47): require_once('...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Old Windows\Windows NT\System\work\germanschool\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Old Windows\Windows NT\System\work\germanschool\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Old Windows\Windows NT\System\work\germanschool\app\Controllers\Home.php(182): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(925): App\Controllers\Home->Enrollment()
+#5 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+#6 C:\Old Windows\Windows NT\System\work\germanschool\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\Old Windows\Windows NT\System\work\germanschool\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Old Windows\Windows NT\System\work\germanschool\system\Commands\Server\rewrite.php(47): require_once('...')
+#9 {main}
+CRITICAL - 2023-01-12 03:05:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH\Controllers\Home.php(182): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->Enrollment()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
