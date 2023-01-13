@@ -30,4 +30,14 @@ INSERT INTO `USERS` (
   '0711314358',
   'Admin',
   'pass'
+),
+(
+  2,
+  'labu',
+  'labrador',
+  'mwangi',
+  'labradorgichohi@gmail.com',
+  '0729179309',
+  'Admin',
+  'pass'
 );
