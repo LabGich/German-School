@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <img src="/assets/fees44.png" class="img-fluid" />
+          <img src="/assets/img/A1 - C1 Fee Structure.jpeg" class="img-fluid" />
         </div>
 
       </div>

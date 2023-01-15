@@ -33,14 +33,15 @@
         <!-- Events and Trainers we will come to that -->
         <li class="dropdown"><a href="#"><span>Fee Structure</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="/Feestructuregerman">German Course</a></li>
-            <li><a href="/Feestructurechinese">Chinese Course</a></li>
-            <li><a href="/Feestructurefrench">French Course</a></li>
-            <li><a href="/Feestructurespanish">Spanish Course</a></li>
-            <li><a href="/Feestructureenglish">English Course</a></li>
-            <li><a href="/Feestructureswahili">Swahili Course</a></li>
             <li><a href="/Feestructurearabic">Arabic Course</a></li>
+            <li><a href="/Feestructurechinese">Chinese Course</a></li>
+            <li><a href="/Feestructureenglish">English Course</a></li>
+            <li><a href="/Feestructurefrench">French Course</a></li>
+            <li><a href="/Feestructuregerman">German Course</a></li>
             <li><a href="/Feestructureitalian">Italian Course</a></li>
+            <li><a href="/Feestructurejapanese">Japanese Course</a></li>
+            <li><a href="/Feestructurespanish">Spanish Course</a></li>
+            <li><a href="/Feestructureswahili">Swahili Course</a></li>
           </ul>
         </li>
         <li><a href="/Admission">Apply Today</a></li>

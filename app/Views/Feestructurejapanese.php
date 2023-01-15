@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <!--<img src="/assets/feeschineese.png" class="img-fluid"/>-->
+          <img src="/assets/img/Japanese Fee Structure.jpeg" class="img-fluid" />
         </div>
 
       </div>
