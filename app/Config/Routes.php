@@ -37,8 +37,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/Login', 'Home::Login');
-$routes->get('/Userlist', 'Home::Userlist');
-$routes->match(['get', 'post'], '/logincontroller', 'Home::loginfunc');
+$routes->get('/userlist', 'Home::userlist');
+$routes->get('/Loginstaff', 'Home::Loginstaff');
+$routes->match(['get', 'post'], '/loginfunc', 'Home::loginfunc');
+$routes->match(['get', 'post'], '/logincontrollerstaff', 'Home::logincontrollerstaff');
 $routes->get('/Registration', 'Home::Registration');
 $routes->get('/Homework', 'Home::Homework');
 $routes->get('/Attendance', 'Home::Attendance');

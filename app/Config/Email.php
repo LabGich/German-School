@@ -33,7 +33,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $protocol = 'mail';
+    public $protocol = 'smtp';
 
     /**
      * The server path to Sendmail.
@@ -47,21 +47,21 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost;
+    public $SMTPHost = "mail.liyanahotels.co.uk";
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser;
+    public $SMTPUser = "accounts@liyanahotels.co.uk";
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass;
+    public $SMTPPass = "simba87";
 
     /**
      * SMTP Port
@@ -75,7 +75,7 @@ class Email extends BaseConfig
      *
      * @var int
      */
-    public $SMTPTimeout = 5;
+    public $SMTPTimeout = 15;
 
     /**
      * Enable persistent SMTP connections

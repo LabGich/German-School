@@ -22,7 +22,7 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Student Login</h2>
+        <h2>Staff Login</h2>
       </div>
     </div><!-- End Breadcrumbs -->
     <!-- ======= Login Section ======= -->
@@ -31,10 +31,10 @@
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;">
-        <p class="text-center mb-2" style="justify-content:center">Please Enter Registration Number and Password </p>
+        <p class="text-center mb-2" style="justify-content:center">Please Enter Account Details</p>
         <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
 
-          <form action="<?php echo ('/loginfunc'); ?>" method="post" role="form" class="mt-3 m-3">
+          <form action="<?php echo ('/logincontrollerstaff'); ?>" method="post" role="form" class="mt-3 m-3">
 
             <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
               <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Admission Number" required>

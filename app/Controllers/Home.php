@@ -23,23 +23,59 @@ class Home extends BaseController
         $username = $this->request->getPost('admissionnumber');
         $password = $this->request->getPost('password');
         $db = Database::connect();
-        // $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
-        $query = $db->query("SELECT * FROM users ");
+        $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+        // $query = $db->query("SELECT * FROM users ");
         $result = $query->getResultArray();
         if ($result) {
             // echo 'Database connection successful';
-            var_dump($result);
-            $data['users'] = $result;
+            // var_dump($result);
+            // $data['users'] = $result;
             foreach ($result as $row) {
-                echo $id = $row['userid'];
-                echo $firstname = $row['firstname'];
-                echo $email = $row['email'];
-                echo $usertype = $row['usertype'];
+                 $id = $row['userid'];
+                 $firstname = $row['firstname'];
+                 $email = $row['email'];
+                 $usertype = $row['usertype'];
+                //  $session->set('username', $email);
+                 $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+                 $result2 = $query2->getResultArray();
+                 $data['enrollment'] = $result2;
             }
         } else {
             echo 'No User found!';
         }
-        return view('userlist', $data);
+        return view('Scholarship', $data);
+    }
+    public function Loginstaff()
+    {
+        return view('Loginstaff');
+    }
+    public function logincontrollerstaff()
+    {
+        // var_dump($this->request->getPost());
+        $username = $this->request->getPost('admissionnumber');
+        $password = $this->request->getPost('password');
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+        // $query = $db->query("SELECT * FROM users ");
+        $result = $query->getResultArray();
+        if ($result) {
+            // echo 'Database connection successful';
+            // var_dump($result);
+            // $data['users'] = $result;
+            foreach ($result as $row) {
+                 $id = $row['userid'];
+                 $firstname = $row['firstname'];
+                 $email = $row['email'];
+                 $usertype = $row['usertype'];
+                //  $session->set('username', $email);
+                 $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+                 $result2 = $query2->getResultArray();
+                 $data['enrollment'] = $result2;
+            }
+        } else {
+            echo 'No User found!';
+        }
+        return view('enrollmentlist', $data);
     }
     public function userlist()
     {
@@ -49,7 +85,7 @@ class Home extends BaseController
         $data['users'] = [];
         if ($result) {
 
-            var_dump($result);
+            // var_dump($result);
             $data['users'] = $result;
             // foreach ($result as $row)
             // {
@@ -174,7 +210,7 @@ class Home extends BaseController
         $builder = $db->table('flcENROLLMENT');
         $builder->insert($data);
         var_dump($builder);
-        return $builder;
+        // return $builder;
         // return view('Scholarship');
     }
     public function Applyscholarship()
@@ -183,21 +219,15 @@ class Home extends BaseController
         $admissionnum = $_GET["admissionnum"];
         $reasons = $_GET["reasons"];
 
-        // $db = Database::connect();
-        // $query = $db->query('SELECT * FROM users');
-        // if ($query)
-        // {
-        //     echo 'Database connection successful';
-        // }
-        // else
-        // {
-        //     echo 'Error connecting to database';
-        // }
-
-        // $db = \Config\Database::connect();
-        // $query = $db->query('SELECT * FROM users');
-        // $results = $query->getResult();
-
-        return $reasons;
+        $message = "Scholarship application from: ".$name." Admission: ".$admissionnum." Reasons: ".$reasons;
+        $email = \Config\Services::email();
+        $email->setFrom('mailer@foreignlanguagemombasa.co.ke', 'Foreign Language Mombasa');
+        $email->setTo("info@foreignlanguagemombasa.co.ke");
+        $email->setSubject('Scholarship Application');
+        $email->setMessage($message);
+        $email->send();
+        $email->printDebugger(['headers']);
+       print_r($email);
+        // return view('Scholarship');
     }
 }

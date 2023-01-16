@@ -17,7 +17,7 @@
     <!-- ======= Header ======= -->
     <?php include 'header.php' ?>
 
-    <div class="row" style="background: aliceblue;">
+    <div class="row mt-3" style="background: aliceblue;margin-top: 100px !important;">
         <div class=" col-12" style="margin-left:auto; margin-right:auto; padding:50px;">
             <table id="enrollment-table" class="table table-bordered table-hover" style="margin-left:auto; margin-right:auto; ">
                 <thead>
@@ -42,25 +42,25 @@
                 <tbody>
 
                     <?php
-                    foreach ($users as $row) { ?>
+                    foreach ($enrollment as $row) { ?>
                         <tr>
-                            <td><?php echo $row['admissionnum'] ?></td>
-                            <td><?php echo $row['trimester'] ?></td>
-                            <td><?php echo $row['fullname'] ?></td>
-                            <td><?php echo $row['gender'] ?></td>
-                            <td><?php echo $row['idno'] ?></td>
-                            <td><?php echo $row['placeofbirth'] ?></td>
-                            <td><?php echo $row['dob'] ?></td>
-                            <td><?php echo $row['residence'] ?></td>
-                            <td><?php echo $row['profession'] ?></td>
-                            <td><?php echo $row['pobox'] ?></td>
-                            <td><?php echo $row['email'] ?></td>
-                            <td><?php echo $row['telephone'] ?></td>
-                            <td><?php echo $row['guardian'] ?></td>
-                            <td><?php echo $row['course'] ?></td>
-                            <td><?php echo $row['intake'] ?></td>
+                            <td><?php echo $row['ID'] ?></td>
+                            <td><?php echo $row['TRIMESTER'] ?></td>
+                            <td><?php echo $row['FULLNAMES'] ?></td>
+                            <td><?php echo $row['GENDER'] ?></td>
+                            <td><?php echo $row['IDNO'] ?></td>
+                            <td><?php echo $row['PLACEOFBIRTH'] ?></td>
+                            <td><?php echo $row['DOB'] ?></td>
+                            <td><?php echo $row['RESIDENCE'] ?></td>
+                            <td><?php echo $row['PROFESSION'] ?></td>
+                            <td><?php echo $row['POBOX'] ?></td>
+                            <td><?php echo $row['EMAIL'] ?></td>
+                            <td><?php echo $row['TELEPHONE'] ?></td>
+                            <td><?php echo $row['GUARDIAN'] ?></td>
+                            <td><?php echo $row['COURSE'] ?></td>
+                            <td><?php echo $row['INTAKE'] ?></td>
                             <td>
-                                <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['admissionnum']; ?>')" title="Edit <?= $row['admissionnum']; ?>" data-toggle="modal" data-target="#edit-user-modal">
+                                <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
                                         <i class="fa fa-eye"></i>
                                     </button>
