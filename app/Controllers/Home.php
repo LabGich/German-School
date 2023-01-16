@@ -230,7 +230,7 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('flcSCHOLARSHIP');
         $builder->insert($data);
-        var_dump($builder);
+        // var_dump($builder);
 
         // $message = "Scholarship application from: ".$name." Admission: ".$admissionnum." Reasons: ".$reasons;
         // $email = \Config\Services::email();
@@ -241,6 +241,6 @@ class Home extends BaseController
         // $email->send();
         // $email->printDebugger(['headers']);
     //   print_r($email);
-        // return view('Scholarship');
+        return view('Scholarship');
     }
 }
