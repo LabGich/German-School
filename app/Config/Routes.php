@@ -64,7 +64,7 @@ $routes->get('/Feestructureenglish', 'Home::Feestructureenglish');
 $routes->get('/Feestructurefrench', 'Home::Feestructurefrench');
 $routes->get('/Feestructuregerman', 'Home::Feestructuregerman');
 $routes->get('/Feestructureitalian', 'Home::Feestructureitalian');
-$routes->get('/Feestructurejapanese', 'Home::Feestructurejapanese');
+$routes->get('/Feestructurejapanese', 'sudo systemctl restart php-fpmHome::Feestructurejapanese');
 $routes->get('/Feestructurespanish', 'Home::Feestructurespanish');
 $routes->get('/Feestructureswahili', 'Home::Feestructureswahili');
 $routes->get('/Admission', 'Home::Admission');
