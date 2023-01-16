@@ -49,7 +49,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">German Class</a></h3>
@@ -80,7 +80,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">Italian Class</a></h3>
@@ -111,7 +111,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">Spanish Class</a></h3>
@@ -143,7 +143,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 44,000</p>
+                  <p class="price">Ksh 45,500</p>
                 </div>
 
                 <h3><a href="/Courses">Chinese Class</a></h3>
@@ -174,7 +174,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">English Class</a></h3>
@@ -205,7 +205,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 44,000</p>
+                  <p class="price">Ksh 45,500</p>
                 </div>
 
                 <h3><a href="/Courses">Japanese Class</a></h3>
@@ -237,7 +237,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 44,000</p>
+                  <p class="price">Ksh 45,500</p>
                 </div>
 
                 <h3><a href="/Courses">Swahili Class</a></h3>
@@ -268,7 +268,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 60,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">Arabic Class</a></h3>

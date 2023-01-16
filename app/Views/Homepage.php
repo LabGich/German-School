@@ -21,7 +21,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learn Foreign Language<br>Study in World Leading Institutions</h1>
+      <h1>Learn Foreign Languages<br>Study in World Leading Institutions</h1>
       <h2>LANGUAGE IS POWER!</h2>
       <a href="/Admission" class="btn-get-started">Apply Now</a>
     </div>
@@ -256,7 +256,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 20,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">German Class</a></h3>
@@ -287,7 +287,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">Italian Class</a></h3>
@@ -318,7 +318,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 30,000</p>
+                  <p class="price">Ksh 31,500</p>
                 </div>
 
                 <h3><a href="/Courses">Spanish Class</a></h3>
