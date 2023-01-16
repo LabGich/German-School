@@ -37,7 +37,7 @@
           <form action="<?php echo ('/logincontrollerstaff'); ?>" method="post" role="form" class="mt-3 m-3">
 
             <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
-              <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Admission Number" required>
+              <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Email Address" required>
             </div>
             <div class="form-group mt-3  col-lg-12 col-sm-12 mb-2">
               <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
