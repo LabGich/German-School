@@ -8,7 +8,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile Page Design Example</title>
 
     <meta name="author" content="Codeconvey" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
@@ -48,6 +47,7 @@
         <div class="container d-flex align-items-center">
             <a href="/Login" class="get-started-btn">Log Out</a>
             <a href="/Admission" class="get-started-btn">Update Details</a>
+            <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
         </div>
         </div>
         </div>
