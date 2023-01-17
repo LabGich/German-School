@@ -63,9 +63,9 @@
                             <td><?php echo $row['COURSE'] ?></td>
                             <td><?php echo $row['INTAKE'] ?></td>
                             <td>
-                                <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
+                            <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
-                                        <i class="bx bxs-bullseye">View</i>
+                                        <i class="bx bxs-cart-add">Admit</i>
                                     </button>
                                 </a>
 
