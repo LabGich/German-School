@@ -45,10 +45,12 @@ public function Loginstaff()
                  $result2 = $query2->getResultArray();
                  $data['enrollment'] = $result2;
             }
+            return view('Adminprofileview');
         } else {
             echo 'No User found!';
+            return view('Loginstaff');
         }
-        return view('enrollmentlist', $data);
+        
     }
     public function userlist()
     {

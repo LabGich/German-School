@@ -79,7 +79,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img" src="https://source.unsplash.com/600x300/?student" alt="student dp">
+                                                                <img class="profile_img img-fluid" src="https://source.unsplash.com/600x300/?student" alt="student dp">
                                                                 <h3>Admin 1</h3>
                                                             </div>
                                                             <div class="card-body">
@@ -125,9 +125,9 @@
 
                                     <Sectionstudentp2>
                                         <div class="container d-flex align-items-center">
-                                            <a href="#" class="get-started-btn">Userlist</a>
-                                            <a href="#" class="get-started-btn">Enrollment List</a>
-                                            <a href="#" class="get-started-btn">Scholarship List</a>
+                                            <a href="/userlist" class="get-started-btn">Userlist</a>
+                                            <a href="/Enrollmentlist" class="get-started-btn">Enrollment List</a>
+                                            <a href="/Scholarshiplist" class="get-started-btn">Scholarship List</a>
                                             <a href="#" class="get-started-btn">Class Attendance</a>                                                                                        
                                         </div>
                                     </Sectionstudentp2>

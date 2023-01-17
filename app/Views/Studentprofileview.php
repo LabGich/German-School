@@ -79,7 +79,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img" src="https://source.unsplash.com/600x300/?student" alt="student dp">
+                                                                <img class="profile_img img-fluid" src="https://source.unsplash.com/600x300/?student" alt="student dp">
                                                                 <h3>Ishmam Ahasan Samin</h3>
                                                             </div>
                                                             <div class="card-body">
