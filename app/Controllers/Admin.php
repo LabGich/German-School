@@ -72,4 +72,48 @@ public function Loginstaff()
         }
         return view('userlist', $data);
     }
+    public function Scholarshiplist()
+    {
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM flcSCHOLARSHIP ");
+        $result = $query->getResultArray();
+        $data['scholarship'] = [];
+        if ($result) {
+
+            // var_dump($result);
+            $data['scholarship'] = $result;
+            // foreach ($result as $row)
+            // {
+            //   echo $id = $row['userid'];
+            //   echo $firstname = $row['firstname'];
+            //   echo $email = $row['email'];
+            //   echo $usertype = $row['usertype'];
+            // }
+        } 
+        return view('scholarshiplist', $data);
+    }
+    public function EnrollmentList()
+    {
+        $db = Database::connect();
+        $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+        $result2 = $query2->getResultArray();
+        $data['enrollment'] = $result2;
+        if ($result) {
+
+            // var_dump($result);
+            $data['enrollment'] = $result;
+            // foreach ($result as $row)
+            // {
+            //   echo $id = $row['userid'];
+            //   echo $firstname = $row['firstname'];
+            //   echo $email = $row['email'];
+            //   echo $usertype = $row['usertype'];
+            // }
+        } 
+        return view('enrollmentlist', $data);
+    }
+    public function Adminprofileview()
+    {
+        return view('Adminprofileview');
+    }
 }

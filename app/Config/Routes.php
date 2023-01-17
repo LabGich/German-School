@@ -38,8 +38,11 @@ $routes->setAutoRoute(true);
 //admin
 $routes->get('/Admin', 'Admin::Login');
 $routes->get('/userlist', 'Admin::userlist');
+$routes->get('/Enrollmentlist', 'Admin::Enrollmentlist');
+$routes->get('/Scholarshiplist', 'Admin::Scholarshiplist');
 $routes->get('/Loginstaff', 'Admin::Loginstaff');
 $routes->match(['get', 'post'], '/logincontrollerstaff', 'Admin::logincontrollerstaff');
+$routes->get('/Adminprofileview', 'Admin::Adminprofileview');
 
 
 $routes->get('/', 'Home::index');
@@ -64,7 +67,7 @@ $routes->get('/Feestructureenglish', 'Home::Feestructureenglish');
 $routes->get('/Feestructurefrench', 'Home::Feestructurefrench');
 $routes->get('/Feestructuregerman', 'Home::Feestructuregerman');
 $routes->get('/Feestructureitalian', 'Home::Feestructureitalian');
-$routes->get('/Feestructurejapanese', 'sudo systemctl restart php-fpmHome::Feestructurejapanese');
+$routes->get('/Feestructurejapanese', 'Home::Feestructurejapanese');
 $routes->get('/Feestructurespanish', 'Home::Feestructurespanish');
 $routes->get('/Feestructureswahili', 'Home::Feestructureswahili');
 $routes->get('/Admission', 'Home::Admission');
