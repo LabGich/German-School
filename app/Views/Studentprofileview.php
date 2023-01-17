@@ -138,7 +138,7 @@
                                             <a href="#" class="get-started-btn">Class Attendance</a>
                                             <a href="#" class="get-started-btn">Course Progress</a>
                                             <a href="#" class="get-started-btn">Fee Statement</a>
-                                            <a href="/Scholarship">Scholarship</a>
+                                            <a href="/Scholarship" class="get-started-btn">Scholarship</a>
                                         </div>
                                     </Sectionstudentp2>
                                     <!-- partial -->
