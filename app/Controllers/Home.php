@@ -31,14 +31,14 @@ class Home extends BaseController
             // var_dump($result);
             // $data['users'] = $result;
             foreach ($result as $row) {
-                 $id = $row['userid'];
-                 $firstname = $row['firstname'];
-                 $email = $row['email'];
-                 $usertype = $row['usertype'];
+                $id = $row['userid'];
+                $firstname = $row['firstname'];
+                $email = $row['email'];
+                $usertype = $row['usertype'];
                 //  $session->set('username', $email);
-                 $query2 = $db->query("SELECT * FROM flcENROLLMENT");
-                 $result2 = $query2->getResultArray();
-                 $data['enrollment'] = $result2;
+                $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+                $result2 = $query2->getResultArray();
+                $data['enrollment'] = $result2;
             }
         } else {
             echo 'No User found!';
@@ -63,14 +63,14 @@ class Home extends BaseController
             // var_dump($result);
             // $data['users'] = $result;
             foreach ($result as $row) {
-                 $id = $row['userid'];
-                 $firstname = $row['firstname'];
-                 $email = $row['email'];
-                 $usertype = $row['usertype'];
+                $id = $row['userid'];
+                $firstname = $row['firstname'];
+                $email = $row['email'];
+                $usertype = $row['usertype'];
                 //  $session->set('username', $email);
-                 $query2 = $db->query("SELECT * FROM flcENROLLMENT");
-                 $result2 = $query2->getResultArray();
-                 $data['enrollment'] = $result2;
+                $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+                $result2 = $query2->getResultArray();
+                $data['enrollment'] = $result2;
             }
         } else {
             echo 'No User found!';
@@ -171,6 +171,10 @@ class Home extends BaseController
     {
         return view('Scholarship');
     }
+    public function Studentprofileview()
+    {
+        return view('Studentprofileview');
+    }
     public function Enrollment()
     {
         $trimester = $_GET["trimester"];
@@ -215,7 +219,7 @@ class Home extends BaseController
     }
     public function Applyscholarship()
     {
-        
+
         $name = $_GET["name"];
         $admissionnum = $_GET["admissionnum"];
         $reasons = $_GET["reasons"];
@@ -224,7 +228,7 @@ class Home extends BaseController
         $data = [
             'name'       => $name,
             'admissionnum'        => $admissionnum,
-            'Reasons'        => $reasons,            
+            'Reasons'        => $reasons,
         ];
         // var_dump($data);
         $db = Database::connect();
@@ -240,7 +244,7 @@ class Home extends BaseController
         // $email->setMessage($message);
         // $email->send();
         // $email->printDebugger(['headers']);
-    //   print_r($email);
+        //   print_r($email);
         return view('Scholarship');
     }
 }

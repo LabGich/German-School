@@ -73,7 +73,7 @@ $routes->get('/Homework', 'Home::Homework');
 $routes->get('/Scholarship', 'Home::Scholarship');
 $routes->get('/Enrollment', 'Home::Enrollment');
 $routes->get('/Applyscholarship', 'Home::Applyscholarship');
-
+$routes->get('/Studentprofileview', 'Home::Studentprofileview');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
