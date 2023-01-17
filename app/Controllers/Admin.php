@@ -100,10 +100,10 @@ public function Loginstaff()
         $query2 = $db->query("SELECT * FROM flcENROLLMENT");
         $result2 = $query2->getResultArray();
         $data['enrollment'] = $result2;
-        if ($result) {
+        if ($result2) {
 
             // var_dump($result);
-            $data['enrollment'] = $result;
+            $data['enrollment'] = $result2;
             // foreach ($result as $row)
             // {
             //   echo $id = $row['userid'];
