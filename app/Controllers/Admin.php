@@ -18,7 +18,7 @@ class Admin extends BaseController
         return view('Login');
     }
 
-public function Loginstaff()
+    public function Loginstaff()
     {
         return view('Loginstaff');
     }
@@ -37,20 +37,16 @@ public function Loginstaff()
             // $data['users'] = $result;
             foreach ($result as $row) {
                  $id = $row['userid'];
-                 $firstname = $row['firstname'];
-                 $email = $row['email'];
-                 $usertype = $row['usertype'];
-                //  $session->set('username', $email);
-                 $query2 = $db->query("SELECT * FROM flcENROLLMENT");
-                 $result2 = $query2->getResultArray();
-                 $data['enrollment'] = $result2;
+                 $data['firstname'] = $row['firstname'];
+                 $data['email'] = $row['email'];
+                 $data['usertype'] = $row['usertype'];                
+                
             }
-            return view('Adminprofileview');
+            return view('Adminprofileview',$data);        
         } else {
-            echo 'No User found!';
+            $data['error'] = 'Password or Username incorrect!!';
             return view('Loginstaff');
-        }
-        
+        }                
     }
     public function userlist()
     {
@@ -59,20 +55,12 @@ public function Loginstaff()
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {
-
             // var_dump($result);
-            $data['users'] = $result;
-            // foreach ($result as $row)
-            // {
-            //   echo $id = $row['userid'];
-            //   echo $firstname = $row['firstname'];
-            //   echo $email = $row['email'];
-            //   echo $usertype = $row['usertype'];
-            // }
+            $data['users'] = $result;    
+            return view('userlist', $data);        
         } else {
-            echo 'No User found!';
-        }
-        return view('userlist', $data);
+            return view('userlist', $data);
+        }        
     }
     public function Scholarshiplist()
     {
@@ -81,18 +69,13 @@ public function Loginstaff()
         $result = $query->getResultArray();
         $data['scholarship'] = [];
         if ($result) {
-
             // var_dump($result);
-            $data['scholarship'] = $result;
-            // foreach ($result as $row)
-            // {
-            //   echo $id = $row['userid'];
-            //   echo $firstname = $row['firstname'];
-            //   echo $email = $row['email'];
-            //   echo $usertype = $row['usertype'];
-            // }
+            $data['scholarship'] = $result;            
+            return view('scholarshiplist', $data);
         } 
+        else{
         return view('scholarshiplist', $data);
+        }
     }
     public function EnrollmentList()
     {
@@ -103,16 +86,11 @@ public function Loginstaff()
         if ($result2) {
 
             // var_dump($result);
-            $data['enrollment'] = $result2;
-            // foreach ($result as $row)
-            // {
-            //   echo $id = $row['userid'];
-            //   echo $firstname = $row['firstname'];
-            //   echo $email = $row['email'];
-            //   echo $usertype = $row['usertype'];
-            // }
-        } 
-        return view('enrollmentlist', $data);
+            $data['enrollment'] = $result2;         
+            return view('enrollmentlist', $data);
+        } else{
+            return view('enrollmentlist', $data);
+        }        
     }
     public function Adminprofileview()
     {
