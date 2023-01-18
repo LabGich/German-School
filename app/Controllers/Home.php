@@ -29,18 +29,15 @@ class Home extends BaseController
         if ($result) {
             // echo 'Database connection successful';
             // var_dump($result);
-            // $data['users'] = $result;
+            
             foreach ($result as $row) {
                 $id = $row['userid'];
-                $firstname = $row['firstname'];
-                $email = $row['email'];
-                $usertype = $row['usertype'];
-                //  $session->set('username', $email);
-                $query2 = $db->query("SELECT * FROM flcENROLLMENT");
-                $result2 = $query2->getResultArray();
-                $data['enrollment'] = $result2;
+                $data['firstname'] = $row['firstname'];
+                $data['email'] = $row['email'];
+                $data['usertype'] = $row['usertype'];
+                
             }
-             return view('Scholarship', $data);
+             return view('Studentprofileview', $data);
         } else {
             $data['error'] = 'Password or Username incorrect!!';
              return view('Login',$data);

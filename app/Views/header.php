@@ -43,24 +43,18 @@
             <li><a href="/Feestructurespanish">Spanish Course</a></li>
             <li><a href="/Feestructureswahili">Swahili Course</a></li>
           </ul>
-        </li>
-        <li><a href="/Admission">Apply Today</a></li>
+        </li>        
         <li><a href="/Scholarship">Apply Scholarship</a></li>
-        <li><a href="/Contact">Contact</a></li>
+        <li><a href="/Contact">Contact</a></li>        
         <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
           <ul>
           <li><a href="/Loginstaff">Staff Portal</a></li>
             <li><a href="/Login">Student Portal</a></li>
           </ul>
         </li>
-        <li><a href="/Studentprofileview">Student Dashboard</a></li>
-
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-
-    <a href="/Admission" class="get-started-btn">Register</a>
-    <!--<a href="/Registration" class="get-started-btn">Registration</a>-->
-
+      <a href="/Admission" class="get-started-btn">Apply Today</a>
   </div>
 </header><!-- End Header -->
