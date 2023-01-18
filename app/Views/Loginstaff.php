@@ -33,9 +33,9 @@
     margin-bottom: 15px;">
         <p class="text-center mb-2" style="justify-content:center">Please Enter Account Details</p>
         <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
-
+          <?= $error?$error:""?>
           <form action="<?php echo ('/logincontrollerstaff'); ?>" method="post" role="form" class="mt-3 m-3">
-
+            <p class="text-danger"><?= $error?$error:""?></p>
             <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
               <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Email Address" required>
             </div>

@@ -35,14 +35,16 @@
           EMAIL: info@foreignlanguagemombasa.co.ke</p>
           <u style="color:red">ENROLLMENT FORM</u>
         </div>
+        
         <form action="/Enrollment" class="card p-3" method="GET" role="form">
+          <p class="text-danger"><?= $insert?$insert:""?></p>
           <div class="form-group row mt-3">
             <label for="trimester" class="col-lg-2 col-sm-2 col-form-label">TRIMESTER</label>
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="trimester" class="form-control" id="trimester">
             </div>
             <label for="year" class="col-sm-1 col-form-label">YEAR</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <input type="text" name="year" class="form-control" id="year">
             </div>
           </div>
@@ -52,9 +54,9 @@
               <input type="text" name="fullnames" class="form-control" id="fullnames">
             </div>
             <label for="gender" class="col-sm-1 col-form-label">GENDER</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <select name="gender" class="form-control">
-                <option>select</option>
+                <option>Select Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
@@ -66,7 +68,7 @@
               <input type="text" name="idno" class="form-control" id="idno">
             </div>
             <label for="placeofbirth" class="col-sm-1 col-form-label">Country</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <select id="placeofbirth" name="placeofbirth" required class="form-control">
                 <option selected="true" value="Select Country">Select Country</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -328,7 +330,7 @@
               <input type="date" name="dob" class="form-control" id="dob">
             </div>
             <label for="residence" class="col-sm-1 col-form-label">Residence</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <input type="text" name="residence" class="form-control" id="residence">
             </div>
           </div>
@@ -339,7 +341,7 @@
               <input type="text" name="profession" class="form-control" id="profession">
             </div>
             <label for="pobox" class="col-sm-1 col-form-label">P.O Box</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <input type="text" name="pobox" class="form-control" id="pobox">
             </div>
           </div>
@@ -351,7 +353,7 @@
               <input type="email" name="email" class="form-control" id="email">
             </div>
             <label for="telephone" class="col-sm-1 col-form-label">Telephone</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <input type="text" name="telephone" class="form-control" id="telephone">
             </div>
           </div>
@@ -369,7 +371,7 @@
             <label for="course" class="col-lg-2 col-sm-2 col-form-label">Course enrolled</label>
             <div class="col-sm-4 col-lg-4">
               <select name="course" class="form-control">
-                <option>select</option>
+                <option>Select Course</option>
                 <option value="Arabic">Arabic</option>
                 <option value="Chinese">Chinese</option>
                 <option value="English">English</option>
@@ -382,9 +384,9 @@
               </select>
             </div>
             <label for="intake" class="col-sm-1 col-form-label">Intake</label>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <select name="intake" class="form-control">
-                <option>select intake</option>
+                <option>Select Intake</option>
                 <option value="January">January</option>
                 <option value="April">April</option>
                 <option value="July">July</option>

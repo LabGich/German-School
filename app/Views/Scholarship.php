@@ -38,6 +38,7 @@
           <div class="col-lg-12 mt-5 mt-lg-0">
 
             <form action="/Applyscholarship" method="GET" role="form">
+              <p class="text-danger"><?= $insert?$insert:""?></p>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
