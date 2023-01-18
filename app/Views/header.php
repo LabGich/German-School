@@ -1,3 +1,4 @@
+<?php $session = session(); ?>
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
 
@@ -45,16 +46,23 @@
           </ul>
         </li>        
         <li><a href="/Scholarship">Apply Scholarship</a></li>
-        <li><a href="/Contact">Contact</a></li>        
+        <li><a href="/Contact">Contact</a></li>         
+        <?php if (!isset($_SESSION['username'])){ ?>
         <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
           <ul>
           <li><a href="/Loginstaff">Staff Portal</a></li>
             <li><a href="/Login">Student Portal</a></li>
           </ul>
         </li>
+        <?php } ?>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
+    <?php if (!isset($_SESSION['username'])){ ?>
       <a href="/Admission" class="get-started-btn">Apply Today</a>
+      <?php } ?>
+      <?php if (isset($_SESSION['username'])){ ?>
+            <a href="/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
+        <?php } ?>
   </div>
 </header><!-- End Header -->

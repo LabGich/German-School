@@ -50,7 +50,6 @@ $routes->get('/Login', 'Home::Login');
 $routes->get('/userlist', 'Home::userlist');
 $routes->get('/Loginstaff', 'Home::Loginstaff');
 $routes->match(['get', 'post'], '/loginfunc', 'Home::loginfunc');
-$routes->match(['get', 'post'], '/logincontrollerstaff', 'Home::logincontrollerstaff');
 
 
 

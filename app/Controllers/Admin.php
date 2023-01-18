@@ -42,6 +42,14 @@ class Admin extends BaseController
                  $data['usertype'] = $row['usertype'];                
                 
             }
+            $this->session 	= \Config\Services::session();
+            $datasess = array(
+                'username' 	=> $username,
+                'email' 	=> $data['email'],
+                'usertype'  =>  $data['usertype'],
+                'logged_in'	=> TRUE
+            );
+            $this->session->set($datasess);
             return view('Adminprofileview',$data);        
         } else {
             $data['error'] = 'Password or Username incorrect!!';

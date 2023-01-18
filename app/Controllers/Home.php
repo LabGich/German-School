@@ -37,6 +37,14 @@ class Home extends BaseController
                 $data['usertype'] = $row['usertype'];
                 
             }
+            $this->session 	= \Config\Services::session();
+            $datasess = array(
+                'username' 	=> $username,
+                'email' 	=> $data['email'],
+                'usertype'  =>  $data['usertype'],
+                'logged_in'	=> TRUE
+            );
+            $this->session->set($datasess);
              return view('Studentprofileview', $data);
         } else {
             $data['error'] = 'Password or Username incorrect!!';
@@ -46,37 +54,7 @@ class Home extends BaseController
     public function Loginstaff()
     {
         return view('Loginstaff');
-    }
-    public function logincontrollerstaff()
-    {
-        // var_dump($this->request->getPost());
-        $username = $this->request->getPost('admissionnumber');
-        $password = $this->request->getPost('password');
-        $db = Database::connect();
-        $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
-        // $query = $db->query("SELECT * FROM users ");
-        $result = $query->getResultArray();
-        if ($result) {
-            // echo 'Database connection successful';
-            // var_dump($result);
-            // $data['users'] = $result;
-            foreach ($result as $row) {
-                $id = $row['userid'];
-                $firstname = $row['firstname'];
-                $email = $row['email'];
-                $usertype = $row['usertype'];
-                //  $session->set('username', $email);
-                $query2 = $db->query("SELECT * FROM flcENROLLMENT");
-                $result2 = $query2->getResultArray();
-                $data['enrollment'] = $result2;
-            }
-            return view('enrollmentlist', $data);
-        } else {
-            $data['error'] = 'Password or Username incorrect!!';
-            return view('Loginstaff');
-        }
-        
-    }
+    }    
     public function userlist()
     {
         $db = Database::connect();
