@@ -31,8 +31,8 @@ class Home extends BaseController
         $data['username'] = $username;
         $password = $this->request->getPost('password');
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM USERS where EMAIL = '$username' and PASSWORD = '$password' ");
-        // $query = $db->query("SELECT * FROM users ");
+        $query = $db->query("SELECT * FROM flcUSERS where EMAIL = '$username' and PASSWORD = '$password' ");
+        // $query = $db->query("SELECT * FROM flcusers ");
         $result = $query->getResultArray();
         if ($result) {
             // echo 'Database connection successful';
@@ -51,7 +51,7 @@ class Home extends BaseController
             $this->session 	= \Config\Services::session();
 
             $query2 = $db->query("SELECT * FROM flcENROLLMENT where EMAIL = '$emailpass' limit 1");
-            // $query = $db->query("SELECT * FROM users ");
+            // $query = $db->query("SELECT * FROM flcusers ");
             $result2 = $query2->getResultArray();            
                      // echo 'Database connection successful';
                     // var_dump($result);                    
@@ -100,7 +100,7 @@ class Home extends BaseController
     public function userlist()
     {
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM USERS ");
+        $query = $db->query("SELECT * FROM flcUSERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {            

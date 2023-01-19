@@ -43,6 +43,8 @@ $routes->get('/Scholarshiplist', 'Admin::Scholarshiplist');
 $routes->get('/Loginstaff', 'Admin::Loginstaff');
 $routes->match(['get', 'post'], '/logincontrollerstaff', 'Admin::logincontrollerstaff');
 $routes->get('/Adminprofileview', 'Admin::Adminprofileview');
+$routes->get('/Admitstudent', 'Admin::Admitstudent');
+$routes->get('/Admitcontroller', 'Admin::Admitcontroller');
 
 
 $routes->get('/', 'Home::index');

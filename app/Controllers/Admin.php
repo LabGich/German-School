@@ -22,14 +22,67 @@ class Admin extends BaseController
     {
         return view('Loginstaff');
     }
+     public function Admitcontroller()
+    {
+        // var_dump($_GET);
+        $admissionnum = $_GET['admissionnum'];
+        $idtable = $_GET['id'];
+        $db = Database::connect();
+         $query2 = $db->query("SELECT * FROM flcENROLLMENT where ID = '$idtable'");
+            // $query = $db->query("SELECT * FROM flcusers ");
+        $result2 = $query2->getResultArray();            
+                    // echo 'Database connection successful';
+                // var_dump($result);                    
+                foreach ($result2 as $row2) {
+                    $id = $row2['ID'];
+                    $TRIMESTER = $row2['TRIMESTER'];
+                    $GENDER = $row2['GENDER'];
+                    $IDNO = $row2['IDNO'];
+                    $EMAIL = $row2['EMAIL'];
+                    $TELEPHONE = $row2['TELEPHONE'];
+                    $COURSE = $row2['COURSE'];
+                    $INTAKE = $row2['INTAKE'];
+                    $FULLNAMES = $row2['FULLNAMES'];
+                   
+                    $data = [
+                                'USERNAME'       => $EMAIL,
+                                'FIRSTNAME'        => $FULLNAMES,                                
+                                'EMAIL' => $admissionnum,
+                                'PHONENUM'        => $TELEPHONE,
+                                'USERTYPE'        => 'Student',
+                                'PASSWORD'        => $IDNO
+                            ];
+                            // var_dump($data);
+                            $db = Database::connect();
+                            $builder = $db->table('USERS');
+                            $builder->insert($data);
+
+                            $query = $db->query("SELECT * FROM flcUSERS ");
+                            $result = $query->getResultArray();
+                            $data['users'] = [];
+                            if ($result) {
+                                // var_dump($result);
+                                $data['users'] = $result;    
+                                return view('userlist', $data);        
+                            } else {
+                                return view('userlist', $data);
+                            }  
+        
+                }
+
+    }
+    public function Admitstudent()
+    {
+        return view('Admitstudent');
+    }
     public function logincontrollerstaff()
     {
         // var_dump($this->request->getPost());
         $username = $this->request->getPost('admissionnumber');
         $password = $this->request->getPost('password');
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM USERS where EMAIL = '$username' and PASSWORD = '$password'");
-        // $query = $db->query("SELECT * FROM users ");
+        $query = $db->query("SELECT * FROM flcUSERS where EMAIL = '$username' and PASSWORD = '$password'");
+        // $query = $db->query("SELECT * FROM flcusers ");
         $result = $query->getResultArray();
         if ($result) {
             // echo 'Database connection successful';
@@ -66,7 +119,7 @@ class Admin extends BaseController
     public function userlist()
     {
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM USERS ");
+        $query = $db->query("SELECT * FROM flcUSERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {
