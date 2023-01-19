@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <img src="/assets/img/Swahili Fee Structure.jpeg" class="img-fluid" />
+          <img src="/assets/img/Swahili-Fee-Structure-Updated.jpg" class="img-fluid" />
         </div>
 
       </div>

@@ -17,12 +17,12 @@ class Home extends BaseController
     {
         return view('Login');
     }
-     public function Logout()
+    public function Logout()
     {
-        $this->session 	= \Config\Services::session();
+        $this->session  = \Config\Services::session();
         $this->session->destroy();
         $data['error'] = "You Have been logged out";
-        return view('Login',$data);
+        return view('Login', $data);
     }
     public function loginfunc()
     {
@@ -37,7 +37,7 @@ class Home extends BaseController
         if ($result) {
             // echo 'Database connection successful';
             // var_dump($result);
-            
+
             foreach ($result as $row) {
                 $id = $row['userid'];
                 $firstname = $row['FIRSTNAME'];
@@ -47,68 +47,63 @@ class Home extends BaseController
                 $phone = $row['PHONENUM'];
                 $emailpass = $row['USERNAME'];
             }
-            
-            $this->session 	= \Config\Services::session();
+
+            $this->session     = \Config\Services::session();
 
             $query2 = $db->query("SELECT * FROM flcENROLLMENT where EMAIL = '$emailpass' limit 1");
             // $query = $db->query("SELECT * FROM flcusers ");
-            $result2 = $query2->getResultArray();            
-                     // echo 'Database connection successful';
-                    // var_dump($result);                    
-                    foreach ($result2 as $row2) {
-                        $id = $row2['userid'];
-                        $trimester = $row2['TRIMESTER'];
-                        $gender = $row2['GENDER'];
-                        $idno = $row2['IDNO'];
-                        $course = $row2['COURSE'];
-                        $telephone = $row2['TELEPHONE'];
-                        $intake = $row2['INTAKE'];
-
-
-                    }
-                    $datasess = array(
-                        'username' 	=> $username,
-                        'email' 	=> $emailpass,
-                        'usertype'  =>  $usertype,
-                        'firstname' => $firstname,
-                        'lastname' => $lastname,
-                        'usertype' => $usertype,
-                        'phone' => $phonenum,
-                        'trimester' => $trimester,
-                        'gender' => $gender,
-                        'idno' => $idno,
-                        'intake' => $intake,
-                        'course' => $course,
-                        'telephone' => $telephone,
-                        'logged_in'	=> TRUE
-                    );
-                    $this->session->set($datasess);
-                    // var_dump($datasess);
-                    return view('Studentprofileview', $datasess);
-                
-
-            
+            $result2 = $query2->getResultArray();
+            // echo 'Database connection successful';
+            // var_dump($result);                    
+            foreach ($result2 as $row2) {
+                $id = $row2['userid'];
+                $trimester = $row2['TRIMESTER'];
+                $gender = $row2['GENDER'];
+                $idno = $row2['IDNO'];
+                $course = $row2['COURSE'];
+                $telephone = $row2['TELEPHONE'];
+                $intake = $row2['INTAKE'];
+            }
+            $datasess = array(
+                'username'     => $username,
+                'email'     => $emailpass,
+                'usertype'  =>  $usertype,
+                'firstname' => $firstname,
+                'lastname' => $lastname,
+                'usertype' => $usertype,
+                'phone' => $telephone,
+                'trimester' => $trimester,
+                'gender' => $gender,
+                'idno' => $idno,
+                'intake' => $intake,
+                'course' => $course,
+                'telephone' => $telephone,
+                'logged_in'    => TRUE
+            );
+            $this->session->set($datasess);
+            // var_dump($datasess);
+            return view('Studentprofileview', $datasess);
         } else {
             $data['error'] = 'Password or Username incorrect!!';
-             return view('Login',$data);
+            return view('Login', $data);
         }
     }
     public function Loginstaff()
     {
         return view('Loginstaff');
-    }    
+    }
     public function userlist()
     {
         $db = Database::connect();
         $query = $db->query("SELECT * FROM flcUSERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
-        if ($result) {            
-            $data['users'] = $result;            
+        if ($result) {
+            $data['users'] = $result;
             return view('userlist', $data);
-        } else {            
+        } else {
             return view('userlist', $data);
-        }        
+        }
     }
     public function Registration()
     {
@@ -153,6 +148,10 @@ class Home extends BaseController
     public function Feestructurejapanese()
     {
         return view('Feestructurejapanese');
+    }
+    public function Feestructureportuguese()
+    {
+        return view('Feestructureportuguese');
     }
     public function Feestructurespanish()
     {
@@ -227,7 +226,7 @@ class Home extends BaseController
         // var_dump($builder);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
-        return view('Admission',$data);
+        return view('Admission', $data);
     }
     public function Applyscholarship()
     {
@@ -247,6 +246,6 @@ class Home extends BaseController
         $builder = $db->table('flcSCHOLARSHIP');
         $builder->insert($data);
         $data['insert'] = 'We will contact you with more information thank you!';
-        return view('Scholarship',$data);
+        return view('Scholarship', $data);
     }
 }

@@ -268,7 +268,7 @@
                       <a href="/Admission" class="btn-get-started">Apply Now</a>
                     </div>
                   </div>
-                  <p class="price">Ksh 31,500</p>
+                  <p class="price">Ksh 45,500</p>
                 </div>
 
                 <h3><a href="/Courses">Arabic Class</a></h3>

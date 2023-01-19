@@ -35,9 +35,9 @@
           EMAIL: info@foreignlanguagemombasa.co.ke</p>
           <u style="color:red">ENROLLMENT FORM</u>
         </div>
-        
-        <form action="/Enrollment" class="card p-3" method="GET" role="form">
-          <p class="text-danger"><?= $insert?$insert:""?></p>
+
+        <form action="/Feepayment" class="card p-3" method="GET" role="form">
+          <p class="text-danger"><?= $insert ? $insert : "" ?></p>
           <div class="form-group row mt-3">
             <label for="trimester" class="col-lg-2 col-sm-2 col-form-label">TRIMESTER</label>
             <div class="col-sm-4 col-lg-4">

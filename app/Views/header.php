@@ -19,6 +19,7 @@
             <li><a href="/Courses">German Course</a></li>
             <li><a href="/Courses">Italian Course</a></li>
             <li><a href="/Courses">Japanese Course</a></li>
+            <li><a href="/Courses">Portuguese Course</a></li>
             <li><a href="/Courses">Spanish Course</a></li>
             <li><a href="/Courses">Swahili Course</a></li>
           </ul>
@@ -41,28 +42,29 @@
             <li><a href="/Feestructuregerman">German Course</a></li>
             <li><a href="/Feestructureitalian">Italian Course</a></li>
             <li><a href="/Feestructurejapanese">Japanese Course</a></li>
+            <li><a href="/Feestructureportuguese">Portuguese Course</a></li>
             <li><a href="/Feestructurespanish">Spanish Course</a></li>
             <li><a href="/Feestructureswahili">Swahili Course</a></li>
           </ul>
-        </li>        
-        <li><a href="/Scholarship">Apply Scholarship</a></li>
-        <li><a href="/Contact">Contact</a></li>         
-        <?php if (!$session->username){ ?>
-        <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
-          <ul>
-          <li><a href="/Loginstaff">Staff Portal</a></li>
-            <li><a href="/Login">Student Portal</a></li>
-          </ul>
         </li>
+        <li><a href="/Scholarship">Apply Scholarship</a></li>
+        <li><a href="/Contact">Contact</a></li>
+        <?php if (!$session->username) { ?>
+          <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
+            <ul>
+              <li><a href="/Loginstaff">Staff Portal</a></li>
+              <li><a href="/Login">Student Portal</a></li>
+            </ul>
+          </li>
         <?php } ?>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <?php if (!$session->username){ ?>
+    <?php if (!$session->username) { ?>
       <a href="/Admission" class="get-started-btn">Apply Today</a>
-      <?php } ?>
-      <?php if (($session->username)){ ?>
-            <a href="/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
-        <?php } ?>
+    <?php } ?>
+    <?php if (($session->username)) { ?>
+      <a href="/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
+    <?php } ?>
   </div>
 </header><!-- End Header -->
