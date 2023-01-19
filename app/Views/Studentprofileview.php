@@ -45,8 +45,8 @@
         <!-- Student Profile View Secton -->
         </div>
         <div class="container d-flex align-items-center">
-            <a href="/Login" class="get-started-btn">Log Out</a>
-            <a href="/Admission" class="get-started-btn">Update Details</a>
+            <a href="/Logout" class="get-started-btn">Log Out</a>
+            <a href="#" class="get-started-btn">Update Details</a>
             <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
         </div>
         </div>
@@ -79,13 +79,13 @@
                                                     <div class="col-lg-4">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img img-fluid" src="https://source.unsplash.com/600x300/?student" alt="student dp">
-                                                                <h3>Ishmam Ahasan Samin</h3>
+                                                                <img class="profile_img img-fluid" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="student dp">
+                                                                <h3><?= $firstname." ".$lastname ?></h3>
                                                             </div>
                                                             <div class="card-body">
-                                                                <p class="mb-0"><strong class="pr-1">Student ID:</strong>FLC02001KE</p>
-                                                                <p class="mb-0"><strong class="pr-1">Course:</strong>German</p>
-                                                                <p class="mb-0"><strong class="pr-1">Trimester:</strong>A1</p>
+                                                                <p class="mb-0"><strong class="pr-1">Student ID:</strong><?= $username ?></p>
+                                                                <p class="mb-0"><strong class="pr-1">Course:</strong><?= $course ?></p>
+                                                                <p class="mb-0"><strong class="pr-1">Trimester:</strong><?= $trimester ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -99,7 +99,7 @@
                                                                     <tr>
                                                                         <th width="30%">Intake</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>January</td>
+                                                                        <td><?= $intake ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">Academic Year </th>
@@ -109,17 +109,17 @@
                                                                     <tr>
                                                                         <th width="30%">Gender</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>Male</td>
+                                                                        <td><?= $gender ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">Telephone</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>+254721000111</td>
+                                                                        <td><?= $telephone ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">E-mail</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>ihsham@gmail.com</td>
+                                                                        <td><? $email ?></td>
                                                                     </tr>
                                                                 </table>
                                                             </div>

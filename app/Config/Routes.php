@@ -46,6 +46,7 @@ $routes->get('/Adminprofileview', 'Admin::Adminprofileview');
 
 
 $routes->get('/', 'Home::index');
+$routes->get('/Logout', 'Home::Logout');
 $routes->get('/Login', 'Home::Login');
 $routes->get('/userlist', 'Home::userlist');
 $routes->get('/Loginstaff', 'Home::Loginstaff');

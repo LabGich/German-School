@@ -79,11 +79,11 @@
                                                     <div class="col-lg-4">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img img-fluid" src="https://source.unsplash.com/600x300/?student" alt="student dp">
-                                                                <h3>Admin 1</h3>
+                                                                <img class="profile_img img-fluid" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="student dp">
+                                                                <h3><?= $firstname." ".$lastname ?></h3>
                                                             </div>
                                                             <div class="card-body">
-                                                                <p class="mb-0"><strong class="pr-1">Name:</strong>Kenedy</p>                                                                
+                                                                <p class="mb-0"><strong class="pr-1">Name:</strong><?= $username ?></p>                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -91,28 +91,28 @@
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent border-0">
                                                                 <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Admin Information</h3>
-                                                            </div>
+                                                            </div>                                                            
                                                             <div class="card-body pt-0">
                                                                 <table class="table table-bordered">
                                                                     <tr>
-                                                                        <th width="30%">Date</th>
+                                                                        <th width="30%">Date Added</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>January</td>
-                                                                    </tr>                                                                    
+                                                                        <td><?= $date ?></td>
+                                                                    </tr>    
                                                                     <tr>
-                                                                        <th width="30%">Gender</th>
+                                                                        <th width="30%">User Role</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>Male</td>
+                                                                        <td><?= $usertype ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">Telephone</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>+254721000111</td>
+                                                                        <td><?= $phone ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">E-mail</th>
                                                                         <td width="2%">:</td>
-                                                                        <td>ihsham@gmail.com</td>
+                                                                        <td><?= $email ?></td>
                                                                     </tr>
                                                                 </table>
                                                             </div>

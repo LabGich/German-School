@@ -17,13 +17,21 @@ class Home extends BaseController
     {
         return view('Login');
     }
+     public function Logout()
+    {
+        $this->session 	= \Config\Services::session();
+        $this->session->destroy();
+        $data['error'] = "You Have been logged out";
+        return view('Login',$data);
+    }
     public function loginfunc()
     {
         // var_dump($this->request->getPost());
         $username = $this->request->getPost('admissionnumber');
+        $data['username'] = $username;
         $password = $this->request->getPost('password');
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+        $query = $db->query("SELECT * FROM USERS where EMAIL = '$username' and PASSWORD = '$password' ");
         // $query = $db->query("SELECT * FROM users ");
         $result = $query->getResultArray();
         if ($result) {
@@ -32,20 +40,54 @@ class Home extends BaseController
             
             foreach ($result as $row) {
                 $id = $row['userid'];
-                $data['firstname'] = $row['firstname'];
-                $data['email'] = $row['email'];
-                $data['usertype'] = $row['usertype'];
-                
+                $firstname = $row['FIRSTNAME'];
+                $lastname = $row['LASTNAME'];
+                $email = $row['EMAIL'];
+                $usertype = $row['USERTYPE'];
+                $phone = $row['PHONENUM'];
+                $emailpass = $row['USERNAME'];
             }
+            
             $this->session 	= \Config\Services::session();
-            $datasess = array(
-                'username' 	=> $username,
-                'email' 	=> $data['email'],
-                'usertype'  =>  $data['usertype'],
-                'logged_in'	=> TRUE
-            );
-            $this->session->set($datasess);
-             return view('Studentprofileview', $data);
+
+            $query2 = $db->query("SELECT * FROM flcENROLLMENT where EMAIL = '$emailpass' limit 1");
+            // $query = $db->query("SELECT * FROM users ");
+            $result2 = $query2->getResultArray();            
+                     // echo 'Database connection successful';
+                    // var_dump($result);                    
+                    foreach ($result2 as $row2) {
+                        $id = $row2['userid'];
+                        $trimester = $row2['TRIMESTER'];
+                        $gender = $row2['GENDER'];
+                        $idno = $row2['IDNO'];
+                        $course = $row2['COURSE'];
+                        $telephone = $row2['TELEPHONE'];
+                        $intake = $row2['INTAKE'];
+
+
+                    }
+                    $datasess = array(
+                        'username' 	=> $username,
+                        'email' 	=> $emailpass,
+                        'usertype'  =>  $usertype,
+                        'firstname' => $firstname,
+                        'lastname' => $lastname,
+                        'usertype' => $usertype,
+                        'phone' => $phonenum,
+                        'trimester' => $trimester,
+                        'gender' => $gender,
+                        'idno' => $idno,
+                        'intake' => $intake,
+                        'course' => $course,
+                        'telephone' => $telephone,
+                        'logged_in'	=> TRUE
+                    );
+                    $this->session->set($datasess);
+                    // var_dump($datasess);
+                    return view('Studentprofileview', $datasess);
+                
+
+            
         } else {
             $data['error'] = 'Password or Username incorrect!!';
              return view('Login',$data);
@@ -58,7 +100,7 @@ class Home extends BaseController
     public function userlist()
     {
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM users ");
+        $query = $db->query("SELECT * FROM USERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {            

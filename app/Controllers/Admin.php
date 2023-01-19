@@ -28,7 +28,7 @@ class Admin extends BaseController
         $username = $this->request->getPost('admissionnumber');
         $password = $this->request->getPost('password');
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM users where email = '$username' and password = '$password' ");
+        $query = $db->query("SELECT * FROM USERS where EMAIL = '$username' and PASSWORD = '$password'");
         // $query = $db->query("SELECT * FROM users ");
         $result = $query->getResultArray();
         if ($result) {
@@ -36,21 +36,28 @@ class Admin extends BaseController
             // var_dump($result);
             // $data['users'] = $result;
             foreach ($result as $row) {
-                 $id = $row['userid'];
-                 $data['firstname'] = $row['firstname'];
-                 $data['email'] = $row['email'];
-                 $data['usertype'] = $row['usertype'];                
+                 $id = $row['USERID'];
+                 $data['FIRSTNAME'] = $row['FIRSTNAME'];
+                 $data['LASTNAME'] = $row['LASTNAME'];
+                 $data['EMAIL'] = $row['EMAIL'];
+                 $data['USERTYPE'] = $row['USERTYPE'];                
+                 $data['DATE'] = $row['DATE'];                
+                 $data['PHONENUM'] = $row['PHONENUM'];                
                 
             }
             $this->session 	= \Config\Services::session();
             $datasess = array(
                 'username' 	=> $username,
-                'email' 	=> $data['email'],
-                'usertype'  =>  $data['usertype'],
+                'email' 	=> $data['EMAIL'],
+                'firstname'  =>  $data['FIRSTNAME'],
+                'lastname'  =>  $data['LASTNAME'],
+                'usertype'  =>  $data['USERTYPE'],
+                'phone'  =>  $data['PHONENUM'],
+                'date'  =>  $data['DATE'],
                 'logged_in'	=> TRUE
             );
             $this->session->set($datasess);
-            return view('Adminprofileview',$data);        
+            return view('Adminprofileview',$datasess);        
         } else {
             $data['error'] = 'Password or Username incorrect!!';
             return view('Loginstaff');
@@ -59,7 +66,7 @@ class Admin extends BaseController
     public function userlist()
     {
         $db = Database::connect();
-        $query = $db->query("SELECT * FROM users ");
+        $query = $db->query("SELECT * FROM USERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {
