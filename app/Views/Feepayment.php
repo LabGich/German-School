@@ -23,14 +23,16 @@
         <!-- ======= Breadcrumbs ======= -->
         <div class="breadcrumbs" data-aos="fade-in">
             <div class="container">
-                <h2>Apply Scholarship</h2>
+                <h2>Fee Payment</h2>
 
             </div>
         </div><!-- End Breadcrumbs -->
 
-        <!-- Fee payment Section -->
-
-        <!-- End Fee payment Section -->
+        <!-- Fee Payment Section -->
+        <div>
+            <h3>Your Application to Foreign Language Mombasa has been successfully submitted. Please follow the etc etc below to make your fee payments. Your admission number will be assigned after 50% completion f the fee payment</h3>
+        </div>
+        <!-- End Fee Payment Section -->
 
     </main><!-- End #main -->
 

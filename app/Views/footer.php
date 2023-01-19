@@ -28,19 +28,33 @@
         </div>
 
         <div class="col-lg-4 col-md-6 footer-links">
-          <h4>Languages Offered</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Arabic</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Chinese</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">English</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">French</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">German</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Italian</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Japanese</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Spanish</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Swahili</a></li>
-
-          </ul>
+          <h4>Our Partners</h4><br />
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-links">
+              TVETA Kenya <a href="/" class="logo me-auto"><img src="/assets/TVETA-logo.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              MoE Kenya <a href="/" class="logo me-auto"><img src="/assets/Ministry-of-Education-logo.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              GOETHE Institut <a href="/" class="logo me-auto"><img src="/assets/GOETHE-logo.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-5 footer-links">
+              CHAMPION WORLD COLLEGE <a href="/" class="logo me-auto"><img src="/assets/Champion-World-College-Mombasa-logo1.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              IELTS <a href="/" class="logo me-auto"><img src="/assets/IELTS-logo.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              TOEFL <a href="/" class="logo me-auto"><img src="/assets/TOEFL-logo1.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              HSK <a href="/" class="logo me-auto"><img src="/assets/HSK-logo.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              pesapal <a href="/" class="logo me-auto"><img src="/assets/pesapal-logo.png" alt="" class="img-fluid"></a>
+            </div>
+          </div>
         </div>
 
 
