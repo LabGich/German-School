@@ -28,8 +28,7 @@
                         <th>Username</th>
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>Email</th>
-                        <th>Location</th>
+                        <th>Email</th>                        
                         <th>Phone Number</th>
                         <th>User Type</th>
                         <th>Action</th>
@@ -40,13 +39,12 @@
                     <?php
                     foreach ($users as $row){ ?>
                         <tr>
-                            <td><?php echo $row['username'] ?></td>
-                            <td><?php echo $row['firstname'] ?></td>
-                            <td><?php echo $row['lastname'] ?></td>
-                            <td><?php echo $row['email'] ?></td>
-                            <td><?php echo $row['location'] ?></td>
-                            <td><?php echo $row['phonenum'] ?></td>
-                            <td><?php echo $row['usertype'] ?></td>
+                            <td><?php echo $row['USERNAME'] ?></td>
+                            <td><?php echo $row['FIRSTNAME'] ?></td>
+                            <td><?php echo $row['LASTNAME'] ?></td>
+                            <td><?php echo $row['EMAIL'] ?></td>
+                            <td><?php echo $row['PHONENUM'] ?></td>
+                            <td><?php echo $row['USERTYPE'] ?></td>
                            <td>
                                 <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
