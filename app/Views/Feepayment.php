@@ -24,13 +24,13 @@
         <div class="breadcrumbs" data-aos="fade-in">
             <div class="container">
                 <h2>Fee Payment</h2>
-
+                <p class="text-danger"><?= $insert ? $insert : "" ?></p>
             </div>
         </div><!-- End Breadcrumbs -->
 
         <!-- Fee Payment Section -->
-        <div>
-            <h3>Your Application to Foreign Language Mombasa has been successfully submitted. Please follow the etc etc below to make your fee payments. Your admission number will be assigned after 50% completion f the fee payment</h3>
+        <div class="container card p-3 mt-3 mb-3">
+            <h3>Your Application to Foreign Language Mombasa has been successfully submitted. Please follow the instructions on the fee structure to make your fee payments. Your admission number will be assigned after 50% completion of the fee payment</h3>
         </div>
         <!-- End Fee Payment Section -->
 

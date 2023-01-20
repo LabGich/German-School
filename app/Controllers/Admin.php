@@ -11,7 +11,7 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('Adminhome');
+        return view('Loginstaff');
     }
     public function Login()
     {
@@ -57,6 +57,11 @@ class Admin extends BaseController
                             $builder = $db->table('USERS');
                             $builder->insert($data);
 
+                            $builder2 = $db->table('flcENROLLMENT');                            
+                            $builder2->set('Status', 'Admitted');
+                            $builder2->where('ID', $idtable);
+                            $builder2->update();
+
                             $query = $db->query("SELECT * FROM flcUSERS ");
                             $result = $query->getResultArray();
                             $data['users'] = [];
@@ -73,7 +78,13 @@ class Admin extends BaseController
     }
     public function Admitstudent()
     {
-        return view('Admitstudent');
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
+            return view('Admitstudent');
+        }
+        else{
+            return view('Loginstaff');            
+        }
     }
     public function logincontrollerstaff()
     {
@@ -110,7 +121,13 @@ class Admin extends BaseController
                 'logged_in'	=> TRUE
             );
             $this->session->set($datasess);
-            return view('Adminprofileview',$datasess);        
+        if ($this->session->get('usertype') === "Admin"){
+            return view('Adminprofileview',$datasess);     
+        }   
+        else {
+            $data['error'] = 'Please Login';
+            return view('Login');
+        }   
         } else {
             $data['error'] = 'Password or Username incorrect!!';
             return view('Loginstaff');
@@ -118,6 +135,8 @@ class Admin extends BaseController
     }
     public function userlist()
     {
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
         $db = Database::connect();
         $query = $db->query("SELECT * FROM flcUSERS ");
         $result = $query->getResultArray();
@@ -129,9 +148,15 @@ class Admin extends BaseController
         } else {
             return view('userlist', $data);
         }        
+        }
+        else{
+            return view('Loginstaff');            
+        }
     }
     public function Scholarshiplist()
     {
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
         $db = Database::connect();
         $query = $db->query("SELECT * FROM flcSCHOLARSHIP ");
         $result = $query->getResultArray();
@@ -144,11 +169,17 @@ class Admin extends BaseController
         else{
         return view('scholarshiplist', $data);
         }
+        }
+        else{
+            return view('Loginstaff');            
+        }
     }
     public function EnrollmentList()
     {
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
         $db = Database::connect();
-        $query2 = $db->query("SELECT * FROM flcENROLLMENT");
+        $query2 = $db->query("SELECT * FROM flcENROLLMENT where Status = 'Pending' ");
         $result2 = $query2->getResultArray();
         $data['enrollment'] = $result2;
         if ($result2) {
@@ -158,10 +189,20 @@ class Admin extends BaseController
             return view('enrollmentlist', $data);
         } else{
             return view('enrollmentlist', $data);
-        }        
+        }  
+        }
+        else{
+            return view('Loginstaff');
+        }
     }
     public function Adminprofileview()
     {
-        return view('Adminprofileview');
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
+            return view('Adminprofileview');
+        }else{
+            return view('Loginstaff');
+        }
+        
     }
 }

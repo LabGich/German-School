@@ -20,9 +20,15 @@ class Home extends BaseController
     public function Logout()
     {
         $this->session  = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
         $this->session->destroy();
         $data['error'] = "You Have been logged out";
+        return view('Loginstaff', $data);
+        }else{
+            $this->session->destroy();
+        $data['error'] = "You Have been logged out";
         return view('Login', $data);
+        }
     }
     public function loginfunc()
     {
@@ -82,7 +88,12 @@ class Home extends BaseController
             );
             $this->session->set($datasess);
             // var_dump($datasess);
+            if ($this->session->get('usertype') === "Student"){
             return view('Studentprofileview', $datasess);
+            }
+            else{
+                return view('Adminprofileview', $datasess);
+            }
         } else {
             $data['error'] = 'Password or Username incorrect!!';
             return view('Login', $data);
@@ -92,17 +103,24 @@ class Home extends BaseController
     {
         return view('Loginstaff');
     }
-    public function userlist()
+     public function userlist()
     {
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
         $db = Database::connect();
         $query = $db->query("SELECT * FROM flcUSERS ");
         $result = $query->getResultArray();
         $data['users'] = [];
         if ($result) {
-            $data['users'] = $result;
-            return view('userlist', $data);
+            // var_dump($result);
+            $data['users'] = $result;    
+            return view('userlist', $data);        
         } else {
             return view('userlist', $data);
+        }        
+        }
+        else{
+            return view('Loginstaff');            
         }
     }
     public function Registration()
@@ -116,6 +134,10 @@ class Home extends BaseController
     public function Courses()
     {
         return view('Courses');
+    }
+    public function Feepayment()
+    {
+        return view('Feepayment');
     }
     public function Feestructure()
     {
@@ -183,7 +205,13 @@ class Home extends BaseController
     }
     public function Studentprofileview()
     {
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Student"){
         return view('Studentprofileview');
+        }
+        else{
+            return view('Adminprofileview');
+        }
     }
     public function Enrollment()
     {
@@ -226,7 +254,7 @@ class Home extends BaseController
         // var_dump($builder);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
-        return view('Admission', $data);
+        return view('Feepayment', $data);
     }
     public function Applyscholarship()
     {

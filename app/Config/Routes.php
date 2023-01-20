@@ -62,6 +62,7 @@ $routes->get('/Attendance', 'Home::Attendance');
 $routes->get('/Courses', 'Home::Courses');
 $routes->get('/Contact', 'Home::Contact');
 $routes->get('/About', 'Home::About');
+$routes->get('/Feepayment', 'Home::Feepayment');
 $routes->get('/Feestructure', 'Home::Feestructure');
 $routes->get('/Feestructurearabic', 'Home::Feestructurearabic');
 $routes->get('/Feestructurechinese', 'Home::Feestructurechinese');
