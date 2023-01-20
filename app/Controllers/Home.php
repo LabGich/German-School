@@ -243,8 +243,10 @@ class Home extends BaseController
         ];
         // var_dump($data);
         $db = Database::connect();
+        // var_dump($db);
         $builder = $db->table('flcSCHOLARSHIP');
         $builder->insert($data);
+        // var_dump($builder);
         $data['insert'] = 'We will contact you with more information thank you!';
         return view('Scholarship', $data);
     }
