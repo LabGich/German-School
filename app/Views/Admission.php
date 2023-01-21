@@ -38,20 +38,36 @@
 
         <form action="/Feepayment" class="card p-3" method="GET" role="form">
           <p class="text-danger"><?= $insert ? $insert : "" ?></p>
+
+          <!-- Trimester - Year -->
           <div class="form-group row mt-3">
             <label for="trimester" class="col-lg-2 col-sm-2 col-form-label">TRIMESTER</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="text" name="trimester" class="form-control" id="trimester">
+              <input type="text" name="trimester" class="form-control" id="trimester" placeholder="A1/JPL5/HSK1/Level1" required>
             </div>
             <label for="year" class="col-sm-1 col-form-label">YEAR</label>
             <div class="col-sm-4">
               <input type="text" name="year" class="form-control" id="year">
             </div>
           </div>
+
+          <!-- FirstName - LastName -->
           <div class="form-group row mt-3">
-            <label for="fullnames" class="col-lg-2 col-sm-2 col-form-label">Full Names</label>
+            <label for="firstname" class="col-lg-2 col-sm-2 col-form-label">First Name</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="text" name="fullnames" class="form-control" id="fullnames">
+              <input type="text" name="firstname" class="form-control" id="firstname" required>
+            </div>
+            <label for="lastname" class="col-sm-1 col-form-label">Last Name</label>
+            <div class="col-sm-4 col-lg-4">
+              <input type="text" name="lastname" class="form-control" id="lastname" required>
+            </div>
+          </div>
+
+          <!-- ID No - Gender -->
+          <div class="form-group row mt-3">
+            <label for="idno" class="col-lg-2 col-sm-2 col-form-label">Id No/Passport No</label>
+            <div class="col-sm-4 col-lg-4">
+              <input type="text" name="idno" class="form-control" id="idno" required>
             </div>
             <label for="gender" class="col-sm-1 col-form-label">GENDER</label>
             <div class="col-sm-4">
@@ -62,10 +78,12 @@
               </select>
             </div>
           </div>
+
+          <!-- DOB - Country -->
           <div class="form-group row mt-3">
-            <label for="idno" class="col-lg-2 col-sm-2 col-form-label">Id No/Passport No</label>
+            <label for="dob" class="col-lg-2 col-sm-2 col-form-label">Date of Birth</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="text" name="idno" class="form-control" id="idno">
+              <input type="date" name="dob" class="form-control" id="dob">
             </div>
             <label for="placeofbirth" class="col-sm-1 col-form-label">Country</label>
             <div class="col-sm-4">
@@ -324,10 +342,11 @@
             </div>
           </div>
 
+          <!-- Profession - Residence -->
           <div class="form-group row mt-3">
-            <label for="dob" class="col-lg-2 col-sm-2 col-form-label">Date of Birth</label>
+            <label for="profession" class="col-lg-2 col-sm-2 col-form-label">Profession</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="date" name="dob" class="form-control" id="dob">
+              <input type="text" name="profession" class="form-control" id="profession">
             </div>
             <label for="residence" class="col-sm-1 col-form-label">Residence</label>
             <div class="col-sm-4">
@@ -335,10 +354,12 @@
             </div>
           </div>
 
+
+          <!-- Email - P.O Box -->
           <div class="form-group row mt-3">
-            <label for="profession" class="col-lg-2 col-sm-2 col-form-label">Profession</label>
+            <label for="email" class="col-lg-2 col-sm-2 col-form-label">Email</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="text" name="profession" class="form-control" id="profession">
+              <input type="email" name="email" class="form-control" id="email" required>
             </div>
             <label for="pobox" class="col-sm-1 col-form-label">P.O Box</label>
             <div class="col-sm-4">
@@ -346,19 +367,13 @@
             </div>
           </div>
 
-
+          <!-- Telephone No - Guardian Telephone No -->
           <div class="form-group row mt-3">
-            <label for="email" class="col-lg-2 col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-4 col-lg-4">
-              <input type="email" name="email" class="form-control" id="email">
-            </div>
-            <label for="telephone" class="col-sm-1 col-form-label">Telephone</label>
+            <label for="telephone" class="col-lg-2 col-sm-2 col-form-label">Telephone No</label>
             <div class="col-sm-4">
-              <input type="text" name="telephone" class="form-control" id="telephone">
+              <input type="text" name="telephone" class="form-control" id="telephone" required>
             </div>
-          </div>
-          <div class="form-group row mt-3">
-            <label for="guardian" class="col-lg-2 col-sm-2 col-form-label">Guardian</label>
+            <label for="guardian" class="col-sm-1 col-form-label">Guardian No</label>
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="guardian" class="form-control" id="guardian">
             </div>
@@ -370,7 +385,7 @@
           <div class="form-group row mt-3">
             <label for="course" class="col-lg-2 col-sm-2 col-form-label">Course enrolled</label>
             <div class="col-sm-4 col-lg-4">
-              <select name="course" class="form-control">
+              <select name="course" class="form-control" required="required">
                 <option>Select Course</option>
                 <option value="Arabic">Arabic</option>
                 <option value="Chinese">Chinese</option>
@@ -385,7 +400,7 @@
             </div>
             <label for="intake" class="col-sm-1 col-form-label">Intake</label>
             <div class="col-sm-4">
-              <select name="intake" class="form-control">
+              <select name="intake" class="form-control" required>
                 <option>Select Intake</option>
                 <option value="January">January</option>
                 <option value="April">April</option>

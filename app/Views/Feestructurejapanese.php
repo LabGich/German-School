@@ -21,8 +21,8 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Pricing</h2>
-        <p>Breakdown of our Fee Structure. </p>
+        <h2>Japanese Course Fee</h2>
+        <p>Breakdown of our Japanese Fee Structure. </p>
       </div>
     </div><!-- End Breadcrumbs -->
 

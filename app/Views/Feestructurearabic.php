@@ -21,8 +21,8 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Pricing</h2>
-        <p>Breakdown of our Fee Structure. </p>
+        <h2>Arabic Course Fee</h2>
+        <p>Breakdown of our Arabic Fee Structure. </p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -105,6 +105,7 @@
             </div>
           </div>
           <img src="/assets/img/Arabic-Fee-Structure-Updated.jpg" class="img-fluid" />
+
         </div>
 
       </div>

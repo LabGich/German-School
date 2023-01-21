@@ -1,0 +1,36 @@
+CRITICAL - 2023-01-21 05:15:23 --> Undefined variable $error
+in APPPATH\Views\Loginstaff.php on line 36.
+ 1 APPPATH\Views\Loginstaff.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Loginstaff.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin.php(23): view()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin->Loginstaff()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-21 09:52:10 --> Undefined variable $insert
+in APPPATH\Views\Admission.php on line 40.
+ 1 APPPATH\Views\Admission.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(192): view()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->Admission()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-21 09:53:04 --> Undefined variable $insert
+in APPPATH\Views\Admission.php on line 40.
+ 1 APPPATH\Views\Admission.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(192): view()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->Admission()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
