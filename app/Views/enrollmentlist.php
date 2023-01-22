@@ -40,6 +40,7 @@
                         <th>Guardian</th>
                         <th>Course</th>
                         <th>Intake</th>
+                        <th>Date Submitted</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -63,6 +64,7 @@
                             <td><?php echo $row['GUARDIAN'] ?></td>
                             <td><?php echo $row['COURSE'] ?></td>
                             <td><?php echo $row['INTAKE'] ?></td>
+                            <td><?php echo $row['Datesubmitted'] ?></td>
                             <td>
                             <a href="/Admitstudent?id=<?= $row['ID']; ?>" >
                                     <button type="button" class="btn btn-info btn-circle btn-xs">

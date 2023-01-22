@@ -31,6 +31,7 @@
                         <th>Email</th>                        
                         <th>Phone Number</th>
                         <th>User Type</th>
+                        <th>Date Submitted</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -45,6 +46,7 @@
                             <td><?php echo $row['EMAIL'] ?></td>
                             <td><?php echo $row['PHONENUM'] ?></td>
                             <td><?php echo $row['USERTYPE'] ?></td>
+                            <td><?php echo $row['DATE'] ?></td>
                            <td>
                                 <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">

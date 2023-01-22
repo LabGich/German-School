@@ -28,6 +28,7 @@
                         <th>Admission Number</th>
                         <th>Full Name</th>
                         <th>Reason</th>
+                        <th>Date Submitted</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -39,6 +40,7 @@
                             <td><?php echo $row['admissionnum'] ?></td>
                             <td><?php echo $row['name'] ?></td>
                             <td><?php echo $row['Reasons'] ?></td>
+                            <td><?php echo $row['Datesubmitted'] ?></td>
                             <td>
                                 <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
