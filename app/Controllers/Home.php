@@ -137,6 +137,45 @@ class Home extends BaseController
     }
     public function Feepayment()
     {
+        $trimester = $_GET["trimester"];
+        $year = $_GET["year"];
+        $fullnames = $_GET["fullnames"];
+        $gender = $_GET["gender"];
+        $idno = $_GET["idno"];
+        $placeofbirth = $_GET["placeofbirth"];
+        $dob = $_GET["dob"];
+        $residence = $_GET["residence"];
+        $profession = $_GET["profession"];
+        $pobox = $_GET["pobox"];
+        $email = $_GET["email"];
+        $telephone = $_GET["telephone"];
+        $guardian = $_GET["guardian"];
+        $course = $_GET["course"];
+        $intake = $_GET["intake"];
+
+        $data = [
+            'TRIMESTER'       => $trimester,
+            'FULLNAMES'        => $fullnames,
+            'GENDER'        => $gender,
+            'IDNO' => $idno,
+            'PLACEOFBIRTH'        => $placeofbirth,
+            'DOB'        => $dob,
+            'RESIDENCE'        => $residence,
+            'PROFESSION'        => $profession,
+            'POBOX'        => $pobox,
+            'EMAIL'        => $email,
+            'TELEPHONE'        => $telephone,
+            'GUARDIAN'        => $guardian,
+            'COURSE'        => $course,
+            'INTAKE'        => $intake
+        ];
+        // var_dump($data);
+        $db = Database::connect();
+        $builder = $db->table('flcENROLLMENT');
+        $builder->insert($data);
+        // var_dump($builder);
+        // return $builder;        
+        $data['insert'] = 'We will contact you with more information thank you!';
         return view('Feepayment');
     }
     public function Feestructure()
@@ -221,7 +260,7 @@ class Home extends BaseController
         $gender = $_GET["gender"];
         $idno = $_GET["idno"];
         $placeofbirth = $_GET["placeofbirth"];
-        $dob = ["dob"];
+        $dob = $_GET["dob"];
         $residence = $_GET["residence"];
         $profession = $_GET["profession"];
         $pobox = $_GET["pobox"];
@@ -251,7 +290,7 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('flcENROLLMENT');
         $builder->insert($data);
-        // var_dump($builder);
+        var_dump($builder);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
         return view('Feepayment', $data);

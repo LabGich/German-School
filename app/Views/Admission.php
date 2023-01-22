@@ -83,7 +83,7 @@
           <div class="form-group row mt-3">
             <label for="dob" class="col-lg-2 col-sm-2 col-form-label">Date of Birth</label>
             <div class="col-sm-4 col-lg-4">
-              <input type="date" name="dob" class="form-control" id="dob">
+              <input type="date" name="dob" class="form-control" id="dob" required>
             </div>
             <label for="placeofbirth" class="col-sm-1 col-form-label">Country</label>
             <div class="col-sm-4">
