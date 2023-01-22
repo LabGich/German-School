@@ -120,7 +120,7 @@ class Admin extends BaseController
                             $builder = $db->table('USERS');
                             $builder->insert($data);
 
-                            $builder2 = $db->table('flcENROLLMENT');                            
+                            $builder2 = $db->table('ENROLLMENT');                            
                             $builder2->set('Status', 'Admitted');
                             $builder2->where('ID', $idtable);
                             $builder2->update();

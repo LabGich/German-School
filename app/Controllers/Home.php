@@ -143,7 +143,8 @@ class Home extends BaseController
     {
         $trimester = $_GET["trimester"];
         $year = $_GET["year"];
-        $fullnames = $_GET["fullnames"];
+        $firstname = $_GET["firstname"];
+        $lastname = $_GET["lastname"];
         $gender = $_GET["gender"];
         $idno = $_GET["idno"];
         $placeofbirth = $_GET["placeofbirth"];
@@ -159,7 +160,7 @@ class Home extends BaseController
 
         $data = [
             'TRIMESTER'       => $trimester,
-            'FULLNAMES'        => $fullnames,
+            'FULLNAMES'        => $firstname." ".$lastname,
             'GENDER'        => $gender,
             'IDNO' => $idno,
             'PLACEOFBIRTH'        => $placeofbirth,
@@ -175,7 +176,7 @@ class Home extends BaseController
         ];
         // var_dump($data);
         $db = Database::connect();
-        $builder = $db->table('flcENROLLMENT');
+        $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
         // var_dump($builder);
         // return $builder;        
@@ -260,7 +261,8 @@ class Home extends BaseController
     {
         $trimester = $_GET["trimester"];
         $year = $_GET["year"];
-        $fullnames = $_GET["fullnames"];
+        $firstname = $_GET["firstname"];
+        $lastname = $_GET["lastname"];
         $gender = $_GET["gender"];
         $idno = $_GET["idno"];
         $placeofbirth = $_GET["placeofbirth"];
@@ -276,7 +278,7 @@ class Home extends BaseController
 
         $data = [
             'TRIMESTER'       => $trimester,
-            'FULLNAMES'        => $fullnames,
+            'FULLNAMES'        => $firstname." ".$lastname,
             'GENDER'        => $gender,
             'IDNO' => $idno,
             'PLACEOFBIRTH'        => $placeofbirth,
@@ -292,7 +294,7 @@ class Home extends BaseController
         ];
         // var_dump($data);
         $db = Database::connect();
-        $builder = $db->table('flcENROLLMENT');
+        $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
         var_dump($builder);
         // return $builder;        
@@ -315,7 +317,7 @@ class Home extends BaseController
         // var_dump($data);
         $db = Database::connect();
         // var_dump($db);
-        $builder = $db->table('flcSCHOLARSHIP');
+        $builder = $db->table('SCHOLARSHIP');
         $builder->insert($data);
         // var_dump($builder);
         $data['insert'] = 'We will contact you with more information thank you!';
