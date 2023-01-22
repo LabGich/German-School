@@ -32,11 +32,8 @@
     <section id="contact" class="contact">
 
       <div class="container card p-3" data-aos="fade-up">
-
         <div class="row mt-5">
-
           <div class="col-lg-12 mt-5 mt-lg-0">
-
             <form action="/Admitcontroller" method="GET" role="form">
               <p class="text-danger"><?= $insert?$insert:""?></p>
               <div class="row">                
@@ -47,11 +44,8 @@
               </div>
               <div class="text-center"><button type="submit" class="btn btn-primary mt-2 mb-3">Submit Admission</button></div>
             </form>
-
           </div>
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
