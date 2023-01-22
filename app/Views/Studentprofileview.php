@@ -125,16 +125,30 @@
                                                             </div>
                                                         </div><br />
                                                         <Sectionstudentp2>
-                                                        <div class="container d-flex align-items-center">
-                                                            <a href="#" class="get-started-btn">My Homework</a>
-                                                            <a href="#" class="get-started-btn">Time Table</a>
-                                                            <a href="#" class="get-started-btn">My Grades</a>
-                                                            <a href="#" class="get-started-btn">Class Attendance</a>
-                                                            <a href="#" class="get-started-btn">Course Progress</a>
-                                                            <a href="#" class="get-started-btn">Fee Statement</a>
-                                                            <a href="/Scholarship" class="get-started-btn">Scholarship</a>
-                                                        </div>
-                                                    </Sectionstudentp2>
+                                                            <div class="container d-flex flex-row align-items-center">
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">My Homework</a>
+                                                                </div>
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Time Table</a>
+                                                                </div>
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">My Grades</a>
+                                                                </div>
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Class Attendance</a>
+                                                                </div>
+                                                                 <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Course Progress</a>
+                                                                </div>
+                                                                 <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Fee Statement</a>
+                                                                </div>
+                                                                 <div class="p-2 m-2">
+                                                                <a href="/Scholarship" class="get-started-btn">Scholarship</a>
+                                                                </div>
+                                                            </div>
+                                                        </Sectionstudentp2>                                                      
                                                     </div>
                                                 </div>
                                             </div>

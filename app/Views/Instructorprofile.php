@@ -119,11 +119,23 @@
                                                         </div><br />
                                                         <Sectionstudentp2>
                                                         <div class="container d-flex align-items-center">
-                                                            <a href="#" class="get-started-btn">Class List</a>
-                                                            <a href="#" class="get-started-btn">Assignments List</a>
-                                                            <a href="#" class="get-started-btn">Class Attendance</a>                                            
+                                                                                                        
                                                         </div>
                                                     </Sectionstudentp2>
+
+                                                     <Sectionstudentp2>
+                                                            <div class="container row align-items-center m-2">
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Class List</a>
+                                                                </div>
+                                                                <div class="p-2 m-2">
+                                                                <a href="#" class="get-started-btn">Assignments List</a>
+                                                                </div>
+                                                                <div class="p-2 m-2">
+                                                                <a href="/public/Scholarshiplist" class="get-started-btn">Scholarship List</a>
+                                                                </div>
+                                                            </div>
+                                                        </Sectionstudentp2>
                                                     </div>
                                                 </div>
                                             </div>
