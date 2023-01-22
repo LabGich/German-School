@@ -17,6 +17,7 @@ class Home extends BaseController
     {
         return view('Login');
     }
+    
     public function Logout()
     {
         $this->session  = \Config\Services::session();

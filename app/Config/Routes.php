@@ -45,6 +45,8 @@ $routes->match(['get', 'post'], '/logincontrollerstaff', 'Admin::logincontroller
 $routes->get('/Adminprofileview', 'Admin::Adminprofileview');
 $routes->get('/Admitstudent', 'Admin::Admitstudent');
 $routes->get('/Admitcontroller', 'Admin::Admitcontroller');
+$routes->get('/Addinstructor', 'Admin::Addinstructor');
+$routes->match(['get', 'post'],'/Saveinstructor', 'Admin::Saveinstructor');
 
 
 $routes->get('/', 'Home::index');

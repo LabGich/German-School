@@ -22,6 +22,57 @@ class Admin extends BaseController
     {
         return view('Loginstaff');
     }
+    public function Addinstructor()
+    {        
+        return view('Addinstructor');
+    }
+    public function Saveinstructor()
+    { 
+               
+        $firstname = $this->request->getPost('firstname');
+        $lastname = $this->request->getPost('lastname');
+        $emailaddress = $this->request->getPost('emailaddress');
+        $course = $this->request->getPost('course');
+        $idno = $this->request->getPost('idno');
+        $telephoneno = $this->request->getPost('telephoneno');
+        $USERTYPE = 'Instructor';
+
+
+        $data = ['USERNAME' => $emailaddress,
+                'FIRSTNAME' => $firstname,                                
+                'LASTNAME' => $lastname,                                
+                'EMAIL' => $emailaddress,
+                'PHONENUM' => $telephoneno,
+                'USERTYPE' => $USERTYPE,
+                'IDNO' => $idno,
+                'COURSE' => $course,
+                'PASSWORD' => $idno
+                ];
+                // var_dump($data);
+                $db = Database::connect();
+                $builder = $db->table('USERS');
+                $builder->insert($data);
+
+
+
+         $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM flcUSERS ");
+        $result = $query->getResultArray();
+        $data['users'] = [];
+        if ($result) {
+            // var_dump($result);
+            $data['users'] = $result;    
+            return view('userlist', $data);        
+        } else {
+            return view('userlist', $data);
+        }        
+        }
+        else{
+            return view('Addinstructor');            
+        }        
+    }
      public function Admitcontroller()
     {
         // var_dump($_GET);

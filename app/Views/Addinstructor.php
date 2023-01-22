@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- End Student Profile View -->
 
-    <title>Foreign Language College Mombasa - Admin Profile</title>
+    <title>Foreign Language College Mombasa - Add Instructor</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -37,18 +37,13 @@
         <!-- ======= Breadcrumbs ======= -->
         <div class="breadcrumbs" data-aos="fade-in">
             <div class="container">
-                <h2>Admin Dashboard</h2>
+                <h2>Add Instructor</h2>
             </div>
         </div><!-- End Breadcrumbs -->
         <br />
 
         <!-- Student Profile View Secton -->
-        </div>
-        <div class="container d-flex align-items-center">
-            <a href="/Logout" class="get-started-btn">Log Out</a>
-            <a href="/Admission" class="get-started-btn">Update Details</a>
-            <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
-        </div>
+        </div>        
         </div>
         </div>
 
@@ -75,46 +70,38 @@
                                     <Sectionstudentp1>
                                         <div class="student-profile py-4">
                                             <div class="container">
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="card shadow-sm">
-                                                            <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img img-fluid" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="student dp">
-                                                                <h3><?= $firstname." ".$lastname ?></h3>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <p class="mb-0"><strong class="pr-1">Name:</strong><?= $username ?></p>                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="row">                                                    
                                                     <div class="col-lg-8">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent border-0">
-                                                                <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Admin Information</h3>
+                                                                <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Instructor Information</h3>
                                                             </div>                                                            
                                                             <div class="card-body pt-0">
-                                                                <table class="table table-bordered">
-                                                                    <tr>
-                                                                        <th width="30%">Date Added</th>
-                                                                        <td width="2%">:</td>
-                                                                        <td><?= $date ?></td>
-                                                                    </tr>    
-                                                                    <tr>
-                                                                        <th width="30%">User Role</th>
-                                                                        <td width="2%">:</td>
-                                                                        <td><?= $usertype ?></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th width="30%">Telephone</th>
-                                                                        <td width="2%">:</td>
-                                                                        <td><?= $phone ?></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th width="30%">E-mail</th>
-                                                                        <td width="2%">:</td>
-                                                                        <td><?= $email ?></td>
-                                                                    </tr>
-                                                                </table>
+                                                               <form action="/Saveinstructor" method="POST" role="form">
+                                                                <p class="text-danger"><?= $insert?$insert:""?></p>
+                                                                <p>Instructors Can Login With Email and Password idno at the staff login Portal</p>
+                                                                <div class="row">                
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ENTER FIRSTNAME " required>                                                                    
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="ENTER LASTNAME " required>                                                                    
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="ENTER EMAIL " required>                                                                    
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="course" id="course" placeholder="ENTER COURSE ASSIGNED" required>                                                                    
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="idno" id="idno" placeholder="ENTER ID NUMBER" required>                                                                    
+                                                                    </div>                                                                    
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="text" class="form-control" name="telephoneno" id="telephoneno" placeholder="ENTER ID NUMBER" required>                                                                    
+                                                                    </div>                                                                    
+                                                                </div>
+                                                                <div class="text-center"><button type="submit" class="btn btn-primary mt-2 mb-3">Submit</button></div>
+                                                                </form>
                                                             </div>
                                                         </div><br />
                                                     </div>

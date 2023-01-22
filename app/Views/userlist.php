@@ -23,12 +23,10 @@
     <div class="row mt-3" style="background: aliceblue;margin-top: 100px !important;">
         <div class=" col-12" style="margin-left:auto; margin-right:auto; padding:50px;">
             <table id="tabledata" class="table table-bordered table-hover" style="margin-left:auto; margin-right:auto; ">
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>                        
+                 <thead>
+                    <tr>                       
+                        <th>Full Name</th>
+                        <th>Username</th>                        
                         <th>Phone Number</th>
                         <th>User Type</th>
                         <th>Date Submitted</th>
@@ -39,10 +37,8 @@
 
                     <?php
                     foreach ($users as $row){ ?>
-                        <tr>
-                            <td><?php echo $row['USERNAME'] ?></td>
-                            <td><?php echo $row['FIRSTNAME'] ?></td>
-                            <td><?php echo $row['LASTNAME'] ?></td>
+                        <tr>                            
+                            <td><?php echo $row['FIRSTNAME']." ".$row['LASTNAME'] ?></td>
                             <td><?php echo $row['EMAIL'] ?></td>
                             <td><?php echo $row['PHONENUM'] ?></td>
                             <td><?php echo $row['USERTYPE'] ?></td>
