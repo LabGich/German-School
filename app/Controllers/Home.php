@@ -89,11 +89,14 @@ class Home extends BaseController
             );
             $this->session->set($datasess);
             // var_dump($datasess);
+             if ($this->session->get('usertype') === "Admin"){
+            return view('Adminprofileview',$datasess);     
+            }   
+            if ($this->session->get('usertype') === "Instructor"){
+                return view('Instructorprofile',$datasess);     
+            }   
             if ($this->session->get('usertype') === "Student"){
-            return view('Studentprofileview', $datasess);
-            }
-            else{
-                return view('Adminprofileview', $datasess);
+                return view('Studentprofileview',$datasess);     
             }
         } else {
             $data['error'] = 'Password or Username incorrect!!';

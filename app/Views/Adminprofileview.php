@@ -117,21 +117,21 @@
                                                                 </table>
                                                             </div>
                                                         </div><br />
+                                                        <Sectionstudentp2>
+                                                        <div class="container d-flex align-items-center">
+                                                            <a href="/userlist" class="get-started-btn">Userlist</a>
+                                                            <a href="/Enrollmentlist" class="get-started-btn">Enrollment List</a>
+                                                            <a href="/Scholarshiplist" class="get-started-btn">Scholarship List</a>
+                                                            <a href="#" class="get-started-btn">Class Attendance</a>                                                                                        
+                                                            <a href="/Addinstructor" class="get-started-btn">Add Instructor</a>
+                                                        </div>
+                                                    </Sectionstudentp2>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </Sectionstudentp1>
-
-                                    <Sectionstudentp2>
-                                        <div class="container d-flex align-items-center">
-                                            <a href="/userlist" class="get-started-btn">Userlist</a>
-                                            <a href="/Enrollmentlist" class="get-started-btn">Enrollment List</a>
-                                            <a href="/Scholarshiplist" class="get-started-btn">Scholarship List</a>
-                                            <a href="#" class="get-started-btn">Class Attendance</a>                                                                                        
-                                            <a href="/Addinstructor" class="get-started-btn">Add Instructor</a>
-                                        </div>
-                                    </Sectionstudentp2>
+                                    
                                     <!-- partial -->
 
                                 </div>

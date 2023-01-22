@@ -179,7 +179,7 @@ class Admin extends BaseController
             return view('Instructorprofile',$datasess);     
         }   
         if ($this->session->get('usertype') === "Student"){
-            return view('Studentprofile',$datasess);     
+            return view('Studentprofileview',$datasess);     
         }
         else {
             $data['error'] = 'Please Login';

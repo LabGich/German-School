@@ -117,19 +117,20 @@
                                                                 </table>
                                                             </div>
                                                         </div><br />
+                                                        <Sectionstudentp2>
+                                                        <div class="container d-flex align-items-center">
+                                                            <a href="#" class="get-started-btn">Class List</a>
+                                                            <a href="#" class="get-started-btn">Assignments List</a>
+                                                            <a href="#" class="get-started-btn">Class Attendance</a>                                            
+                                                        </div>
+                                                    </Sectionstudentp2>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </Sectionstudentp1>
 
-                                    <Sectionstudentp2>
-                                        <div class="container d-flex align-items-center">
-                                            <a href="#" class="get-started-btn">Class List</a>
-                                            <a href="#" class="get-started-btn">Assignments List</a>
-                                            <a href="#" class="get-started-btn">Class Attendance</a>                                            
-                                        </div>
-                                    </Sectionstudentp2>
+                                    
                                     <!-- partial -->
 
                                 </div>
