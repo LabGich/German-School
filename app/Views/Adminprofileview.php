@@ -117,7 +117,7 @@
                                                                 </table>
                                                             </div>
                                                         </div><br />
-                                                         <Sectionstudentp2>
+                                                         <div>
                                                             <div class="container row align-items-center m-2">
                                                                 <div class="p-2 m-2">
                                                                 <a href="/public/userlist" class="get-started-btn">User List</a>
@@ -135,7 +135,7 @@
                                                                 <a href="/public/Addinstructor" class="get-started-btn">Add Instructor</a>
                                                                 </div>
                                                             </div>
-                                                        </Sectionstudentp2>
+</div>
                                                     </div>
                                                 </div>
                                             </div>

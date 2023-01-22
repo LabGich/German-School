@@ -124,7 +124,7 @@
                                                                 </table>
                                                             </div>
                                                         </div><br />
-                                                        <Sectionstudentp2>
+                                                        <div>
                                                             <div class="container d-flex flex-row align-items-center">
                                                                 <div class="p-2 m-2">
                                                                 <a href="#" class="get-started-btn">My Homework</a>
@@ -148,7 +148,7 @@
                                                                 <a href="/Scholarship" class="get-started-btn">Scholarship</a>
                                                                 </div>
                                                             </div>
-                                                        </Sectionstudentp2>                                                      
+                                                            </div>                                                      
                                                     </div>
                                                 </div>
                                             </div>

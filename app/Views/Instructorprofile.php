@@ -123,7 +123,7 @@
                                                         </div>
                                                     </Sectionstudentp2>
 
-                                                     <Sectionstudentp2>
+                                                     <div>
                                                             <div class="container row align-items-center m-2">
                                                                 <div class="p-2 m-2">
                                                                 <a href="#" class="get-started-btn">Class List</a>
@@ -135,7 +135,7 @@
                                                                 <a href="/public/Scholarshiplist" class="get-started-btn">Scholarship List</a>
                                                                 </div>
                                                             </div>
-                                                        </Sectionstudentp2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
