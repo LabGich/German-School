@@ -22,10 +22,10 @@ class Admin extends BaseController
     {
         return view('Loginstaff');
     }
-    public function Addinstructor()
+    public function Instructorprofile()
     {        
-        return view('Addinstructor');
-    }
+        return view('Instructorprofile');
+    }   
     public function Saveinstructor()
     { 
                
@@ -175,6 +175,12 @@ class Admin extends BaseController
         if ($this->session->get('usertype') === "Admin"){
             return view('Adminprofileview',$datasess);     
         }   
+        if ($this->session->get('usertype') === "Instructor"){
+            return view('Instructorprofile',$datasess);     
+        }   
+        if ($this->session->get('usertype') === "Student"){
+            return view('Studentprofile',$datasess);     
+        }
         else {
             $data['error'] = 'Please Login';
             return view('Login');
