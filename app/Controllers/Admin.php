@@ -26,6 +26,10 @@ class Admin extends BaseController
     {        
         return view('Instructorprofile');
     }   
+    public function Addinstructor()
+    {
+        return view('Addinstructor');
+    }
     public function Saveinstructor()
     { 
                
