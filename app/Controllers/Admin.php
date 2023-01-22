@@ -24,11 +24,19 @@ class Admin extends BaseController
     }
     public function Instructorprofile()
     {        
-        return view('Instructorprofile');
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Instructor")
+        {
+          return view('Instructorprofile');
+        }
     }   
     public function Addinstructor()
     {
-        return view('Addinstructor');
+        $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin")
+        {
+            return view('Addinstructor');
+        }
     }
     public function Saveinstructor()
     { 
