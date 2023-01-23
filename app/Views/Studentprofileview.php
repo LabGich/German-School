@@ -45,7 +45,7 @@
         <!-- Student Profile View Secton -->
         </div>
         <div class="container d-flex align-items-center">
-            <a href="/Logout" class="get-started-btn">Log Out</a>
+            <a href="/public/Logout" class="get-started-btn">Log Out</a>
             <a href="#" class="get-started-btn">Update Details</a>
             <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
         </div>
@@ -119,13 +119,13 @@
                                                                     <tr>
                                                                         <th width="30%">E-mail</th>
                                                                         <td width="2%">:</td>
-                                                                        <td><? $email ?></td>
+                                                                        <td><?= $email ?></td>
                                                                     </tr>
                                                                 </table>
                                                             </div>
                                                         </div><br />
                                                         <div>
-                                                            <div class="container d-flex flex-row align-items-center">
+                                                            <div class="container row align-items-center m-2">
                                                                 <div class="p-2 m-2">
                                                                     <a href="#" class="get-started-btn">My Homework</a>
                                                                 </div>
@@ -142,10 +142,10 @@
                                                                     <a href="#" class="get-started-btn">Course Progress</a>
                                                                 </div>
                                                                 <div class="p-2 m-2">
-                                                                    <a href="/Admittedfeepayment" class="get-started-btn">Fee Statement</a>
+                                                                    <a href="/public/Admittedfeepayment" class="get-started-btn">Fee Statement</a>
                                                                 </div>
                                                                 <div class="p-2 m-2">
-                                                                    <a href="/Scholarship" class="get-started-btn">Scholarship</a>
+                                                                    <a href="/public/Scholarship" class="get-started-btn">Scholarship</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -154,7 +154,6 @@
                                             </div>
                                         </div>
                                     </Sectionstudentp1>
-
 
                                     <!-- partial -->
 

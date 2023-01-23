@@ -17,18 +17,18 @@ class Home extends BaseController
     {
         return view('Login');
     }
-    
+
     public function Logout()
     {
         $this->session  = \Config\Services::session();
-        if ($this->session->get('usertype') === "Admin"){
-        $this->session->destroy();
-        $data['error'] = "You Have been logged out";
-        return view('Loginstaff', $data);
-        }else{
+        if ($this->session->get('usertype') === "Admin") {
             $this->session->destroy();
-        $data['error'] = "You Have been logged out";
-        return view('Login', $data);
+            $data['error'] = "You Have been logged out";
+            return view('Loginstaff', $data);
+        } else {
+            $this->session->destroy();
+            $data['error'] = "You Have been logged out";
+            return view('Login', $data);
         }
     }
     public function loginfunc()
@@ -89,14 +89,14 @@ class Home extends BaseController
             );
             $this->session->set($datasess);
             // var_dump($datasess);
-             if ($this->session->get('usertype') === "Admin"){
-            return view('Adminprofileview',$datasess);     
-            }   
-            if ($this->session->get('usertype') === "Instructor"){
-                return view('Instructorprofile',$datasess);     
-            }   
-            if ($this->session->get('usertype') === "Student"){
-                return view('Studentprofileview',$datasess);     
+            if ($this->session->get('usertype') === "Admin") {
+                return view('Adminprofileview', $datasess);
+            }
+            if ($this->session->get('usertype') === "Instructor") {
+                return view('Instructorprofile', $datasess);
+            }
+            if ($this->session->get('usertype') === "Student") {
+                return view('Studentprofileview', $datasess);
             }
         } else {
             $data['error'] = 'Password or Username incorrect!!';
@@ -107,24 +107,23 @@ class Home extends BaseController
     {
         return view('Loginstaff');
     }
-     public function userlist()
+    public function userlist()
     {
         $this->session = \Config\Services::session();
-        if ($this->session->get('usertype') === "Admin"){
-        $db = Database::connect();
-        $query = $db->query("SELECT * FROM flcUSERS ");
-        $result = $query->getResultArray();
-        $data['users'] = [];
-        if ($result) {
-            // var_dump($result);
-            $data['users'] = $result;    
-            return view('userlist', $data);        
+        if ($this->session->get('usertype') === "Admin") {
+            $db = Database::connect();
+            $query = $db->query("SELECT * FROM flcUSERS ");
+            $result = $query->getResultArray();
+            $data['users'] = [];
+            if ($result) {
+                // var_dump($result);
+                $data['users'] = $result;
+                return view('userlist', $data);
+            } else {
+                return view('userlist', $data);
+            }
         } else {
-            return view('userlist', $data);
-        }        
-        }
-        else{
-            return view('Loginstaff');            
+            return view('Loginstaff');
         }
     }
     public function Registration()
@@ -134,6 +133,10 @@ class Home extends BaseController
     public function About()
     {
         return view('About');
+    }
+    public function Admittedfeepayment()
+    {
+        return view('Admittedfeepayment');
     }
     public function Courses()
     {
@@ -160,7 +163,7 @@ class Home extends BaseController
 
         $data = [
             'TRIMESTER'       => $trimester,
-            'FULLNAMES'        => $firstname." ".$lastname,
+            'FULLNAMES'        => $firstname . " " . $lastname,
             'GENDER'        => $gender,
             'IDNO' => $idno,
             'PLACEOFBIRTH'        => $placeofbirth,
@@ -250,10 +253,9 @@ class Home extends BaseController
     public function Studentprofileview()
     {
         $this->session = \Config\Services::session();
-        if ($this->session->get('usertype') === "Student"){
-        return view('Studentprofileview');
-        }
-        else{
+        if ($this->session->get('usertype') === "Student") {
+            return view('Studentprofileview');
+        } else {
             return view('Adminprofileview');
         }
     }
@@ -278,7 +280,7 @@ class Home extends BaseController
 
         $data = [
             'TRIMESTER'       => $trimester,
-            'FULLNAMES'        => $firstname." ".$lastname,
+            'FULLNAMES'        => $firstname . " " . $lastname,
             'GENDER'        => $gender,
             'IDNO' => $idno,
             'PLACEOFBIRTH'        => $placeofbirth,
