@@ -80,7 +80,7 @@
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
                                                                 <img class="profile_img img-fluid" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="student dp">
-                                                                <h3><?= $firstname." ".$lastname ?></h3>
+                                                                <h3><?= $firstname . " " . $lastname ?></h3>
                                                             </div>
                                                             <div class="card-body">
                                                                 <p class="mb-0"><strong class="pr-1">Student ID:</strong><?= $username ?></p>
@@ -127,35 +127,35 @@
                                                         <div>
                                                             <div class="container d-flex flex-row align-items-center">
                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">My Homework</a>
+                                                                    <a href="#" class="get-started-btn">My Homework</a>
                                                                 </div>
                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Time Table</a>
+                                                                    <a href="#" class="get-started-btn">Time Table</a>
                                                                 </div>
                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">My Grades</a>
+                                                                    <a href="#" class="get-started-btn">My Grades</a>
                                                                 </div>
                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Class Attendance</a>
+                                                                    <a href="#" class="get-started-btn">Class Attendance</a>
                                                                 </div>
-                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Course Progress</a>
+                                                                <div class="p-2 m-2">
+                                                                    <a href="#" class="get-started-btn">Course Progress</a>
                                                                 </div>
-                                                                 <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Fee Statement</a>
+                                                                <div class="p-2 m-2">
+                                                                    <a href="/Admittedfeepayment" class="get-started-btn">Fee Statement</a>
                                                                 </div>
-                                                                 <div class="p-2 m-2">
-                                                                <a href="/Scholarship" class="get-started-btn">Scholarship</a>
+                                                                <div class="p-2 m-2">
+                                                                    <a href="/Scholarship" class="get-started-btn">Scholarship</a>
                                                                 </div>
                                                             </div>
-                                                            </div>                                                      
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </Sectionstudentp1>
 
-                                    
+
                                     <!-- partial -->
 
                                 </div>

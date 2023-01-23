@@ -47,7 +47,7 @@ $routes->get('/Admitstudent', 'Admin::Admitstudent');
 $routes->get('/Admitcontroller', 'Admin::Admitcontroller');
 $routes->get('/Instructorprofile', 'Admin::Instructorprofile');
 $routes->get('/Addinstructor', 'Admin::Addinstructor');
-$routes->match(['get', 'post'],'/Saveinstructor', 'Admin::Saveinstructor');
+$routes->match(['get', 'post'], '/Saveinstructor', 'Admin::Saveinstructor');
 
 
 $routes->get('/', 'Home::index');
@@ -65,6 +65,7 @@ $routes->get('/Attendance', 'Home::Attendance');
 $routes->get('/Courses', 'Home::Courses');
 $routes->get('/Contact', 'Home::Contact');
 $routes->get('/About', 'Home::About');
+$routes->get('/Admittedfeepayment', 'Home::Admittedfeepayment');
 $routes->get('/Feepayment', 'Home::Feepayment');
 $routes->get('/Feestructure', 'Home::Feestructure');
 $routes->get('/Feestructurearabic', 'Home::Feestructurearabic');
