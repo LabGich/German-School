@@ -57,16 +57,30 @@
                             <div class="collapse p-3 pt-0" id="collapseExample">
                                 <div class="row">
                                     <div class="col-8">
-                                        <p class="h4 mb-0">Summary</p>
-                                        <p class="mb-0"><span class="fw-bold">Product:</span><span class="c-green">: Name of
-                                                product</span></p>
-                                        <p class="mb-0"><span class="fw-bold">Price:</span><span class="c-green">:$452.90</span></p>
-                                        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-                                            nihil neque
-                                            quisquam aut
-                                            repellendus, dicta vero? Animi dicta cupiditate, facilis provident quibusdam ab
-                                            quis,
-                                            iste harum ipsum hic, nemo qui!</p>
+                                        <p class="h4 mb-0">Follow the steps below to make payment using M-PESA or use Option 2 to initialize payment</p><br />
+                                        <p class="mb-0"><span class="fw-bold">
+                                                <ol>
+                                                    <li>Go to M-Pesa</li>
+                                                    <li>In M-Pesa go to Lipa na M-Pesa</li>
+                                                    <li>In Lipa na M-PESA choose Pay Bill</li>
+                                                    <li>Use our Pay Bill No: 4082661</li>
+                                                    <li>Enter Account No as your Admission number/ID No</li>
+                                                    <li>Enter Amount (respective fee balance)</li>
+                                                    <li>Wait for the confirmation message: Pay FOREIGN LANGUAGE COLLEGE MOMBASA...</li>
+                                                </ol>
+                                                <b>Option 2</b><br />
+                                                Enter correct details below to Pay
+                                                <div class="form-group row mt-3">
+                                                    <label for="phonenumber" class="col-lg-2 col-sm-2 col-form-label">M-PESA No</label>
+                                                    <div class="col-sm-4 col-lg-4">
+                                                        <input type="tel" name="phonenumber" class="form-control" id="phonenumber" placeholder="07********" required>
+                                                    </div>
+                                                    <label for="amount" class="col-sm-2 col-form-label">Amount</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="number" name="amount" class="form-control" id="amount">
+                                                    </div>
+                                                </div>
+                                            </span></p>
                                     </div>
                                 </div>
                             </div>

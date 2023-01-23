@@ -45,7 +45,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="trimester" class="form-control" id="trimester" placeholder="A1/JPL5/HSK1/Level1" required>
             </div>
-            <label for="year" class="col-sm-1 col-form-label">YEAR</label>
+            <label for="year" class="col-sm-2 col-form-label">YEAR</label>
             <div class="col-sm-4">
               <input type="text" name="year" class="form-control" id="year">
             </div>
@@ -57,7 +57,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="firstname" class="form-control" id="firstname" required>
             </div>
-            <label for="lastname" class="col-sm-1 col-form-label">Last Name</label>
+            <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="lastname" class="form-control" id="lastname" required>
             </div>
@@ -69,7 +69,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="idno" class="form-control" id="idno" required>
             </div>
-            <label for="gender" class="col-sm-1 col-form-label">GENDER</label>
+            <label for="gender" class="col-sm-2 col-form-label">GENDER</label>
             <div class="col-sm-4">
               <select name="gender" class="form-control">
                 <option>Select Gender</option>
@@ -85,7 +85,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="date" name="dob" class="form-control" id="dob" required>
             </div>
-            <label for="placeofbirth" class="col-sm-1 col-form-label">Country</label>
+            <label for="placeofbirth" class="col-sm-2 col-form-label">Country</label>
             <div class="col-sm-4">
               <select id="placeofbirth" name="placeofbirth" required class="form-control">
                 <option selected="true" value="Select Country">Select Country</option>
@@ -348,7 +348,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="profession" class="form-control" id="profession">
             </div>
-            <label for="residence" class="col-sm-1 col-form-label">Residence</label>
+            <label for="residence" class="col-sm-2 col-form-label">Residence</label>
             <div class="col-sm-4">
               <input type="text" name="residence" class="form-control" id="residence">
             </div>
@@ -361,7 +361,7 @@
             <div class="col-sm-4 col-lg-4">
               <input type="email" name="email" class="form-control" id="email" required>
             </div>
-            <label for="pobox" class="col-sm-1 col-form-label">P.O Box</label>
+            <label for="pobox" class="col-sm-2 col-form-label">P.O Box</label>
             <div class="col-sm-4">
               <input type="text" name="pobox" class="form-control" id="pobox">
             </div>
@@ -373,7 +373,7 @@
             <div class="col-sm-4">
               <input type="text" name="telephone" class="form-control" id="telephone" required>
             </div>
-            <label for="guardian" class="col-sm-1 col-form-label">Guardian No</label>
+            <label for="guardian" class="col-sm-2 col-form-label">Guardian No</label>
             <div class="col-sm-4 col-lg-4">
               <input type="text" name="guardian" class="form-control" id="guardian">
             </div>
@@ -398,7 +398,7 @@
                 <option value="Swahili">Swahili</option>
               </select>
             </div>
-            <label for="intake" class="col-sm-1 col-form-label">Intake</label>
+            <label for="intake" class="col-sm-2 col-form-label">Intake</label>
             <div class="col-sm-4">
               <select name="intake" class="form-control" required>
                 <option>Select Intake</option>
