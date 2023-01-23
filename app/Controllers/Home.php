@@ -296,7 +296,7 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
-        var_dump($builder);
+        //var_dump($builder);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
         return view('Feepayment', $data);
