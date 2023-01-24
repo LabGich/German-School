@@ -53,6 +53,47 @@ class Admin extends BaseController
             return view('Addinstructor');
         }
     }
+    public function UpdateUser()
+    { 
+        $userid = $this->request->getPost('userid');
+        $firstname = $this->request->getPost('firstname');
+        $lastname = $this->request->getPost('lastname');
+        $emailaddress = $this->request->getPost('emailaddress');        
+        $password = $this->request->getPost('password');
+        $idno = $this->request->getPost('idno');
+        $telephoneno = $this->request->getPost('telephoneno');        
+
+
+        $data = ['USERNAME' => $emailaddress,
+                'FIRSTNAME' => $firstname,                                
+                'LASTNAME' => $lastname,                                
+                'EMAIL' => $emailaddress,
+                'PHONENUM' => $telephoneno,
+                'IDNO' => $idno,
+                'PASSWORD' => $password
+                ];
+                // var_dump($data);
+                $db = Database::connect();
+        $builder = $db->table('USERS');   
+        $builder->update($data, ['USERID' => $userid]);
+         $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){        
+        $query = $db->query("SELECT * FROM flcUSERS ");
+        $result = $query->getResultArray();
+        $data['users'] = [];
+        if ($result) {
+            // var_dump($result);
+            $data['users'] = $result;    
+            return view('userlist', $data);        
+        } else {
+            return view('userlist', $data);
+        }        
+        }
+        else{
+            return view('Login');            
+        }        
+    }
+    
     public function Saveinstructor()
     { 
                

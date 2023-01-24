@@ -84,6 +84,7 @@
                                                                         foreach ($users as $row){ ?>            
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                     <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ENTER FIRSTNAME " value="<?= $row['FIRSTNAME'] ?>" required>
+                                                                    <input type="hidden" class="form-control" name="userid" id="userid"  value="<?= $row['USERID'] ?>" required>
                                                                     </div>
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                     <input type="text" class="form-control" name="lastname" id="lastname" placeholder="ENTER LASTNAME " value="<?= $row['LASTNAME'] ?>" required>
@@ -96,6 +97,9 @@
                                                                     </div>
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                     <input type="text" class="form-control" name="telephoneno" id="telephoneno" placeholder="ENTER ID NUMBER" value="<?= $row['PHONENUM'] ?>" required>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="password" class="form-control" name="password" id="password" placeholder="ENTER PASSWORD HERE" required>
                                                                     </div>
                                                                 </div>
                                                                 <?php

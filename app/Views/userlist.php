@@ -46,7 +46,7 @@
                            <td>
                                 <a href="/GetUser?ID=<?= $row['USERID']; ?>" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
-                                        <i class="bx bxs-bullseye">View</i>
+                                        <i class="bx bxs-bullseye">Edit Details</i>
                                     </button>
                                 </a>
                                 <a href="javascript:void(0)" onclick="deleteuser('<?= $row['USERID']; ?>')" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
