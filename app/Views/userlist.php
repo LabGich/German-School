@@ -44,9 +44,14 @@
                             <td><?php echo $row['USERTYPE'] ?></td>
                             <td><?php echo $row['DATE'] ?></td>
                            <td>
-                                <a href="javascript:void(0)" onclick="getUserDetails('<?= $row['ID']; ?>')" title="Edit <?= $row['ID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
+                                <a href="/GetUser?ID=<?= $row['USERID']; ?>" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
                                         <i class="bx bxs-bullseye">View</i>
+                                    </button>
+                                </a>
+                                <a href="javascript:void(0)" onclick="deleteuser('<?= $row['USERID']; ?>')" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
+                                    <button type="button" class="btn btn-info btn-circle btn-xs">
+                                        <i class="bx bxs-trash">Delete</i>
                                     </button>
                                 </a>
 
@@ -59,6 +64,27 @@
             </table>
         </div>
     </div>
+    <!-- edit user details modal -->
+<div class="modal fade" id="edit-user-modal" style="display: none; width:80%; margin-left:auto; margin-right:auto;" aria-hidden="true">
+    <div class="modal-dialog-center  modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal" id="modalClose" data-target="#edit-user-modal" aria-label="Close">
+                    x
+                </a>
+            </div>
+            <div class="modal-body">
+                <div id="user-edit-content"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="modalClose2" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.edit user details modal -->
   <?php include 'footer.php' ?>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
@@ -75,6 +101,20 @@
     <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.3.1/js/dataTables.fixedHeader.min.js"></script>
     <script>
+        function getUserDetails(ID) {
+
+        $.ajax({
+            method: "get",
+            url: "/GetUser",
+            data: {
+                ID: ID,
+            },
+            success: function(response) {
+                $('#edit-user-modal').removeClass('fade');
+                $("#user-edit-content").html(response);
+            },
+        });
+    }
        $(document).ready(function() {
         var table = $('#tabledata').DataTable( {
             responsive: true,

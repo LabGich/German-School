@@ -17,7 +17,22 @@ class Admin extends BaseController
     {
         return view('Login');
     }
-
+    public function GetUser()
+    {
+        $USERID = $_GET['ID']; 
+        // echo $USERID;
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM flcUSERS where USERID = '$USERID'");
+        // $query = $db->query("SELECT * FROM flcusers ");
+        $result = $query->getResultArray();
+        // var_dump($query);
+        $data['users'] = $result;    
+        if ($result) {
+            // var_dump($result);
+            return view('GetUser',$data);
+        }
+        
+    }
     public function Loginstaff()
     {
         return view('Loginstaff');
