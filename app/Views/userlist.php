@@ -44,7 +44,7 @@
                             <td><?php echo $row['USERTYPE'] ?></td>
                             <td><?php echo $row['DATE'] ?></td>
                            <td>
-                                <a href="/GetUser?ID=<?= $row['USERID']; ?>" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
+                                <a href="/public/GetUser?ID=<?= $row['USERID']; ?>" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
                                         <i class="bx bxs-bullseye">Edit Details</i>
                                     </button>
@@ -87,6 +87,7 @@
 <!-- /.edit user details modal -->
   <?php include 'footer.php' ?>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>    
     <script src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>    
@@ -101,11 +102,24 @@
     <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.3.1/js/dataTables.fixedHeader.min.js"></script>
     <script>
+     function deleteuser(ID) {
+        
+        $.ajax({
+            method: "get",
+            url: "/public/DeleteUser",
+            data: {
+                ID: ID,
+            },
+            success: function(response) {
+                window.location.reload();
+            },
+        });
+    }
         function getUserDetails(ID) {
 
         $.ajax({
             method: "get",
-            url: "/GetUser",
+            url: "/public/GetUser",
             data: {
                 ID: ID,
             },

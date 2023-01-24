@@ -13,9 +13,11 @@ class Admin extends BaseController
     {
         return view('Loginstaff');
     }
-    public function Login()
+    public function DeleteUser()
     {
-        return view('Login');
+        $USERID = $_GET['ID']; 
+        $db = Database::connect();
+        $query = $db->query("DELETE FROM flcUSERS where USERID = '$USERID'");
     }
     public function GetUser()
     {
