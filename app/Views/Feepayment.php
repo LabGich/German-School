@@ -33,12 +33,13 @@
             <h5><b></b>Your Application to Foreign Language Mombasa has been successfully submitted.
                 Please follow the instructions below to make your fee payments.
                 Your admission number will be assigned after 50% completion of the fee payment</b></h5>
+                 <br/>
+                <br/>
+              <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
+              <br/>
+              <br/>
         </div>
-            <br/>
-          <br/>
-          <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
-          <br/>
-          <br/>
+           
         <div class="container card p-3 mt-3 mb-3">
             <div class="row">
 
