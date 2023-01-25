@@ -47,11 +47,11 @@
             <li><a href="/Feestructureswahili">Swahili Course</a></li>
           </ul>
         </li>
-        <?php if (!$session->usertype === 'Admin') { ?>
+        <?php if ($session->usertype === 'Admin') { ?>
         <li class="dropdown"><a href="#"><span>Lists</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="/userlist">User List</a></li>
-            <li><a href="/Enrolmentlist">Enrollment List</a></li>
+            <li><a href="/Enrollmentlist">Enrollment List</a></li>
             <li><a href="/Scholarshiplist">Scholarship List</a></li>
             <li><a href="/Addinstructor">Add Instructor</a></li>
           </ul>

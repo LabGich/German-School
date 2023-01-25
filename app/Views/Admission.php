@@ -34,6 +34,12 @@
           P.O BOX 83803-80100, MOMBASA TEL 041 23116251/+254 111896265</br>
           EMAIL: info@foreignlanguagemombasa.co.ke</p>
           <u style="color:red">ENROLLMENT FORM</u>
+
+          <br/>
+          <br/>
+          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
+          <br/>
+          <br/>
         </div>
 
         <form action="/Feepayment" class="card p-3" method="GET" role="form">
@@ -412,7 +418,7 @@
           <button type="submit" class="btn btn-primary p-2 mt-3 mb-2">Submit</button>
         </form>
 
-        <!--          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download</button>-->
+                 
         <!--</br>          -->
         <!--<img src="/assets/img/admission.png" class="img-fluid"/>-->
 
@@ -433,13 +439,13 @@
   <script>
     function downloadImage(imageUrl) {
       var link = document.createElement('a');
-      link.download = 'image.jpg';
+      link.download = 'admission.jpg';
       link.href = imageUrl;
       link.click();
     }
     var button = document.getElementById('btn-download');
     button.addEventListener('click', function(e) {
-      downloadImage('https://www.foreignlanguagemombasa.co.ke/assets/img/admission.png');
+      downloadImage('https://www.foreignlanguagemombasa.co.ke/public/assets/img/admission.png');
     });
   </script>
 </body>
