@@ -19,6 +19,12 @@ class Admin extends BaseController
         $db = Database::connect();
         $query = $db->query("DELETE FROM flcUSERS where USERID = '$USERID'");
     }
+    public function DeleteEnrollment()
+    {
+        $ID = $_GET['ID']; 
+        $db = Database::connect();
+        $query = $db->query("DELETE FROM flcENROLLMENT where ID = '$ID'");
+    }
     public function GetUser()
     {
         $USERID = $_GET['ID']; 
@@ -306,7 +312,8 @@ class Admin extends BaseController
         $this->session = \Config\Services::session();
         if ($this->session->get('usertype') === "Admin"){
         $db = Database::connect();
-        $query2 = $db->query("SELECT * FROM flcENROLLMENT where Status = 'Pending' ");
+        $query2 = $db->query("SELECT * FROM flcENROLLMENT ");
+        
         $result2 = $query2->getResultArray();
         $data['enrollment'] = $result2;
         if ($result2) {

@@ -25,7 +25,9 @@
             <table id="tabledata" class="table table-bordered table-hover" style="margin-left:auto; margin-right:auto; ">
                 <thead>
                     <tr>
-                        <th>Admission Number</th>
+                        
+                        <th>Id</th>
+                        <th>Status</th>
                         <th>Trimester</th>
                         <th>Full Name</th>
                         <th>Gender</th>
@@ -49,7 +51,9 @@
                     <?php
                     foreach ($enrollment as $row) { ?>
                         <tr>
+                            
                             <td><?php echo $row['ID'] ?></td>
+                            <td><?php echo $row['Status'] ?></td>
                             <td><?php echo $row['TRIMESTER'] ?></td>
                             <td><?php echo $row['FULLNAMES'] ?></td>
                             <td><?php echo $row['GENDER'] ?></td>
@@ -66,9 +70,14 @@
                             <td><?php echo $row['INTAKE'] ?></td>
                             <td><?php echo $row['Datesubmitted'] ?></td>
                             <td>
-                            <a href="/Admitstudent?id=<?= $row['ID']; ?>" >
+                            <a href="/public/Admitstudent?id=<?= $row['ID']; ?>" >
                                     <button type="button" class="btn btn-info btn-circle btn-xs">
                                         <i class="bx bxs-cart-add">Admit</i>
+                                    </button>
+                                </a>
+                                <a href="javascript:void(0)" onclick="deleteenrollment('<?= $row['ID']; ?>')" title="DELETE <?= $row['ID']; ?>" data-toggle="modal" >
+                                    <button type="button" class="btn btn-info btn-circle btn-xs">
+                                        <i class="bx bxs-trash">Delete</i>
                                     </button>
                                 </a>
 
@@ -97,6 +106,19 @@
     <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.3.1/js/dataTables.fixedHeader.min.js"></script>
     <script>
+     function deleteenrollment(ID) {
+        
+        $.ajax({
+            method: "get",
+            url: "/public/DeleteEnrollment",
+            data: {
+                ID: ID,
+            },
+            success: function(response) {
+                window.location.reload();
+            },
+        });
+    }
        $(document).ready(function() {
         var table = $('#tabledata').DataTable( {
             responsive: true,

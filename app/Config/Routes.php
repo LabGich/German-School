@@ -48,6 +48,7 @@ $routes->get('/Admitcontroller', 'Admin::Admitcontroller');
 $routes->get('/Instructorprofile', 'Admin::Instructorprofile');
 $routes->get('/Addinstructor', 'Admin::Addinstructor');
 $routes->match(['get', 'post'],'/DeleteUser', 'Admin::DeleteUser');
+$routes->match(['get', 'post'],'/DeleteEnrollment', 'Admin::DeleteEnrollment');
 $routes->match(['get', 'post'],'/GetUser', 'Admin::GetUser');
 $routes->match(['get', 'post'],'/UpdateUser', 'Admin::UpdateUser');
 $routes->match(['get', 'post'], '/Saveinstructor', 'Admin::Saveinstructor');
