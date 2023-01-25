@@ -34,7 +34,11 @@
                 Please follow the instructions below to make your fee payments.
                 Your admission number will be assigned after 50% completion of the fee payment</b></h5>
         </div>
-
+            <br/>
+          <br/>
+          <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
+          <br/>
+          <br/>
         <div class="container card p-3 mt-3 mb-3">
             <div class="row">
 
@@ -58,7 +62,7 @@
                             <div class="collapse p-3 pt-0" id="collapseExample">
                                 <div class="row">
                                     <div class="col-8">
-                                        <p class="h4 mb-0">Follow the steps below to make payment using M-PESA or use Option 2 to initialize payment</p><br />
+                                        <p class="h4 mb-0">Follow the steps below to make payment using M-PESA or use the link at the bottom</p>
                                         <p class="mb-0"><span class="fw-bold">
                                                 <ol>
                                                     <li>Go to M-Pesa</li>
@@ -69,7 +73,7 @@
                                                     <li>Enter Amount (respective fee balance)</li>
                                                     <li>Wait for the confirmation message: Pay FOREIGN LANGUAGE COLLEGE MOMBASA...</li>
                                                 </ol>
-                                                <b>Option 2</b><br />
+                                                 <b>Option 2</b><br />
                                                 Enter correct details below to Pay
                                                 <div class="form-group row mt-3">
                                                     <label for="phonenumber" class="col-lg-2 col-sm-2 col-form-label">M-PESA No</label>
@@ -194,7 +198,18 @@
 
     <!-- ======= Footer ======= -->
     <?php include 'footer.php' ?>
-
+    <script>
+        function downloadImage(imageUrl) {
+          var link = document.createElement('a');
+          link.download = 'admission.jpg';
+          link.href = imageUrl;
+          link.click();
+        }
+        var button = document.getElementById('btn-download');
+        button.addEventListener('click', function(e) {
+          downloadImage('https://www.foreignlanguagemombasa.co.ke/public/assets/img/admission.png');
+        });
+      </script>
 </body>
 
 </html>

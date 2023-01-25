@@ -34,17 +34,10 @@
           P.O BOX 83803-80100, MOMBASA TEL 041 23116251/+254 111896265</br>
           EMAIL: info@foreignlanguagemombasa.co.ke</p>
           <u style="color:red">ENROLLMENT FORM</u>
-
-          <br/>
-          <br/>
-          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
-          <br/>
-          <br/>
+         
         </div>
-
-        <form action="/Feepayment" class="card p-3" method="GET" role="form">
-          <p class="text-danger"><?= $insert ? $insert : "" ?></p>
-
+        <form action="/public/Feepayment" class="card p-3" method="GET" role="form">
+           <p class="text-danger"><?= $insert?$insert:""?></p>
           <!-- Trimester - Year -->
           <div class="form-group row mt-3">
             <label for="trimester" class="col-lg-2 col-sm-2 col-form-label">TRIMESTER</label>
@@ -93,8 +86,8 @@
             </div>
             <label for="placeofbirth" class="col-sm-2 col-form-label">Country</label>
             <div class="col-sm-4">
-              <select id="placeofbirth" name="placeofbirth" required class="form-control">
-                <option selected="true" value="Select Country">Select Country</option>
+              <select id="placeofbirth" name="placeofbirth" required class="form-control" required>
+                <option selected="true" >Select Country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -418,7 +411,7 @@
           <button type="submit" class="btn btn-primary p-2 mt-3 mb-2">Submit</button>
         </form>
 
-                 
+        <!--          <button class="btn btn-primary" id="btn-download" download="/assets/img/admission.png"><i class="bx bx-download"></i> Download</button>-->
         <!--</br>          -->
         <!--<img src="/assets/img/admission.png" class="img-fluid"/>-->
 
@@ -436,18 +429,7 @@
 
   <!-- ======= Footer ======= -->
   <?php include 'footer.php' ?>
-  <script>
-    function downloadImage(imageUrl) {
-      var link = document.createElement('a');
-      link.download = 'admission.jpg';
-      link.href = imageUrl;
-      link.click();
-    }
-    var button = document.getElementById('btn-download');
-    button.addEventListener('click', function(e) {
-      downloadImage('https://www.foreignlanguagemombasa.co.ke/public/assets/img/admission.png');
-    });
-  </script>
+ 
 </body>
 
 </html>
