@@ -189,6 +189,7 @@ class Home extends BaseController
 
         $email->setFrom($emailadd, $firstname . " " . $lastname);
         $email->setTo('info@foreignlanguagemombasa.co.ke');
+        $email->setCC('natashatanya@foreignlanguagemombasa.co.ke');
         $email->setBCC('cheruiyotkenedy@gmail.com');
         $email->setSubject('Enrollment');
         $email->setMessage($firstname . " " . $lastname." has enrolled for ".$course. " intake ".$intake);
