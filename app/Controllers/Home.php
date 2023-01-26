@@ -7,6 +7,7 @@ use CodeIgniter\Database\BaseConnection;
 
 
 
+
 class Home extends BaseController
 {
     public function index()
@@ -157,7 +158,7 @@ class Home extends BaseController
         $residence = $_GET["residence"];
         $profession = $_GET["profession"];
         $pobox = $_GET["pobox"];
-        $email = $_GET["email"];
+        $emailadd = $_GET["email"];
         $telephone = $_GET["telephone"];
         $guardian = $_GET["guardian"];
         $course = $_GET["course"];
@@ -173,7 +174,7 @@ class Home extends BaseController
             'RESIDENCE'        => $residence,
             'PROFESSION'        => $profession,
             'POBOX'        => $pobox,
-            'EMAIL'        => $email,
+            'EMAIL'        => $emailadd,
             'TELEPHONE'        => $telephone,
             'GUARDIAN'        => $guardian,
             'COURSE'        => $course,
@@ -183,7 +184,18 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
-        // var_dump($builder);
+        
+        $email = \Config\Services::email();
+
+        $email->setFrom($emailadd, $firstname . " " . $lastname);
+        $email->setTo('cheruiyotkenedy@gmail.com');
+        $email->setSubject('Enrollment');
+        $email->setMessage($firstname . " " . $lastname." has enrolled for ".$course. " intake ".$intake);
+
+        $email->send();
+        
+        
+        // var_dump($email);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
         return view('Feepayment');
@@ -300,6 +312,17 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
+
+
+        $email = new Email();
+
+        $email->setFrom($email, $firstname . " " . $lastname);
+        $email->setTo('cheruiyotkenedy@gmail.com');
+        $email->setSubject('Enrollment');
+        $email->setMessage($firstname . " " . $lastname." has enrolled for ".$course. " intake ".$intake);
+
+        $email->send();
+
         //var_dump($builder);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
