@@ -45,9 +45,10 @@ class Home extends BaseController
         if ($result) {
             // echo 'Database connection successful';
             // var_dump($result);
-
+            $this->session     = \Config\Services::session();
             foreach ($result as $row) {
-                $data['id'] = $row['userid'];
+                $data['id'] = $row['USERID'];
+                $this->session->set('ID',$row['USERID']);
                 $firstname = $row['FIRSTNAME'];
                 $lastname = $row['LASTNAME'];
                 $email = $row['EMAIL'];
@@ -57,7 +58,7 @@ class Home extends BaseController
                 $data['PROFILEIMG'] = $row['PROFILEIMG'];                
             }
 
-            $this->session     = \Config\Services::session();
+            
 
             $query2 = $db->query("SELECT * FROM flcENROLLMENT where EMAIL = '$emailpass' limit 1");
             // $query = $db->query("SELECT * FROM flcusers ");
@@ -87,7 +88,6 @@ class Home extends BaseController
                 'course' => $course,
                 'telephone' => $telephone,
                 'profileimg'  =>  $data['PROFILEIMG'],
-                'ID' => $data['id'],
                 'logged_in'    => TRUE
             );
             $this->session->set($datasess);

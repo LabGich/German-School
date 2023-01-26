@@ -115,10 +115,20 @@ class Admin extends BaseController
         $data['users'] = [];
         if ($result) {
             // var_dump($result);
-            $data['users'] = $result;    
+            $data['users'] = $result;   
+            $this->session = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin"){
             return view('userlist', $data);        
+        }else{
+            return view('Studentprofileview', $data);        
+        }
         } else {
-            return view('userlist', $data);
+            if ($this->session->get('usertype') === "Admin"){
+            return view('userlist', $data);        
+        }else{
+            return view('Studentprofileview', $data);        
+        }
+         
         }        
         }
         else{
