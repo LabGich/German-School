@@ -80,6 +80,8 @@ class Admin extends BaseController
         if ($img && $img->getSize() > 0) {
         $img->move(ROOTPATH . '/public/assets/img/');        
         $file_name =  $img->getName();
+        }else{
+            $file_name = $this->request->getPost('originalfile');
         }
         // move_uploaded_file($file_data['full_path'], './public/assets/img/' . $file_name);
 
