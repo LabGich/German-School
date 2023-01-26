@@ -134,8 +134,12 @@
                                                                 <div class="p-2 m-2 ">
                                                                 <a href="/public/Addinstructor" class="get-started-btn">Add Instructor</a>
                                                                 </div>
+                                                                <div class="p-2 m-2 ">
+                                                                <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
+                                                                </div>
+
                                                             </div>
-</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -153,7 +157,18 @@
 
     <!-- ======= Footer ======= -->
     <?php include 'footer.php' ?>
-
+<script>
+        function downloadImage(imageUrl) {
+          var link = document.createElement('a');
+          link.download = 'admission.jpg';
+          link.href = imageUrl;
+          link.click();
+        }
+        var button = document.getElementById('btn-download');
+        button.addEventListener('click', function(e) {
+          downloadImage('https://www.foreignlanguagemombasa.co.ke/public/assets/img/admission.png');
+        });
+      </script>
 </body>
 
 </html>
