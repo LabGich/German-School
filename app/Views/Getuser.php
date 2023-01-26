@@ -82,31 +82,31 @@
                                                                 <div class="row">    
                                                                     <?php
                                                                         foreach ($users as $row){ ?>
+                                                                        <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" class="img-fluid mb-2 p-2 m-2 col-10" style="border-radius:10px !important;" />
                                                                         <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="file" name="profileimg" id="profileimg" class="form-control form-control-lg"  accept="image/*">
-                                                                    <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" class="img-fluid" />
-                                                                    <input type="hidden" class="form-control" name="originalfile" id="originalfile"  value="<?= $row['PROFILEIMG'] ?>" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ENTER FIRSTNAME " value="<?= $row['FIRSTNAME'] ?>" required>
-                                                                    <input type="hidden" class="form-control" name="userid" id="userid"  value="<?= $row['USERID'] ?>" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="ENTER LASTNAME " value="<?= $row['LASTNAME'] ?>" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="ENTER EMAIL " value="<?= $row['EMAIL'] ?>" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="text" class="form-control" name="idno" id="idno" placeholder="ENTER ID NUMBER" required value="<?= $row['IDNO'] ?>">
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="text" class="form-control" name="telephoneno" id="telephoneno" placeholder="ENTER ID NUMBER" value="<?= $row['PHONENUM'] ?>" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="password" class="form-control" name="password" id="password" value="<?= $row['PASSWORD'] ?>" placeholder="ENTER PASSWORD HERE" required>
-                                                                    </div>
-                                                                </div>
+                                                                            <input type="file" name="profileimg" id="profileimg" class="form-control form-control-lg"  accept="image/*">
+                                                                            <input type="hidden" class="form-control" name="originalfile" id="originalfile"  value="<?= $row['PROFILEIMG'] ?>" required>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ENTER FIRSTNAME " value="<?= $row['FIRSTNAME'] ?>" required>
+                                                                            <input type="hidden" class="form-control" name="userid" id="userid"  value="<?= $row['USERID'] ?>" required>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="ENTER LASTNAME " value="<?= $row['LASTNAME'] ?>" required>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="text" class="form-control" name="emailaddress" id="emailaddress" placeholder="ENTER EMAIL " value="<?= $row['EMAIL'] ?>" required>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="text" class="form-control" name="idno" id="idno" placeholder="ENTER ID NUMBER" required value="<?= $row['IDNO'] ?>">
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="text" class="form-control" name="telephoneno" id="telephoneno" placeholder="ENTER ID NUMBER" value="<?= $row['PHONENUM'] ?>" required>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                            <input type="password" class="form-control" name="password" id="password" value="<?= $row['PASSWORD'] ?>" placeholder="ENTER PASSWORD HERE" required>
+                                                                            </div>
+                                                                        </div>
                                                                 <?php
                                                                     }
                                                                     ?>
