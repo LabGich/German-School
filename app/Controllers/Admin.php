@@ -74,11 +74,13 @@ class Admin extends BaseController
         // $this->fileupload->do_upload('profileimg');
 
         // $file_data = $this->fileupload->data();
-
-         $img = $this->request->getFile('profileimg');
+        $file_name = "";
+        $img = $this->request->getFile('profileimg');
         // $file_name = $_FILES['file_field_name']['profileimg']; 
+        if ($img && $img->getSize() > 0) {
         $img->move(ROOTPATH . '/public/assets/img/');        
         $file_name =  $img->getName();
+        }
         // move_uploaded_file($file_data['full_path'], './public/assets/img/' . $file_name);
 
 
