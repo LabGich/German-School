@@ -68,18 +68,6 @@
                                                     <li>Enter Amount (respective fee balance)</li>
                                                     <li>Wait for the confirmation message: Pay FOREIGN LANGUAGE COLLEGE MOMBASA...</li>
                                                 </ol>
-                                                <b>Option 2</b><br />
-                                                Enter correct details below to Pay
-                                                <div class="form-group row mt-3">
-                                                    <label for="phonenumber" class="col-lg-2 col-sm-2 col-form-label">M-PESA No</label>
-                                                    <div class="col-sm-4 col-lg-4">
-                                                        <input type="tel" name="phonenumber" class="form-control" id="phonenumber" placeholder="07********" required>
-                                                    </div>
-                                                    <label for="amount" class="col-sm-2 col-form-label">Amount</label>
-                                                    <div class="col-sm-4">
-                                                        <input type="number" name="amount" class="form-control" id="amount">
-                                                    </div>
-                                                </div>
                                             </span></p>
                                     </div>
                                 </div>
