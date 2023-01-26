@@ -63,6 +63,25 @@ class Admin extends BaseController
     }
     public function UpdateUser()
     { 
+        helper(['form', 'url']);
+
+        // $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        // $config['max_size'] = 2048;
+        // $config['upload_path'] = './public/assets/img';
+
+        // $this->fileupload->initialize($config);
+
+        // $this->fileupload->do_upload('profileimg');
+
+        // $file_data = $this->fileupload->data();
+
+         $img = $this->request->getFile('profileimg');
+        // $file_name = $_FILES['file_field_name']['profileimg']; 
+        $img->move(ROOTPATH . '/public/assets/img/');        
+        $file_name =  $img->getName();
+        // move_uploaded_file($file_data['full_path'], './public/assets/img/' . $file_name);
+
+
         $userid = $this->request->getPost('userid');
         $firstname = $this->request->getPost('firstname');
         $lastname = $this->request->getPost('lastname');
@@ -78,7 +97,8 @@ class Admin extends BaseController
                 'EMAIL' => $emailaddress,
                 'PHONENUM' => $telephoneno,
                 'IDNO' => $idno,
-                'PASSWORD' => $password
+                'PASSWORD' => $password,
+                'PROFILEIMG' => $file_name
                 ];
                 // var_dump($data);
                 $db = Database::connect();

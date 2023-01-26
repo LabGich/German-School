@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS `flcUSERS` (
   `PASSWORD` VARCHAR(50) DEFAULT NULL,
   `IDNO` VARCHAR(50) DEFAULT NULL,
   `COURSE` VARCHAR(50) DEFAULT NULL,
+  `PROFILEIMG` VARCHAR(50) DEFAULT NULL,
   `DATE` datetime default CURRENT_TIMESTAMP,
   PRIMARY KEY (`USERID`)
 ) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=LATIN1;
@@ -31,6 +32,7 @@ INSERT INTO `flcUSERS` (
   `USERTYPE`,
   `IDNO`,
   `COURSE`,
+  `PROFILEIMG`,
   `PASSWORD`
 ) VALUES (
   1,
@@ -38,8 +40,11 @@ INSERT INTO `flcUSERS` (
   'kenedy',
   'cheruiyot',
   'cheruiyotkenedy@gmail.com',
-  '0711314358',
+  '0711314358',  
   'Admin',
+  ''.
+  '',
+  '',
   'pass'
 ),
 (
@@ -50,6 +55,9 @@ INSERT INTO `flcUSERS` (
   'labradorgichohi@gmail.com',
   '0729179309',
   'Admin',
+  ''.
+  '',
+  '',
   'pass'
 ),(
   3,
@@ -59,5 +67,8 @@ INSERT INTO `flcUSERS` (
   'FLC022026KE',
   '+254741950326',
   'Student',
+  ''.
+  '',
+  '',
   '26211650'
 );

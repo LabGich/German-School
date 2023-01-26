@@ -30,6 +30,7 @@
                         <th>Phone Number</th>
                         <th>User Type</th>
                         <th>Date Submitted</th>
+                        <th>Profile Img</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -42,7 +43,8 @@
                             <td><?php echo $row['EMAIL'] ?></td>
                             <td><?php echo $row['PHONENUM'] ?></td>
                             <td><?php echo $row['USERTYPE'] ?></td>
-                            <td><?php echo $row['DATE'] ?></td>
+                            <td><?php echo $row['DATE'] ?></td>                            
+                            <td><img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" width="40px"></td>
                            <td>
                                 <a href="/public/GetUser?ID=<?= $row['USERID']; ?>" title="Edit <?= $row['USERID']; ?>" data-toggle="modal" data-target="#edit-user-modal">
                                     <button type="button" class="btn btn-info btn-circle btn-xs">

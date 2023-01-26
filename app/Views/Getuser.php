@@ -77,7 +77,7 @@
                                                                 <h3 class="mb-0"><i class="far fa-clone pr-1"></i>User Information</h3>
                                                             </div>                                                            
                                                             <div class="card-body pt-0">
-                                                               <form action="/public/UpdateUser" method="POST" role="form">
+                                                               <form action="/public/UpdateUser" method="POST" role="form" enctype="multipart/form-data">
                                                                 <p class="text-danger"><?= $insert?$insert:""?></p>                                                            
                                                                 <div class="row">    
                                                                     <?php
