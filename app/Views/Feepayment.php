@@ -30,6 +30,7 @@
 
         <!-- Fee Payment Section -->
         <div class="container card p-3 mt-3 mb-3" data-aos="fade-up">
+            <p><b><?= ($insert?$insert:"") ?> </b></p>
             <h5><b></b>Your Application to Foreign Language Mombasa has been successfully submitted.
                 Please follow the instructions below to make your fee payments.
                 Your admission number will be assigned after 50% completion of the fee payment</b></h5>
@@ -93,7 +94,9 @@
                         </div>
                         
                     </div>
-                </div>               
+                </div>
+
+                
             </div>
         </div>
         <!-- End Fee Payment Section -->

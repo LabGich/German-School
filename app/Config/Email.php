@@ -47,28 +47,28 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost = "mail.liyanahotels.co.uk";
+    public $SMTPHost = "mail.foreignlanguagemombasa.co.ke";
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = "accounts@liyanahotels.co.uk";
+    public $SMTPUser = "mailer@foreignlanguagemombasa.co.ke";
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = "simba87";
+    public $SMTPPass = "locked12?!";
 
     /**
      * SMTP Port
      *
      * @var int
      */
-    public $SMTPPort = 25;
+    public $SMTPPort = 465;
 
     /**
      * SMTP Timeout (in seconds)
@@ -89,7 +89,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPCrypto = 'tls';
+    public $SMTPCrypto = 'ssl';
 
     /**
      * Enable word-wrap
@@ -110,7 +110,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $mailType = 'text';
+    public $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
