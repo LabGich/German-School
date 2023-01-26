@@ -84,7 +84,7 @@
                                                                         foreach ($users as $row){ ?>
                                                                         <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                     <input type="file" name="profileimg" id="profileimg" class="form-control form-control-lg"  accept="image/*">
-                                                                    <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" />
+                                                                    <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" class="img-fluid" />
                                                                     <input type="hidden" class="form-control" name="originalfile" id="originalfile"  value="<?= $row['PROFILEIMG'] ?>" required>
                                                                     </div>
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
