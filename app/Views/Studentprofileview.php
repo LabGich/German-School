@@ -1,3 +1,6 @@
+<?php 
+$this->session 	= \Config\Services::session();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +48,7 @@
         <!-- Student Profile View Secton -->
         </div>
         <div class="container d-flex align-items-center">
-             <a href="/public/GetUser?ID=<?=
-             $this->session 	= \Config\Services::session();
-             $this->session->get('ID') ?>" class="get-started-btn">Update Details</a>
+             <a href="/public/GetUser?ID=<?= $this->session->get('ID') ?>" class="get-started-btn">Update Details</a>
             <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
         </div>
         </div>
