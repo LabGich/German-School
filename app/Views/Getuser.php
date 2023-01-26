@@ -77,11 +77,14 @@
                                                                 <h3 class="mb-0"><i class="far fa-clone pr-1"></i>User Information</h3>
                                                             </div>                                                            
                                                             <div class="card-body pt-0">
-                                                               <form action="/UpdateUser" method="POST" role="form">
+                                                               <form action="/public/UpdateUser" method="POST" role="form">
                                                                 <p class="text-danger"><?= $insert?$insert:""?></p>                                                            
                                                                 <div class="row">    
                                                                     <?php
-                                                                        foreach ($users as $row){ ?>            
+                                                                        foreach ($users as $row){ ?>
+                                                                        <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
+                                                                    <input type="file" name="profileimg" id="profileimg" class="form-control form-control-lg"  accept="image/*">
+                                                                    </div>
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                     <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ENTER FIRSTNAME " value="<?= $row['FIRSTNAME'] ?>" required>
                                                                     <input type="hidden" class="form-control" name="userid" id="userid"  value="<?= $row['USERID'] ?>" required>
@@ -99,7 +102,7 @@
                                                                     <input type="text" class="form-control" name="telephoneno" id="telephoneno" placeholder="ENTER ID NUMBER" value="<?= $row['PHONENUM'] ?>" required>
                                                                     </div>
                                                                     <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
-                                                                    <input type="password" class="form-control" name="password" id="password" placeholder="ENTER PASSWORD HERE" required>
+                                                                    <input type="password" class="form-control" name="password" id="password" value="<?= $row['PASSWORD'] ?>" placeholder="ENTER PASSWORD HERE" required>
                                                                     </div>
                                                                 </div>
                                                                 <?php
