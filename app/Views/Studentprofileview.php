@@ -45,8 +45,9 @@
         <!-- Student Profile View Secton -->
         </div>
         <div class="container d-flex align-items-center">
-            <a href="/public/Logout" class="get-started-btn">Log Out</a>
-            <a href="#" class="get-started-btn">Update Details</a>
+             <a href="/public/GetUser?ID=<?=
+             $this->session 	= \Config\Services::session();
+             $this->session->get('ID') ?>" class="get-started-btn">Update Details</a>
             <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
         </div>
         </div>
@@ -79,13 +80,14 @@
                                                     <div class="col-lg-4">
                                                         <div class="card shadow-sm">
                                                             <div class="card-header bg-transparent text-center">
-                                                                <img class="profile_img img-fluid" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="student dp">
-                                                                <h3><?= $firstname . " " . $lastname ?></h3>
+                                                                <img class="profile_img img-fluid" src="/public/assets/img/<?php                                                                 
+                                                                echo $this->session->get('profileimg')?>" alt="student dp">
+                                                                <h3><?= $this->session->get('firstname')." ".$this->session->get('lastname') ?></h3>
                                                             </div>
                                                             <div class="card-body">
-                                                                <p class="mb-0"><strong class="pr-1">Student ID:</strong><?= $username ?></p>
-                                                                <p class="mb-0"><strong class="pr-1">Course:</strong><?= $course ?></p>
-                                                                <p class="mb-0"><strong class="pr-1">Trimester:</strong><?= $trimester ?></p>
+                                                                <p class="mb-0"><strong class="pr-1">Student ID:</strong><?= $this->session->get('username') ?></p>
+                                                                <p class="mb-0"><strong class="pr-1">Course:</strong><?= $this->session->get('course') ?></p>
+                                                                <p class="mb-0"><strong class="pr-1">Trimester:</strong><?= $this->session->get('trimester') ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -99,7 +101,7 @@
                                                                     <tr>
                                                                         <th width="30%">Intake</th>
                                                                         <td width="2%">:</td>
-                                                                        <td><?= $intake ?></td>
+                                                                        <td><?= $this->session->get('intake') ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">Academic Year </th>
@@ -109,17 +111,17 @@
                                                                     <tr>
                                                                         <th width="30%">Gender</th>
                                                                         <td width="2%">:</td>
-                                                                        <td><?= $gender ?></td>
+                                                                        <td><?= $this->session->get('gender') ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">Telephone</th>
                                                                         <td width="2%">:</td>
-                                                                        <td><?= $telephone ?></td>
+                                                                        <td><?= $this->session->get('telephone') ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th width="30%">E-mail</th>
                                                                         <td width="2%">:</td>
-                                                                        <td><?= $email ?></td>
+                                                                        <td><?= $this->session->get('email') ?></td>
                                                                     </tr>
                                                                 </table>
                                                             </div>

@@ -247,13 +247,14 @@ class Admin extends BaseController
             // var_dump($result);
             // $data['users'] = $result;
             foreach ($result as $row) {
-                 $id = $row['USERID'];
+                 $data['id'] = $row['USERID'];
                  $data['FIRSTNAME'] = $row['FIRSTNAME'];
                  $data['LASTNAME'] = $row['LASTNAME'];
                  $data['EMAIL'] = $row['EMAIL'];
                  $data['USERTYPE'] = $row['USERTYPE'];                
                  $data['DATE'] = $row['DATE'];                
-                 $data['PHONENUM'] = $row['PHONENUM'];                
+                 $data['PHONENUM'] = $row['PHONENUM'];
+                 $data['PROFILEIMG'] = $row['PROFILEIMG'];                
                 
             }
             $this->session 	= \Config\Services::session();
@@ -264,7 +265,9 @@ class Admin extends BaseController
                 'lastname'  =>  $data['LASTNAME'],
                 'usertype'  =>  $data['USERTYPE'],
                 'phone'  =>  $data['PHONENUM'],
-                'date'  =>  $data['DATE'],
+                'profileimg'  =>  $data['PROFILEIMG'],
+                'date' => $data['DATE'],
+                'ID' => $data['id'],
                 'logged_in'	=> TRUE
             );
             $this->session->set($datasess);

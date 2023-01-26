@@ -46,13 +46,14 @@ class Home extends BaseController
             // var_dump($result);
 
             foreach ($result as $row) {
-                $id = $row['userid'];
+                $data['id'] = $row['userid'];
                 $firstname = $row['FIRSTNAME'];
                 $lastname = $row['LASTNAME'];
                 $email = $row['EMAIL'];
                 $usertype = $row['USERTYPE'];
                 $phone = $row['PHONENUM'];
                 $emailpass = $row['USERNAME'];
+                $data['PROFILEIMG'] = $row['PROFILEIMG'];                
             }
 
             $this->session     = \Config\Services::session();
@@ -61,7 +62,7 @@ class Home extends BaseController
             // $query = $db->query("SELECT * FROM flcusers ");
             $result2 = $query2->getResultArray();
             // echo 'Database connection successful';
-            // var_dump($result);                    
+            // var_dump($result2);                    
             foreach ($result2 as $row2) {
                 $id = $row2['userid'];
                 $trimester = $row2['TRIMESTER'];
@@ -74,7 +75,6 @@ class Home extends BaseController
             $datasess = array(
                 'username'     => $username,
                 'email'     => $emailpass,
-                'usertype'  =>  $usertype,
                 'firstname' => $firstname,
                 'lastname' => $lastname,
                 'usertype' => $usertype,
@@ -85,6 +85,8 @@ class Home extends BaseController
                 'intake' => $intake,
                 'course' => $course,
                 'telephone' => $telephone,
+                'profileimg'  =>  $data['PROFILEIMG'],
+                'ID' => $data['id'],
                 'logged_in'    => TRUE
             );
             $this->session->set($datasess);
