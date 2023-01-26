@@ -82,7 +82,7 @@
                                                                 <div class="row">    
                                                                     <?php
                                                                         foreach ($users as $row){ ?>
-                                                                        <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" class="img-fluid mb-2 p-2 m-2 col-10" style="border-radius:10px !important;" />
+                                                                        <img src="/public/assets/img/<?= $row['PROFILEIMG'] ?>" class="img-fluid mb-2 p-2 m-2 col-10" style="border-radius:50px !important;" />
                                                                         <div class="col-md-6 col-sm-12 form-group mt-3 mt-md-0">
                                                                             <input type="file" name="profileimg" id="profileimg" class="form-control form-control-lg"  accept="image/*">
                                                                             <input type="hidden" class="form-control" name="originalfile" id="originalfile"  value="<?= $row['PROFILEIMG'] ?>" required>
