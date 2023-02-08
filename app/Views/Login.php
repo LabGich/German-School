@@ -13,29 +13,27 @@
 
 </head>
 
-<body>
+<body style="background:lightgray;">
 
   <!-- ======= Header ======= -->
-  <?php include 'header.php' ?>
-
   <main id="main">
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
-      <div class="container">
-        <h2>Student Login</h2>
-      </div>
-    </div><!-- End Breadcrumbs -->
+
     <!-- ======= Login Section ======= -->
     <section id="about" class="about">
-      <div class="container p-2  col-lg-6 col-sm-12" data-aos="fade-up" style="background: rgb(178 214 229);
+      <div class="container p-2  col-lg-4 col-sm-6" data-aos="fade-up" style="background: white;
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;">
+        <div style="display: flex;
+                  align-items: center;
+                  justify-content: center;">
+          <img src="/public/assets/logo.png" alt="" class="img-fluid" style="width:150px;">
+        </div>
         <p class="text-center mb-2" style="justify-content:center">Please Enter Registration Number and Password </p>
         <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
-          <?= $error?$error:""?>
-          <form action="<?php echo ('/loginfunc'); ?>" method="post" role="form" class="mt-3 m-3">
-            <p class="text-danger"><?= $error?$error:""?></p>
+          <p class="text-danger"><?= $error ? $error : "" ?></p>
+          <form action="<?php echo ('/public/loginfunc'); ?>" method="post" role="form" class="mt-3 m-3">
+
             <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
               <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Admission Number" required>
             </div>
