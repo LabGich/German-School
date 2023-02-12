@@ -18,10 +18,10 @@
         <div class="col-lg-4 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="/public/">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/public/About">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/public/Courses">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/public/Scholarship">Scholarship Program</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/About">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/Courses">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/Scholarship">Scholarship Program</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
           </ul>
@@ -31,46 +31,46 @@
           <h4>Our Partners</h4><br />
           <div class="row">
             <div class="col-lg-4 col-md-6 footer-links">
-              TVETA Kenya <a href="/public/" class="logo me-auto"><img src="/public/assets/TVETA-logo.png" alt="" class="img-fluid"></a>
+              TVETA Kenya <a href="/public/" class="logo me-auto"><img src="/assets/TVETA-logo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              MoE Kenya <a href="/public/" class="logo me-auto"><img src="/public/assets/Ministry-of-Education-logo.jpg" alt="" class="img-fluid" style="
+              MoE Kenya <a href="/public/" class="logo me-auto"><img src="/assets/Ministry-of-Education-logo.jpg" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              GOETHE Institut <a href="/public/" class="logo me-auto"><img src="/public/assets/GOETHE-logo.png" alt="" class="img-fluid" style="
+              GOETHE Institut <a href="/public/" class="logo me-auto"><img src="/assets/GOETHE-logo.png" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-5 footer-links">
-              CHAMPION WORLD COLLEGE <a href="/public/" class="logo me-auto"><img src="/public/assets/Champion-World-College-Mombasa-logo1.jpg" alt="" class="img-fluid" style="
+              CHAMPION WORLD COLLEGE <a href="/public/" class="logo me-auto"><img src="/assets/Champion-World-College-Mombasa-logo1.jpg" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              IELTS <a href="/public/" class="logo me-auto"><img src="/public/assets/IELTS-logo.png" alt="" class="img-fluid" style="
+              IELTS <a href="/public/" class="logo me-auto"><img src="/assets/IELTS-logo.png" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              TOEFL <a href="/public/" class="logo me-auto"><img src="/public/assets/TOEFL-logo1.png" alt="" class="img-fluid" style="
+              TOEFL <a href="/public/" class="logo me-auto"><img src="/assets/TOEFL-logo1.png" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              HSK <a href="/public/" class="logo me-auto"><img src="/public/assets/HSK-logo.png" alt="" class="img-fluid" style="
+              HSK <a href="/public/" class="logo me-auto"><img src="/assets/HSK-logo.png" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
-              pesapal <a href="/public/" class="logo me-auto"><img src="/public/assets/pesapal-logo.png" alt="" class="img-fluid" style="
+              pesapal <a href="/public/" class="logo me-auto"><img src="/assets/pesapal-logo.png" alt="" class="img-fluid" style="
     height: 120px;
     width: 150px;
 "></a>
@@ -109,11 +109,11 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<script src="/public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="/public/assets/vendor/aos/aos.js"></script>
-<script src="/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="/public/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script>
 
 <!-- Template Main JS File -->
-<script src="/public/assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>

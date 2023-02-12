@@ -32,7 +32,7 @@
         <p class="text-center mb-2" style="justify-content:center">Please Enter Registration Number and Password </p>
         <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
           <p class="text-danger"><?= $error ? $error : "" ?></p>
-          <form action="<?php echo ('/public/loginfunc'); ?>" method="post" role="form" class="mt-3 m-3">
+          <form action="<?php echo ('/loginfunc'); ?>" method="post" role="form" class="mt-3 m-3">
 
             <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
               <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Admission Number" required>

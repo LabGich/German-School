@@ -16,46 +16,47 @@
 <body>
 
   <!-- ======= Header ======= -->
+
   <body style="background:lightgray;">
 
-  <main id="main">
-    
-    <!-- ======= Login Section ======= -->
-    <section id="about" class="about">
-      <div class="container p-2  col-lg-4 col-sm-6" data-aos="fade-up" style="background: white;
+    <main id="main">
+
+      <!-- ======= Login Section ======= -->
+      <section id="about" class="about">
+        <div class="container p-2  col-lg-4 col-sm-6" data-aos="fade-up" style="background: white;
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;">
-           <div style="display: flex;
+          <div style="display: flex;
                   align-items: center;
                   justify-content: center;">
-        <img src="/public/assets/logo.png" alt="" class="img-fluid" style="width:150px;">    
+            <img src="/public/assets/logo.png" alt="" class="img-fluid" style="width:150px;">
+          </div>
+          <p class="text-center mb-2" style="justify-content:center">Please Enter Account Details</p>
+          <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
+            <p class="text-danger"><?= $error ? $error : "" ?></p>
+            <form action="<?php echo ('/logincontrollerstaff'); ?>" method="post" role="form" class="mt-3 m-3">
+
+              <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
+                <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Email Address" required>
+              </div>
+              <div class="form-group mt-3  col-lg-12 col-sm-12 mb-2">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+              </div>
+              <div><button class="btn btn-success  mt-3 p-2  col-lg-6 col-sm-12" type="submit">Login</button></div>
+            </form>
+
+          </div>
+
         </div>
-        <p class="text-center mb-2" style="justify-content:center">Please Enter Account Details</p>
-        <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
-            <p class="text-danger"><?= $error?$error:""?></p>
-          <form action="<?php echo ('/public/logincontrollerstaff'); ?>" method="post" role="form" class="mt-3 m-3">
-
-            <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
-              <input type="text" name="admissionnumber" class="form-control" id="admissionnumber" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group mt-3  col-lg-12 col-sm-12 mb-2">
-              <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-            </div>
-            <div><button class="btn btn-success  mt-3 p-2  col-lg-6 col-sm-12" type="submit">Login</button></div>
-          </form>
-
-        </div>
-
-      </div>
-    </section><!-- End Login Section -->
+      </section><!-- End Login Section -->
 
 
-  </main><!-- End #main -->
+    </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <?php include 'footer.php' ?>
+    <!-- ======= Footer ======= -->
+    <?php include 'footer.php' ?>
 
-</body>
+  </body>
 
 </html>
