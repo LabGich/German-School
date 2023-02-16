@@ -211,7 +211,9 @@ class Admin extends BaseController
                                 'EMAIL' => $admissionnum,
                                 'PHONENUM'        => $TELEPHONE,
                                 'USERTYPE'        => 'Student',
-                                'PASSWORD'        => $IDNO
+                                'PASSWORD'        => $IDNO,
+                                'IDNO' => $IDNO,
+                                'COURSE' => $COURSE
                             ];
                             // var_dump($data);
                             $db = Database::connect();
