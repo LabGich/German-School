@@ -83,7 +83,7 @@ $this->session 	= \Config\Services::session();
                                                             <div class="card-header bg-transparent text-center">
                                                                 
                                                                 <img class="profile_img img-fluid" src="/public/assets/img/<?php 
-                                                                $this->session 	= \Config\Services::session();
+                                                                // var_dump($this->session->get());
                                                                 echo $this->session->get('profileimg')?>" alt="student dp">
                                                                 <h3><?= $this->session->get('firstname')." ".$this->session->get('lastname') ?></h3>
                                                             </div>
@@ -122,28 +122,28 @@ $this->session 	= \Config\Services::session();
                                                                 </table>
                                                             </div>
                                                         </div><br />
-                                                         <div>
-                                                            <div class="container row align-items-center m-2">
-                                                                <div class="p-2 m-2">
-                                                                <a href="/public/userlist" class="get-started-btn">User List</a>
+                                                        
+                                                        
+                                                        <div class="row m-2">
+                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/userlist" class="btn btn-primary">User List</a>
                                                                 </div>
-                                                                <div class="p-2 m-2">
-                                                                <a href="/public/Enrollmentlist" class="get-started-btn">Enrollment List</a>
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/Enrollmentlist" class="btn btn-primary">Enrollment List</a>
                                                                 </div>
-                                                                <div class="p-2 m-2">
-                                                                <a href="/public/Scholarshiplist" class="get-started-btn">Scholarship List</a>
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/Scholarshiplist" class="btn btn-primary">Scholarship List</a>
                                                                 </div>
-                                                                <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Class Attendance</a>                                                                                        
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="#" class="btn btn-primary">Class Attendance</a>                                                                                        
                                                                 </div>
-                                                                <div class="p-2 m-2 ">
-                                                                <a href="/public/Addinstructor" class="get-started-btn">Add Instructor</a>
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/Addinstructor" class="btn btn-primary">Add Instructor</a>
                                                                 </div>
-                                                                <div class="p-2 m-2 ">
+                                                                <div class="m-2 col-lg-6 col-sm-6">
                                                                 <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>
                                                                 </div>
-
-                                                            </div>
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>

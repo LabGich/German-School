@@ -1,5 +1,6 @@
 <?php 
 $this->session 	= \Config\Services::session();
+// var_dump($this->session);
 ?>
 <!DOCTYPE html>
 <html lang="en">

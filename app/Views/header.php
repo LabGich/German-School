@@ -1,33 +1,20 @@
 <?php $session = session(); ?>
-<header id="header" class="fixed-top">
+<header id="header" class="fixed-top mb-4 ">
   <div class="container d-flex align-items-center">
 
-    <!--<h1 class="logo me-auto"><a href="/">F.L.C. Mombasa </a></h1>-->
+    <!--<h1 class="logo me-auto"><a href="/public/">F.L.C. Mombasa </a></h1>-->
     <!-- Uncomment below if you prefer to use an image logo -->
-    <a href="/" class="logo me-auto"><img src="//assets/logo.png" alt="" class="img-fluid"></a>
+    <a href="/" class="logo me-auto"><img src="/public/assets/logo.png" alt="" class="img-fluid"></a>
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li><a class="active" href="/">Home</a></li>
-        <li><a href="/About">About</a></li>
-        <li class="dropdown"><a href="/Courses"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="/Courses">Arabic Course</a></li>
-            <li><a href="/Courses">Chinese Course</a></li>
-            <li><a href="/Courses">English Course</a></li>
-            <li><a href="/Courses">French Course</a></li>
-            <li><a href="/Courses">German Course</a></li>
-            <li><a href="/Courses">Italian Course</a></li>
-            <li><a href="/Courses">Japanese Course</a></li>
-            <li><a href="/Courses">Portuguese Course</a></li>
-            <li><a href="/Courses">Spanish Course</a></li>
-            <li><a href="/Courses">Swahili Course</a></li>
-          </ul>
-        </li>
-        <!--<li class="dropdown"><a href="/Attendance"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>-->
+        <li><a href="/public/">Home</a></li>
+        <li><a href="/public/About">About</a></li>
+        <li><a href="/public/Courses">Courses</a></li>
+        <!--<li class="dropdown"><a href="/public/Attendance"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>-->
         <!--  <ul>-->
-        <!--    <li><a href="/Attendance">Attendance</a></li>-->
-        <!--    <li><a href="/Homework">Homework</a></li>-->
+        <!--    <li><a href="/public/Attendance">Attendance</a></li>-->
+        <!--    <li><a href="/public/Homework">Homework</a></li>-->
         <!--  </ul>-->
         <!--</li>-->
         <!-- <li><a href="trainers.html">Trainers</a></li>
@@ -35,46 +22,46 @@
         <!-- Events and Trainers we will come to that -->
         <li class="dropdown"><a href="#"><span>Fee Structure</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="/Feestructurearabic">Arabic Course</a></li>
-            <li><a href="/Feestructurechinese">Chinese Course</a></li>
-            <li><a href="/Feestructureenglish">English Course</a></li>
-            <li><a href="/Feestructurefrench">French Course</a></li>
-            <li><a href="/Feestructuregerman">German Course</a></li>
-            <li><a href="/Feestructureitalian">Italian Course</a></li>
-            <li><a href="/Feestructurejapanese">Japanese Course</a></li>
-            <li><a href="/Feestructureportuguese">Portuguese Course</a></li>
-            <li><a href="/Feestructurespanish">Spanish Course</a></li>
-            <li><a href="/Feestructureswahili">Swahili Course</a></li>
+            <li><a href="/public/Feestructurearabic">Arabic Course</a></li>
+            <li><a href="/public/Feestructurechinese">Chinese Course</a></li>
+            <li><a href="/public/Feestructureenglish">English Course</a></li>
+            <li><a href="/public/Feestructurefrench">French Course</a></li>
+            <li><a href="/public/Feestructuregerman">German Course</a></li>
+            <li><a href="/public/Feestructureitalian">Italian Course</a></li>
+            <li><a href="/public/Feestructurejapanese">Japanese Course</a></li>
+            <li><a href="/public/Feestructureportuguese">Portuguese Course</a></li>
+            <li><a href="/public/Feestructurespanish">Spanish Course</a></li>
+            <li><a href="/public/Feestructureswahili">Swahili Course</a></li>
           </ul>
-        </li>
-        <?php if ($session->usertype === 'Admin') { ?>
+        </li>     
+         <?php if ($session->usertype === 'Admin') { ?>
         <li class="dropdown"><a href="#"><span>Lists</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="/userlist">User List</a></li>
-            <li><a href="/Enrollmentlist">Enrollment List</a></li>
-            <li><a href="/Scholarshiplist">Scholarship List</a></li>
-            <li><a href="/Addinstructor">Add Instructor</a></li>
+            <li><a href="/public/userlist">User List</a></li>
+            <li><a href="/public/Enrollmentlist">Enrollment List</a></li>
+            <li><a href="/public/Scholarshiplist">Scholarship List</a></li>
+            <li><a href="/public/Addinstructor">Add Instructor</a></li>
           </ul>
         </li>
         <?php } ?>
-        <li><a href="/Scholarship">Apply Scholarship</a></li>
-        <li><a href="/Contact">Contact</a></li>
-        <?php if (!$session->username) { ?>
-          <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
-            <ul>
-              <li><a href="/Loginstaff">Staff Portal</a></li>
-              <li><a href="/Login">Student Portal</a></li>
-            </ul>
-          </li>
+        <li><a href="/public/Scholarship">Apply Scholarship</a></li>
+        <li><a href="/public/Contact">Contact</a></li>         
+        <?php if (!$session->username){ ?>
+        <li class="dropdown"><a href="#"><span>Portal Login<i class="bi bi-chevron-down"></i></span></a>
+          <ul>
+          <li><a href="/public/Loginstaff">Staff Portal</a></li>
+            <li><a href="/public/Login">Student Portal</a></li>
+          </ul>
+        </li>
         <?php } ?>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <?php if (!$session->username) { ?>
-      <a href="/Admission" class="get-started-btn">Apply Today</a>
-    <?php } ?>
-    <?php if (($session->username)) { ?>
-      <a href="/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
-    <?php } ?>
+    <?php if (!$session->username){ ?>
+      <a href="/public/Admission" class="get-started-btn">Apply Today</a>
+      <?php } ?>
+      <?php if (($session->username)){ ?>
+            <a href="/public/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
+        <?php } ?>
   </div>
 </header><!-- End Header -->

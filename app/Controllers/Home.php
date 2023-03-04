@@ -22,7 +22,7 @@ class Home extends BaseController
     public function Logout()
     {
         $this->session  = \Config\Services::session();
-        if ($this->session->get('usertype') === "Admin") {
+        if ($this->session->get('usertype') === "Admin" || $this->session->get('usertype') === "Instructor") {
             $this->session->destroy();
             $data['error'] = "You Have been logged out";
             return view('Loginstaff', $data);
@@ -48,23 +48,24 @@ class Home extends BaseController
             $this->session     = \Config\Services::session();
             foreach ($result as $row) {
                 $data['id'] = $row['USERID'];
-                $this->session->set('ID', $row['USERID']);
+                $this->session->set('ID',$row['USERID']);
                 $firstname = $row['FIRSTNAME'];
                 $lastname = $row['LASTNAME'];
                 $email = $row['EMAIL'];
                 $usertype = $row['USERTYPE'];
                 $phone = $row['PHONENUM'];
+                $idno = $row['IDNO'];
                 $emailpass = $row['USERNAME'];
-                $data['PROFILEIMG'] = $row['PROFILEIMG'];
+                $data['PROFILEIMG'] = $row['PROFILEIMG'];                
             }
 
+            
 
-
-            $query2 = $db->query("SELECT * FROM flcENROLLMENT where EMAIL = '$emailpass' limit 1");
+            $query2 = $db->query("SELECT * FROM flcENROLLMENT where IDNO = '$idno' limit 1");
             // $query = $db->query("SELECT * FROM flcusers ");
             $result2 = $query2->getResultArray();
             // echo 'Database connection successful';
-            // var_dump($result2);                    
+            var_dump($result2);                    
             foreach ($result2 as $row2) {
                 $id = $row2['userid'];
                 $trimester = $row2['TRIMESTER'];
@@ -184,7 +185,7 @@ class Home extends BaseController
         $db = Database::connect();
         $builder = $db->table('ENROLLMENT');
         $builder->insert($data);
-
+        
         $email = \Config\Services::email();
 
         $email->setFrom($emailadd, $firstname . " " . $lastname);
@@ -192,11 +193,11 @@ class Home extends BaseController
         $email->setCC('natashatanya@foreignlanguagemombasa.co.ke');
         $email->setBCC('cheruiyotkenedy@gmail.com');
         $email->setSubject('Enrollment');
-        $email->setMessage($firstname . " " . $lastname . " has enrolled for " . $course . " intake " . $intake);
+        $email->setMessage($firstname . " " . $lastname." has enrolled for ".$course. " intake ".$intake);
 
         $email->send();
-
-
+        
+        
         // var_dump($email);
         // return $builder;        
         $data['insert'] = 'We will contact you with more information thank you!';
@@ -250,10 +251,6 @@ class Home extends BaseController
     {
         return view('Contact');
     }
-    public function Addcourses()
-    {
-        return view('Addcourses');
-    }
     public function Admission()
     {
         return view('Admission');
@@ -261,10 +258,6 @@ class Home extends BaseController
     public function Attendance()
     {
         return view('Attendance');
-    }
-    public function Courselist()
-    {
-        return view('Courselist');
     }
     public function Homework()
     {
@@ -329,7 +322,7 @@ class Home extends BaseController
         $email->setFrom($email, $firstname . " " . $lastname);
         $email->setTo('cheruiyotkenedy@gmail.com');
         $email->setSubject('Enrollment');
-        $email->setMessage($firstname . " " . $lastname . " has enrolled for " . $course . " intake " . $intake);
+        $email->setMessage($firstname . " " . $lastname." has enrolled for ".$course. " intake ".$intake);
 
         $email->send();
 

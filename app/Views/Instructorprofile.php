@@ -1,3 +1,6 @@
+<?php 
+$this->session 	= \Config\Services::session();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +34,9 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <?php include 'header.php' ?>
+    <?php include 'header.php';
+    
+    ?>
 
     <main id="main">
         <!-- ======= Breadcrumbs ======= -->
@@ -45,9 +50,8 @@
         <!-- Student Profile View Secton -->
         </div>
         <div class="container d-flex align-items-center">
-            <a href="/Logout" class="get-started-btn">Log Out</a>
-            <a href="/Admission" class="get-started-btn">Update Details</a>
-            <a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>
+            <a href="/public/GetUser?" class="get-started-btn">Update Details</a>
+            <!--<a href="#" class="get-started-btn">Notifications<span class="bi bi-bell"></span></a>-->
         </div>
         </div>
         </div>
@@ -117,32 +121,32 @@
                                                                 </table>
                                                             </div>
                                                         </div><br />
-                                                        <Sectionstudentp2>
-                                                        <div class="container d-flex align-items-center">
-                                                                                                        
-                                                        </div>
-                                                    </Sectionstudentp2>
-
-                                                     <div>
-                                                            <div class="container row align-items-center m-2">
-                                                                <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Class List</a>
-                                                                </div>
-                                                                <div class="p-2 m-2">
-                                                                <a href="#" class="get-started-btn">Assignments List</a>
-                                                                </div>
-                                                                <div class="p-2 m-2">
-                                                                <a href="/public/Scholarshiplist" class="get-started-btn">Scholarship List</a>
-                                                                </div>
+                                                        
+                                                        <div class="row m-2">
+                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="#" class="btn btn-primary">Class List</a>
                                                             </div>
+                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="#" class="btn btn-primary">Assignments List</a>
+                                                            </div>
+                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="#" class="btn btn-primary ">Add Assignment</a>
+                                                            </div>
+                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="#" class="btn btn-primary ">Attendance List </a>
+                                                            </div>
+                                                           
                                                         </div>
+                                                        
+                                                        
+                                                      
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </Sectionstudentp1>
 
-                                    
+                                   
                                     <!-- partial -->
 
                                 </div>
