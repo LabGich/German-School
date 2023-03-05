@@ -61,7 +61,8 @@
       <a href="/public/Admission" class="get-started-btn">Apply Today</a>
       <?php } ?>
       <?php if (($session->username)){ ?>
-            <a href="/public/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"></i>Logout</a>
+            <a href="/public/Logout" class="get-started-btn"><i class="bi bi-file-lock-fill"> </i> Logout</a>
+            <a href="/public/Profile" class="get-started-btn"><i class="bi bi-file-lock-fill"> </i> Dashboard</a>
         <?php } ?>
   </div>
 </header><!-- End Header -->

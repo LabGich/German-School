@@ -125,8 +125,11 @@ $this->session 	= \Config\Services::session();
                                                         
                                                         
                                                         <div class="row m-2">
-                                                            <div class="m-2 col-lg-3 col-sm-6">
+                                                                <div class="m-2 col-lg-3 col-sm-6">
                                                                 <a href="/public/userlist" class="btn btn-primary">User List</a>
+                                                                </div>
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/courselist" class="btn btn-primary">Course List</a>
                                                                 </div>
                                                                 <div class="m-2 col-lg-3 col-sm-6">
                                                                 <a href="/public/Enrollmentlist" class="btn btn-primary">Enrollment List</a>
@@ -139,6 +142,9 @@ $this->session 	= \Config\Services::session();
                                                                 </div>
                                                                 <div class="m-2 col-lg-3 col-sm-6">
                                                                 <a href="/public/Addinstructor" class="btn btn-primary">Add Instructor</a>
+                                                                </div>
+                                                                <div class="m-2 col-lg-3 col-sm-6">
+                                                                <a href="/public/Addcourses" class="btn btn-primary">Add Course</a>
                                                                 </div>
                                                                 <div class="m-2 col-lg-6 col-sm-6">
                                                                 <button class="btn btn-primary" id="btn-download" download="/public/assets/img/admission.png"><i class="bx bx-download"></i> Download Admission Form Here</button>

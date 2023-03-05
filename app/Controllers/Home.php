@@ -32,6 +32,23 @@ class Home extends BaseController
             return view('Login', $data);
         }
     }
+    public function Profile()
+    {
+        $this->session  = \Config\Services::session();
+        if ($this->session->get('usertype') === "Admin") {
+            return view('Adminprofileview');
+            // return view('Adminprofileview', $datasess);
+        }
+        if ($this->session->get('usertype') === "Instructor") {
+            return view('Instructorprofile');
+            // return view('Instructorprofile', $datasess);
+        }
+        if ($this->session->get('usertype') === "Student") {
+            return view('Studentprofileview');
+            // return view('Studentprofileview', $datasess);
+        }
+            
+    }
     public function loginfunc()
     {
         // var_dump($this->request->getPost());

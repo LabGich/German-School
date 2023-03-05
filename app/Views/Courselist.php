@@ -1,3 +1,7 @@
+<?php 
+use Config\Database;
+use CodeIgniter\Database\BaseConnection;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,16 +31,28 @@
                     <tr>
 
                         <th>Id</th>
+                        <th>Instructor Email</th>
                         <th>Course</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     <?php
-                    foreach ($enrollment as $row) { ?>
+                    foreach ($courses as $row) { ?>
                         <tr>
 
                             <td><?php echo $row['ID'] ?></td>
+                            <?php 
+                            $USERID = $row['USERID'];
+                            $db = Database::connect();
+                            $query = $db->query("SELECT * FROM flcUSERS where USERID = '$USERID'");
+                            // $query = $db->query("SELECT * FROM flcusers ");
+                            $result = $query->getResultArray();
+                            foreach ($result as $EMAIL){
+                                $email = $EMAIL['EMAIL'];
+                            }
+                            ?>
+                            <td><?php echo $email; ?></td>
                             <td><?php echo $row['COURSE'] ?></td>
                         </tr>
 
