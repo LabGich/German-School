@@ -40,6 +40,9 @@
             <li><a href="/public/userlist">User List</a></li>
             <li><a href="/public/Enrollmentlist">Enrollment List</a></li>
             <li><a href="/public/Scholarshiplist">Scholarship List</a></li>
+            <li><a href="/public/courselist">Course List</a></li>
+            <li><a href="/public/Instructorlist">Instructor List</a></li>
+            <li><a href="/public/Studentlist">Student List</a></li>
             <li><a href="/public/Addinstructor">Add Instructor</a></li>
           </ul>
         </li>
