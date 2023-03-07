@@ -311,7 +311,8 @@ use CodeIgniter\Database\BaseConnection;
                      $data['USERTYPE'] = $row['USERTYPE'];                
                      $data['DATE'] = $row['DATE'];                
                      $data['PHONENUM'] = $row['PHONENUM'];
-                     $data['PROFILEIMG'] = $row['PROFILEIMG'];                
+                     $data['PROFILEIMG'] = $row['PROFILEIMG'];   
+                     $idno = $row['USERID'];
                     
                 }
                 $this->session 	= \Config\Services::session();
@@ -335,6 +336,38 @@ use CodeIgniter\Database\BaseConnection;
                 return view('Instructorprofile',$datasess);     
             }   
             if ($this->session->get('usertype') === "Student"){
+                $query2 = $db->query("SELECT * FROM flcENROLLMENT where IDNO = '$idno' limit 1");
+                // $query = $db->query("SELECT * FROM flcusers ");
+                $result2 = $query2->getResultArray();
+                // echo 'Database connection successful';
+                // var_dump($result2);                    
+                foreach ($result2 as $row2) {
+                    $id = $row2['userid'];
+                    $trimester = $row2['TRIMESTER'];
+                    $gender = $row2['GENDER'];
+                    $idno = $row2['IDNO'];
+                    $course = $row2['COURSE'];
+                    $telephone = $row2['TELEPHONE'];
+                    $intake = $row2['INTAKE'];
+                }
+                 $datasess = array(
+                    'username' 	=> $username,
+                    'email' 	=> $data['EMAIL'],
+                    'firstname'  =>  $data['FIRSTNAME'],
+                    'lastname'  =>  $data['LASTNAME'],
+                    'usertype'  =>  $data['USERTYPE'],
+                    'phone' => $telephone,
+                    'profileimg'  =>  $data['PROFILEIMG'],
+                    'date' => $data['DATE'],
+                    'ID' => $data['id'],
+                    'trimester' => $trimester,
+                    'gender' => $gender,
+                    'idno' => $idno,
+                    'intake' => $intake,
+                    'course' => $course,
+                    'logged_in'	=> TRUE
+                );
+                
                 return view('Studentprofileview',$datasess);     
             }
             else {
@@ -352,6 +385,46 @@ use CodeIgniter\Database\BaseConnection;
             if ($this->session->get('usertype') === "Admin"){
             $db = Database::connect();
             $query = $db->query("SELECT * FROM flcUSERS ");
+            $result = $query->getResultArray();
+            $data['users'] = $result;
+            if ($result) {
+                // var_dump($result);
+                $data['users'] = $result;    
+                return view('userlist', $data);        
+            } else {
+                return view('userlist', $data);
+            }        
+            }
+            else{
+                return view('Loginstaff');            
+            }
+        }
+        public function studentlist()
+        {
+            $this->session = \Config\Services::session();
+            if ($this->session->get('usertype') === "Admin"){
+            $db = Database::connect();
+            $query = $db->query("SELECT * FROM flcUSERS WHERE USERTYPE = 'Student' ");
+            $result = $query->getResultArray();
+            $data['users'] = $result;
+            if ($result) {
+                // var_dump($result);
+                $data['users'] = $result;    
+                return view('userlist', $data);        
+            } else {
+                return view('userlist', $data);
+            }        
+            }
+            else{
+                return view('Loginstaff');            
+            }
+        }
+        public function instructorlist()
+        {
+            $this->session = \Config\Services::session();
+            if ($this->session->get('usertype') === "Admin"){
+            $db = Database::connect();
+            $query = $db->query("SELECT * FROM flcUSERS WHERE USERTYPE = 'Instructor'");
             $result = $query->getResultArray();
             $data['users'] = $result;
             if ($result) {

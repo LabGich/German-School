@@ -38,6 +38,8 @@ $routes->setAutoRoute(true);
 //admin
 $routes->get('/Admin', 'Admin::Login');
 $routes->get('/userlist', 'Admin::userlist');
+$routes->get('/Studentlist', 'Admin::studentlist');
+$routes->get('/Instructorlist', 'Admin::instructorlist');
 $routes->get('/Enrollmentlist', 'Admin::Enrollmentlist');
 $routes->get('/Scholarshiplist', 'Admin::Scholarshiplist');
 $routes->get('/courselist', 'Admin::courselist');
@@ -59,6 +61,7 @@ $routes->match(['get', 'post'], '/Saveinstructor', 'Admin::Saveinstructor');
 
 $routes->get('/', 'Home::index');
 $routes->get('/Logout', 'Home::Logout');
+$routes->get('/Profile', 'Home::Profile');
 $routes->get('/Login', 'Home::Login');
 $routes->get('/userlist', 'Home::userlist');
 $routes->get('/Loginstaff', 'Home::Loginstaff');

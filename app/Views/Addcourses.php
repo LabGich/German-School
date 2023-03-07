@@ -35,7 +35,7 @@
                 <p class="text-center mb-2" style="justify-content:center">Please Enter Instructor and their ID/Email</p>
                 <div class="Card col-lg-12 col-sm-12 mt-5 mt-lg-0 text-center m-2">
 
-                    <form action="/public/Savecourses" method="POST" role="form" class=" mt-3 m-3">
+                    <form action="/public/Savecourses" method="GET" role="form" class=" mt-3 m-3">
 
                         <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
                             <select name="instructorid" id="instructorid" class="form-control" required>
@@ -47,7 +47,18 @@
                         </select>                            
                         </div>
                         <div class="col-md-12 col-lg-12 col-sm-12 form-group mb-2">
-                            <input type="text" name="course" class="form-control" id="course" placeholder="Course Assigned" required>
+                            <select name="course" class="form-control" required="required">
+                                <option>Select Course</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="English">English</option>
+                                <option value="French">French</option>
+                                <option value="German">German</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Swahili">Swahili</option>
+                              </select>
                         </div>
                         <div class="text-center"><button type="submit" class="btn btn-primary mt-2 mb-3">Submit</button></div>
                     </form>
